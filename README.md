@@ -12,7 +12,7 @@
 
 ## Projects
 
-### :warning:  It includes examples of various project I've done, drawing inspiration from real-world enterprise challenges I've faced and they are for educational purposes only.
+#### :warning:  It includes examples of various project I've done, drawing inspiration from real-world enterprise challenges I've faced and they are for educational purposes only.
 
 ## Creator
 
