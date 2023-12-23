@@ -15,7 +15,7 @@ $(document).ready(function () {
 
     // scroll menu
     var sections = $('.section'),
-        nav = $('.navbar-fixed-top,footer,#about,#experience,#recommendations,#skills,#certifications,#contact'),
+        nav = $('.navbar-fixed-top,footer,#about'),
         nav_height = nav.outerHeight();
 
     $(window).on('scroll', function () {
