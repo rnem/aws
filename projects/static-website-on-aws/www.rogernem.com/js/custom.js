@@ -15,7 +15,7 @@ $(document).ready(function () {
 
     // scroll menu
     var sections = $('.section'),
-        nav = $('.navbar-fixed-top,footer,#about'),
+        nav = $('.navbar-fixed-top,footer,#about,#experience,#recommendations,#skills,#certifications,#contact'),
         nav_height = nav.outerHeight();
 
     $(window).on('scroll', function () {
@@ -59,6 +59,12 @@ $(document).ready(function () {
 				$('#top-menu').hide();
 			}
 		}
+
+		if($(window).scrollTop() + window.innerHeight > $(document).height() - 50) {
+			nav.find('a').removeClass( "active" );
+			$('.contact').addClass( "active" );
+		}
+		
 	});
 	$("#toTop").click(function () {
 	   $("html, body").animate({scrollTop: 0}, 800);
