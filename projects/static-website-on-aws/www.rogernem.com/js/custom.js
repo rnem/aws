@@ -196,8 +196,8 @@ $(document).ready(function () {
 		autoPlay:true,
 		autoplayTimeout:1000,
 		autoplayHoverPause:true,
-slideSpeed: 300,
-    paginationSpeed: 500
+		slideSpeed: 300,
+		paginationSpeed: 500
     });
 
 
@@ -211,9 +211,8 @@ slideSpeed: 300,
 		}else if(id == 'pdf'){ window.open('Roger_Nem.pdf', '_blank');
 		}
 		
-		$(this).css('transform','translate3d(0px, 0px, 0px)');
 		return false;
 		
-	});
+    });
 
 });
