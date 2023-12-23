@@ -793,7 +793,8 @@ margin-left: auto;
 
 #testimonial-slider{
 	width:90%;
-	height: 625px; /*to fix height for autoHeight to not push things down*/	
+	height: 650px; /*to fix height for autoHeight to not push things down*/	
+	overflow: hidden;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -810,6 +811,128 @@ margin-left: auto;
 	right:0;
 	top:200px;
  }
+
+/* skills section
+==================================================*/
+#skills {
+	padding-top: 50px;
+	padding-right: 0px;
+	padding-bottom: 100px;
+	padding-left: 0px;
+	background:#f3f3f3
+}
+
+.skills_div{
+  position: relative;
+  top: -3.875em;
+  width: 100%;  
+}
+
+.skills_div ul{
+	position: relative;
+	margin-left: -28px
+}
+
+.skills_div li strong{
+	line-height:2em;
+	font-family: 'Lato', sans-serif;
+	font-size: 1.2em;
+	color: #425BB5;
+	text-transform: capitalize;
+	letter-spacing: 1.5px;
+}
+
+#skills .border-bottom {
+    border-bottom-style: dashed !important;
+}
+
+.box-te{
+	height: 290px;
+}
+.box-te-m{
+	height: 240px;
+}
+.box-te-sm{
+	height: 225px;
+}
+.pt-5, .py-5 {
+  padding-top: 3rem !important;
+}
+.mt-5, .my-5 {
+  margin-top: 3rem !important;
+}
+.border-bottom {
+border-bottom: 1px solid #425BB5 !important;
+}
+.border-right{
+	border-right:1px solid rgba(66,91,181,.5);
+}
+.text-left{
+	text-align: left !important;
+}
+.px-lg-3 {
+    padding-left: 1rem !important;
+}
+.py-lg-4{
+padding-top: 1.5rem !important;
+}
+.text-base-color {
+  color: #425BB5 !important;
+}
+.title-extra-large {
+  font-size: 3.125rem !important;
+  line-height: 2.875rem !important;
+}
+.font-alt {
+  font-family: Montserrat,sans-serif !important;
+  font-size: 2.1rem !important;
+  line-height: 2.875rem !important;
+}
+.text-uppercase {
+  text-transform: uppercase !important;
+}
+.mt-2, .my-2 {
+  margin-top: .9rem !important;
+}
+.d-block {
+  display: block !important;
+}
+.letter-spacing-2 {
+  letter-spacing: .16rem !important;
+}
+.bg-base-color {
+  background-color: #425BB5 !important;
+}
+.sep-line-thick, .sep-line-thin {
+  width: 30px;
+}
+.sep-line-thick, .sep-line-thick-full, .sep-line-thick-long {
+  height: 4px;
+}
+.sep-line, .sep-line-extra-thick, .sep-line-extra-thick-full, .sep-line-extra-thick-long, .sep-line-full, .sep-line-long, .sep-line-medium-thick, .sep-line-medium-thick-full, .sep-line-medium-thick-long, .sep-line-thick, .sep-line-thick-full, .sep-line-thick-long, .sep-line-thin, .sep-line-thin-full, .sep-line-thin-long {
+  display: block;
+}
+.mt-3, .my-3 {
+  margin-top: 1.2rem !important;
+}
+
+.tabler-icon i {
+	font-size: 42px;
+	stroke-width: 1
+}
+.text-medium {
+  font-size: 1.5rem !important;
+  line-height: 2rem !important;
+}
+p.text-medium {
+	margin-right: 25px;
+}
+p.mt-3, p.my-3 {
+  margin-top: 1.5rem !important;
+}
+
+
+
 
 /* certifications section
 ==================================================*/
