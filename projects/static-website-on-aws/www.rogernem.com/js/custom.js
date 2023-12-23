@@ -165,6 +165,41 @@ $(document).ready(function () {
 
     });
 
+/*
+    $("#testimonial-slider").owlCarousel({
+        items:2,
+        itemsDesktop:[1000,2],
+        itemsDesktopSmall:[979,2],
+        itemsTablet:[768,1],
+        pagination:false,
+        navigation:true,
+        navigationText:["",""],
+		loop: true,
+		autoplaySpeed: 10,
+        autoPlay:true
+		
+    });
+*/
+
+
+    $("#testimonial-slider").owlCarousel({
+        items:1,
+        itemsDesktop:[1000,1],
+        itemsDesktopSmall:[979,1],
+        itemsTablet:[768,1],
+        pagination:true,
+        navigation:true,
+        navigationText:["",""],
+        transitionStyle:"backSlide",
+        //autoPlay:true,
+		autoHeight: true,
+		autoPlay:true,
+		autoplayTimeout:1000,
+		autoplayHoverPause:true,
+slideSpeed: 300,
+    paginationSpeed: 500
+    });
+
 
 	$('.social a').click(function () {
 
@@ -176,6 +211,7 @@ $(document).ready(function () {
 		}else if(id == 'pdf'){ window.open('Roger_Nem.pdf', '_blank');
 		}
 		
+		$(this).css('transform','translate3d(0px, 0px, 0px)');
 		return false;
 		
 	});
