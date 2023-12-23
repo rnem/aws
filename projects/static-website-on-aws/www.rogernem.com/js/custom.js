@@ -214,6 +214,7 @@ $(document).ready(function () {
 		}else if(id == 'github'){ window.open('https://github.com/rnem', '_blank');
 		}else if(id == 'gitlab'){ 
 		}else if(id == 'youtube'){ window.open('https://www.youtube.com/@RogerNem', '_blank');
+		}else if(id == 'medium'){ window.open('https://medium.com/@rogernem', '_blank');
 		}else if(id == 'pdf'){ window.open('Roger_Nem.pdf', '_blank');
 		}
 		
