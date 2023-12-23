@@ -1285,6 +1285,9 @@ fieldset {
 .social li a.youtube{
 	background:url(../img/youtube_logo.svg) no-repeat; 
 }
+.social li a.medium{
+	background:url(../img/medium_logo.svg) no-repeat; 
+}
 .social li a.pdf{
 	background:url(../img/pdf_logo.svg) no-repeat; 
 }
