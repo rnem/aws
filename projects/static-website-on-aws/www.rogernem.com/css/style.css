@@ -1212,4 +1212,15 @@ fieldset {
     nav li a {
         font-size: 10px;
     }
+	h3{
+		font-size: 21px;
+	}
+
+	#contact .h-50 {
+	  height: 20px;
+	}
+	.size-50{
+	  font-size: 40px;
+	}
+
 }
