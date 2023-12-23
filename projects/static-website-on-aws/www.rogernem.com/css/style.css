@@ -14,6 +14,7 @@
     - home section -
     - About section -
     - experience section -
+	- recommendations section -
     - certifications section -
     - Contact section -
     - Responsive media queries -
@@ -441,15 +442,6 @@ svg {
   font-weight: 100;
 }
 
-
-
-
-
-
-
-
-
-
 .experience-row {
     padding: 20px 0;
     border-bottom: 1px solid #ddd;
@@ -595,6 +587,229 @@ svg {
     padding: 0.25em 1em 0.2em 1em;
 }
 
+
+
+/* recommendations section
+==================================================*/
+#recommendations {
+	padding-top: 50px;
+	padding-right: 0px;
+	padding-bottom: /*100px*/ 50px;
+	padding-left: 0px;
+
+}
+
+/*
+.testimonial{
+    border: 10px solid #662a66;
+    padding: 40px 0 25px 0;
+    margin: 50px;
+    text-align: center;
+    position: relative;
+}
+.testimonial:before{
+    content: "\f10d";
+    font-family: "Font Awesome 5 Free";
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    background: #fff;
+    margin: 0 auto;
+    font-size: 70px;
+    font-weight: 900;
+    color: #f1971f;
+    position: absolute;
+    top: -60px;
+    left: 0;
+    right: 0;
+}
+.testimonial .title{
+    padding: 7px 0;
+    margin: 0 -30px 20px;
+    border: 7px solid #fff;
+    background: #e8326f;
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    position: relative;
+}
+.testimonial .title:before{
+    content: "";
+    border-top: 15px solid #662a66;
+    border-left: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    position: absolute;
+    bottom: -37px;
+    left: 0;
+}
+.testimonial .title:after{
+    content: "";
+    border-top: 15px solid #662a66;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    position: absolute;
+    bottom: -37px;
+    right: 0;
+}
+.testimonial .post{
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: capitalize;
+}
+.testimonial .description{
+    padding: 0 20px;
+    margin: 0;
+    font-size: 15px;
+    color: #6f6f6f;
+    letter-spacing: 1px;
+    line-height: 30px;
+}
+.owl-theme .owl-controls{ margin-top: 0; }
+.owl-theme .owl-controls .owl-buttons div{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 35px;
+    background: #425bb5;
+    color: #fff;
+    border-radius: 0;
+    margin-right: 5px;
+    opacity: 1;
+}
+
+.owl-theme .owl-controls {
+  text-align: center;
+}
+
+.owl-prev:before,
+.owl-next:before{
+    content: "\f060";
+    font-family: "Font Awesome\ 5 Free";
+    font-size: 20px;
+    font-weight: 900;
+}
+.owl-next:before{ content: "\f061"; }
+@media only screen and (max-width: 990px){
+    .testimonial{ margin: 30px; }
+}
+*/
+
+
+.testimonial{
+padding-top: 35px;
+padding-right: 50px;
+padding-bottom: 35px;
+padding-left: 50px;
+margin-top: 50px;
+
+margin-bottom: 30px;
+margin-right: auto;
+margin-left: auto;
+
+    border-radius: 0 70px 0 70px;
+    border: 5px solid #425bb5;
+    border-left: none;
+    border-right: none;
+    text-align: center;
+	background: #f5f5f5
+
+
+}
+
+.testimonial .pic{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    overflow: hidden;
+	border: 3px solid #425bb5;
+}
+.testimonial .pic img{
+    width: 100%;
+    height: auto;
+}
+.testimonial .title{
+    display: block;
+    margin: 0 0 7px 0;
+    font-size: 20px;
+    font-weight: 600;
+    color: #425bb5;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.testimonial .title a{
+    font-size: 12px;
+}
+
+.testimonial .post{
+    display: block;
+    font-size: 15px;
+    color: #1b1b20;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.testimonial .description{
+    color: #1b1b20;
+    /*font-size: 16px;
+    line-height: 30px;*/
+	font-size: 20px;
+  line-height: 24px;
+	font-family: 'Open Sans', sans-serif;
+	/*height: 200px; media - change*/
+}
+.owl-theme .owl-controls{ margin-top: 0; }
+.owl-theme .owl-controls .owl-buttons div{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 35px;
+    background: #425bb5;
+    color: #fff;
+    border-radius: 0;
+    margin-right: 5px;
+    opacity: 1;
+}
+
+.owl-theme .owl-controls {
+  text-align: center;
+}
+
+.owl-prev:before,
+.owl-next:before{
+    content: "\f060";
+    font-family: "Font Awesome\ 5 Free";
+    font-size: 20px;
+    font-weight: 900;
+}
+.owl-next:before{ content: "\f061"; }
+@media only screen and (max-width: 990px){
+    .testimonial{ margin: 30px; }
+}
+
+#testimonial-slider{
+	width:90%;
+	height: 625px; /*to fix height for autoHeight to not push things down*/	
+	margin-left: auto;
+	margin-right: auto;
+}
+.owl-prev, .owl-next {
+	position:absolute;
+ }
+
+.owl-prev {
+	left:0;
+	top: 200px;
+ }
+
+ .owl-next {
+	right:0;
+	top:200px;
+ }
 
 /* certifications section
 ==================================================*/
