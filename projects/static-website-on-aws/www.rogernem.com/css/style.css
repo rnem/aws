@@ -1194,7 +1194,7 @@ fieldset {
     }
     #home,
     .disply-table {
-        height: 600px;
+        /*height: 600px;*/
     }
     .about-border {
         width: 265px;
@@ -1223,4 +1223,13 @@ fieldset {
 	  font-size: 40px;
 	}
 
+}
+
+@media (max-width: 390px) {
+	#contact .h-50 {
+	  height: 20px;
+	}
+	.size-50{
+	  font-size: 40px;
+	}	
 }
