@@ -12,7 +12,6 @@
 
 - [Projects](#projects)
 - [Cloudformation](#cloudformation)
-- [Terraform](#terraform)
 
 ### Projects
 
@@ -21,11 +20,6 @@ This compilation showcases a diverse array of projects I have undertaken, with s
 ### CloudFormation
 
 A collection of some of my CloudFormation templates
-
-### Terraform
-
-An assemblage of my reusable and easily shareable Terraform configuration files, designed to construct, modify, and version cloud and on-premises resources.
-
 
 ## Creator
 
