@@ -231,22 +231,23 @@ header {
     height: 65px;
 }
 
-nav ul {
+ nav ul {
     display: inline-block;
     padding-left: 0;
     list-style: none;
-    padding: 20px;
+    padding: 10px;
     margin-bottom: 0;
     -webkit-transition: all .5s;
     transition: all .5s;
+	
 }
 
-nav li {
+ nav li {
     display: inline-block;
     margin: 10px;
 }
 
-nav li a {
+ nav li a {
     text-transform: uppercase;
     letter-spacing: 2px;
     color: #444;
@@ -256,7 +257,7 @@ nav li a {
 
 .bg-nav {
     background: #fff;
-    border-bottom: 1px solid #f3f3f3
+    border-bottom: 1px solid #f3f3f3;
 }
 
 .bg-nav ul {
@@ -1296,6 +1297,128 @@ fieldset {
 	color: #fff;
 }
 
+
+/* Hamburguer Menu - iPhone
+==================================================*/
+:root{
+    --white: #f9f9f9;
+    --black: #36383F;
+    --gray: #85888C;
+	--blue: #425BB5;
+} /* variables*/
+
+.hamb-div{display:none; right:0; z-index:1; }
+
+
+/* Nav menu */
+.nav2{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+   /*background-color: var(--black);*/
+
+    /*background: url(../img/home-bg-sm.jpg);*/
+    opacity: 0.85;
+   
+    overflow: hidden;
+	z-index: 2;
+	height: 100%;
+ max-height: 0;
+    transition: max-height .5s ease-out;
+}
+
+
+
+/* Menu Icon */
+.hamb{
+    cursor: pointer;
+    float: right;
+padding-top: 40px;
+padding-right: 30px;
+padding-bottom: 40px;
+padding-left: 30px;
+	z-index: 2;
+	position: relative;
+}/* Style label tag */
+
+.hamb-line {
+    background: var(--blue);
+    display: block;
+    height: 2px;
+    position: relative;
+    width: 24px;
+
+} /* Style span tag */
+
+.hamb-line::before,
+.hamb-line::after{
+    background: var(--blue);
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+.hamb-line::before{
+    top: 5px;
+}
+.hamb-line::after{
+    top: -5px;
+}
+
+.side-menu {
+    display: none;
+} /* Hide checkbox */
+
+/* Toggle menu icon */
+.side-menu:checked ~ nav{
+    max-height: 100%;
+	z-index: 1;
+	position: relative;
+}
+.side-menu:checked ~ .hamb .hamb-line {
+    background: transparent;
+}
+.side-menu:checked ~ .hamb .hamb-line::before {
+    transform: rotate(-45deg);
+    top:0;
+}
+.side-menu:checked ~ .hamb .hamb-line::after {
+    transform: rotate(45deg);
+    top:0;
+}
+.side-menu:checked ~ .hamb-div{
+    position: relative;
+}
+
+
+.nav2 ul{ display:block; padding: 0; height:100%;  }
+
+    .menu a:hover{
+        background-color: var(--gray);
+        color: var(--white);
+
+    }
+
+.menu a{
+    display: block;
+    padding: 30px;
+    /*color: var(--white);*/
+	font-size: 40px;
+	width: 100%;
+}
+
+
+
+    .menu li{
+        float: left;
+display: block;
+  width: 100%;		
+    }
+
+
+
 /* Responsive media queries
 ==================================================*/
 
@@ -1306,18 +1429,18 @@ fieldset {
 }
 
 @media (max-width: 768px) {
-    .timeline-event-copy {
+    /*.timeline-event-copy {
         width: 90%;
         left: 2em;
-    }
+    }*/
 }
 
 @media (max-width: 500px) {
-    h1 {
+    /*h1 {
         font-family: 'Playfair Display', serif;
         font-size: 50px;
         line-height: 50px;
-    }
+    }*/
     #home,
     .disply-table {
         /*height: 600px;*/
@@ -1333,13 +1456,13 @@ fieldset {
 
 @media (max-width: 420px) {
     nav li {
-        margin: 6px;
+        /*margin: 6px;*/
     }
     nav li a {
-        font-size: 10px;
+        /*font-size: 10px;*/
     }
 	h3{
-		font-size: 21px;
+		/*font-size: 21px;*/
 	}
 
 	#contact .h-50 {
@@ -1351,11 +1474,143 @@ fieldset {
 
 }
 
+/* iPhone */
 @media (max-width: 390px) {
-	#contact .h-50 {
+	/*.navbar-fixed-top{ z-index: -10 }
+	.navbar-fixed-top nav{ display: none; }
+	.hamb-div{display:block; height: 100%;}*/
+
+	.navbar-fixed-top{
+		height: 110px;
+	}
+	.scroll-down-image {
+		left: 38%;
+	}
+
+	h1{
+        font-size: 45px;
+		
+    }
+
+	#about {
+	  padding-top: 30px;
+	  padding-bottom: 70px;
+	}
+	#about .h-50 {
 	  height: 20px;
+	}
+	.about-border{
+		height: 320px;
+		left: 40px;
+	}
+	.about-img-div img {
+	  height: 410px;
+	}
+
+	#experience {
+		padding-bottom: 50px;
+	}
+	.timeline {
+	  position: static;
+	}
+	.timeline-event-icon {
+		left: 0.7em;
+	}
+	#experience h1 {
+	  float: none;
+	  margin-bottom: 40px;
+	}
+	.right {
+		position: relative;
+		left: 55px;
+		margin-bottom: 50px;
+	}
+	.timeline-event-copy {
+		left: .7em;
+		padding-top: 2em;
+		padding-right: 2em;
+		padding-bottom: 2em;
+		padding-left: 1.9em;
+	}
+	.timeline-event-copy h3 {
+	  font-size: 1.7em;
+	}
+	.timeline::before {
+		margin-left: -4px;
+	}
+	.ptype h4::before{
+		width: 20px;
+	}
+	.ptype h4{
+		letter-spacing:0
+	}
+
+	.testimonial {
+		padding-right: 25px;
+		padding-left: 25px;
+	}
+	.testimonial .description {
+		font-size: 12px;
+	}
+	#testimonial-slider{
+		height: auto;
+	}
+
+	
+	.border-right {
+	  border-right: 0px;
+	}
+
+	#skills {
+	  padding-bottom: 0px;
+	}
+	#skills .size-50{
+	  font-size: 35px;
+	}
+	.skills_div{
+		top: -5.875em;
+	}
+	.box-te {
+	  height: auto;
+	  padding-bottom: 20px;
+	}
+	.box-te-sm{
+		border-bottom: 1px dashed #425BB5 !important;
+	}
+	
+	#certifications {
+		padding-bottom:25px;
+	}
+	.certifications .categories-grid .categories ul li a {
+		margin: 0 6px;
+	}
+.certifications-inner {
+  padding-top: 15px;
+}
+	
+	#contact .h-50 {
+	  height: 0px;
 	}
 	.size-50{
 	  font-size: 40px;
-	}	
+	}
+	#contact h3 {
+		font-size: 20px;
+	}
+	
+	.social li.icons a{
+		text-indent: 400%;
+		width: 30px;
+	}
+	.social li.icons {
+		margin-right: 0px;
+		height: 30px;
+		margin-bottom: 25px;
+	}
+	.social li.icons a:hover{
+	   /*width height */
+	   background-size: 30px 100px; transform: translate3d(0px, -50px, 0px);
+	}
+
+	
 }
