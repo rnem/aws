@@ -1132,6 +1132,7 @@ p.mt-3, p.my-3 {
     line-height: 50px;
 }
 
+#total_certs{ letter-spacing: 2px;  font-size: 14px;  font-weight: bold; color:#7a7a88;}
 
 /* contact
 ==================================================*/
@@ -1295,6 +1296,9 @@ fieldset {
 }
 .social li a.medium{
 	background:url(../img/medium_logo.svg) no-repeat; 
+}
+.social li a.aws{
+	background:url(../img/aws_logo.svg) no-repeat; 
 }
 .social li a.pdf{
 	background:url(../img/pdf_logo.svg) no-repeat; 
@@ -1600,9 +1604,10 @@ display: block;
 	.certifications .categories-grid .categories ul li a {
 		margin: 0 6px;
 	}
-.certifications-inner {
-  padding-top: 15px;
-}
+	
+	.certifications-inner {
+	  padding-top: 15px;
+	}
 	
 	#contact .h-50 {
 	  height: 0px;
@@ -1612,6 +1617,10 @@ display: block;
 	}
 	#contact h3 {
 		font-size: 20px;
+	}
+
+	.social li.icons{
+		width: 45px;
 	}
 	
 	.social li.icons a{
@@ -1628,5 +1637,8 @@ display: block;
 	   background-size: 30px 100px; transform: translate3d(0px, -50px, 0px);
 	}
 
+	.copyright{
+		font-size:13px;
+	}
 	
 }
