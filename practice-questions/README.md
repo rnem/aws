@@ -7,6 +7,7 @@ To help individuals study and prepare for AWS Certification exams, I have releas
 - [AWS Certified Cloud Practitioner](AWS-Certified-Cloud-Practitioner)
 - [AWS Certified Solutions Architect Associate](AWS-Certified-Solutions-Architect-Associate)
 - [AWS Certified Solutions Developer Associate](AWS-Certified-Developer-Associate)
+- [AWS Certified Solutions Architect Professional](AWS-Certified-Solutions-Architect-Professional)
 
 Feel free to reach out to me! 👨‍💻 <br />
 
