@@ -2,7 +2,7 @@
 <h1>AWS Certified Solutions Architect Associate</h1>
 <h2>Free Practice Exams with answers</h2>
 
-<img src="../images/AWS-Certified-Cloud-Practitioner_badge.png">
+<img src="../images/AWS-Certified-Solutions-Architect-Associate_badge.png">
 </div>
 
 Are you ready? Make use of these complimentary practice questions to evaluate your comprehension. Assess your understanding with these complimentary practice questions, designed to assist you prior to the exam. Simply review the following tests. You'll find sample questions along with accurate answers and thorough explanations or reference links.
