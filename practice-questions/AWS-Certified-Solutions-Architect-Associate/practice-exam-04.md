@@ -318,13 +318,13 @@ If this practice exam has been helpful to you please share it with others and re
     - C.  Use an Amazon CloudFront distribution for both static and dynamic content.
     - D.  Use an Elastic Load Balancer with auto scaling groups at the web. App and Amazon Relational Database Service (RDS) tiers.
     - E.  Add alert Amazon CloudWatch to look for high Network in and CPU utilization.
-    33. F. Create processes and capabilities to quickly add and remove rules to the instance OS firewall.
+    - F. Create processes and capabilities to quickly add and remove rules to the instance OS firewall.
 
     <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: C, D, E</p>
     </details>
   
-34. In Amazon CloudFront, if you use Amazon EC2 instances and other custom origins with CloudFront, it is recommended to […].
+33. In Amazon CloudFront, if you use Amazon EC2 instances and other custom origins with CloudFront, it is recommended to […].
     - A.  not use Elastic Load Balancing.
     - B.  restrict Internet communication to private instances while allowing outgoing traffic.
     - C.  enable access key rotation for CloudWatch metrics.
@@ -334,7 +334,7 @@ If this practice exam has been helpful to you please share it with others and re
       <p>Correct answer: D</p>
     </details>
   
-35. Which of the following statements is true regarding attaching network interfaces to your instances in your VPC?
+34. Which of the following statements is true regarding attaching network interfaces to your instances in your VPC?
     - A.  You can attach 5 ENIs per instance type.
     - B.  You can attach as many ENIs as you want.
     - C.  The number of ENIs you can attach varies by instance type.
@@ -344,7 +344,7 @@ If this practice exam has been helpful to you please share it with others and re
       <p>Correct answer: C</p>
     </details>
   
-36. What is the reason for this?
+35. What is the reason for this?
     - A.  For security reasons.
     - B.  Hardware restrictions.
     - C.  Public (IPV4) internet addresses are a scarce resource.
@@ -354,7 +354,7 @@ If this practice exam has been helpful to you please share it with others and re
       <p>Correct answer: C</p>
     </details>
   
-37. Can a ‘user’ be associated with multiple AWS accounts?
+36. Can a ‘user’ be associated with multiple AWS accounts?
     - A.  Yes.
     - B.  No.
 
@@ -362,7 +362,7 @@ If this practice exam has been helpful to you please share it with others and re
       <p>Correct answer: B</p>
     </details>
   
-38. You have an application running on an Amazon Elastic Compute Cloud instance, that uploads 5 GB video objects to Amazon Simple Storage Service (S3). Video uploads are taking longer than expected, resulting in poor application performance. Which method will help improve performance of your application?
+37. You have an application running on an Amazon Elastic Compute Cloud instance, that uploads 5 GB video objects to Amazon Simple Storage Service (S3). Video uploads are taking longer than expected, resulting in poor application performance. Which method will help improve performance of your application?
     - A.  Enable enhanced networking.
     - B.  Use Amazon S3 multipart upload.
     - C.  Leveraging Amazon CloudFront, use the HTTP POST method to reduce latency.
@@ -372,7 +372,7 @@ If this practice exam has been helpful to you please share it with others and re
       <p>Correct answer: B</p>
     </details>
   
-39. You have been given a scope to set up an AWS Media Sharing Framework for a new start up photo sharing company similar to flickr. The first thing that comes to mind about this is that it will obviously need a huge amount of persistent data storage for this framework. Which of the following storage options would be appropriate for persistent storage?
+38. You have been given a scope to set up an AWS Media Sharing Framework for a new start up photo sharing company similar to flickr. The first thing that comes to mind about this is that it will obviously need a huge amount of persistent data storage for this framework. Which of the following storage options would be appropriate for persistent storage?
     - A.  Amazon Glacier or Amazon S3.
     - B.  Amazon Glacier or AWS Import/Export.
     - C.  AWS Import/Export or Amazon CloudFront.
@@ -382,7 +382,7 @@ If this practice exam has been helpful to you please share it with others and re
       <p>Correct answer: D</p>
     </details>
   
-40. You need a persistent and durable storage to trace call activity of an IVR (Interactive Voice Response) system. Call duration is mostly in the 2-3 minutes timeframe. Each traced call can be either active or terminated. An external application needs to know each minute the list of currently active calls, which are usually a few calls/second. Put once per month there is a periodic peak up to 1000 calls/second for a few hours. The system is open 24/7 and any downtime should be avoided. Historical data is periodically archived to files. Cost saving is a priority for this project. What database implementation would better fit this scenario, keeping costs as low as possible?
+39. You need a persistent and durable storage to trace call activity of an IVR (Interactive Voice Response) system. Call duration is mostly in the 2-3 minutes timeframe. Each traced call can be either active or terminated. An external application needs to know each minute the list of currently active calls, which are usually a few calls/second. Put once per month there is a periodic peak up to 1000 calls/second for a few hours. The system is open 24/7 and any downtime should be avoided. Historical data is periodically archived to files. Cost saving is a priority for this project. What database implementation would better fit this scenario, keeping costs as low as possible?
     - A.  Use RDS Multi-AZ with two tables, one for ’Active calls’ and one for ‘Terminated calls’. in this way the ’Active calls’ table is always small and effective to access.
     - B.  Use DynamoDB with a ‘Calls’ table and a Global Secondary Index on a ‘lsActive’ attribute that is present for active calls only in this way the Global Secondary index is sparse and more effective.
     - C.  Use DynamoDB with a ‘Calls’ table and a Global secondary index on a ‘State’ attribute that can equal to ‘active’ or ‘terminated’ in this way the Global Secondary index can be used for all Items in the table.
@@ -392,7 +392,7 @@ If this practice exam has been helpful to you please share it with others and re
       <p>Correct answer: A</p>
     </details>
   
-41. If you have chosen Multi-AZ deployment, in the event of a planned or unplanned outage of your primary DB Instance, Amazon RDS automatically switches to the standby replica. The automatic failover mechanism simply changes the record of the main DB Instance to point to the standby DB Instance.
+40. If you have chosen Multi-AZ deployment, in the event of a planned or unplanned outage of your primary DB Instance, Amazon RDS automatically switches to the standby replica. The automatic failover mechanism simply changes the record of the main DB Instance to point to the standby DB Instance.
     - A.  DNAME.
     - B.  CNAME.
     - C.  TXT.
@@ -402,7 +402,7 @@ If this practice exam has been helpful to you please share it with others and re
       <p>Correct answer: B</p>
     </details>
   
-42. All Amazon EC2 instances are assigned two IP addresses at launch. Which are those?
+41. All Amazon EC2 instances are assigned two IP addresses at launch. Which are those?
     - A.  2 Elastic IP addresses.
     - B.  A private IP address and an Elastic IP address.
     - C.  A public IP address and an Elastic IP address.
@@ -412,7 +412,7 @@ If this practice exam has been helpful to you please share it with others and re
       <p>Correct answer: D</p>
     </details>
   
-43. You need to pass a custom script to new Amazon Linux instances created in your Auto Scaling group. Which feature allows you to accomplish this?
+42. You need to pass a custom script to new Amazon Linux instances created in your Auto Scaling group. Which feature allows you to accomplish this?
     - A.  User data.
     - B.  EC2Config service.
     - C.  IAM roles.
@@ -422,7 +422,7 @@ If this practice exam has been helpful to you please share it with others and re
       <p>Correct answer: B</p>
     </details>
   
-44. A customer wants to track access to their Amazon Simple Storage Service (S3) buckets and also use this information for their internal security and access audits. Which of the following will meet the Customer requirement?
+43. A customer wants to track access to their Amazon Simple Storage Service (S3) buckets and also use this information for their internal security and access audits. Which of the following will meet the Customer requirement?
     - A.  Enable AWS CloudTrail to audit all Amazon S3 bucket access.
     - B.  Enable server access logging for all required Amazon S3 buckets.
     - C.  Enable the Requester Pays option to track access via AWS Billing.
@@ -430,6 +430,16 @@ If this practice exam has been helpful to you please share it with others and re
 
     <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: A</p>
+    </details>
+
+44. You are looking to migrate your Development (Dev) and Test environments to AWS. You have decided to use separate AWS accounts to host each environment. You plan to link each accounts bill to a Master AWS account using Consolidated Billing. To make sure you Keep within budget you would like to implement a way for administrators in the Master account to have access to stop, delete and/or terminate resources in both the Dev and Test accounts. Identify which option will allow you to achieve this goal.
+    - A.  Create IAM users in the Master account with full Admin permissions. Create cross-account roles in the Dev and Test accounts that grant the Master account access to the resources in the account by inheriting permissions from the Master account.
+    - B.  Create IAM users and a cross-account role in the Master account that grants full Admin permissions to the Dev and Test accounts.
+    - C.  Create IAM users in the Master account Create cross-account roles in the Dev and Test accounts that have full Admin permissions and grant the Master.
+    - D.  Link the accounts using Consolidated Billing. This will give IAM users in the Master account access to resources in the Dev and Test accounts.
+
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
+      <p>Correct answer: C</p>
     </details>
   
 45. Which DNS name can only be resolved within Amazon EC2?
@@ -464,7 +474,7 @@ If this practice exam has been helpful to you please share it with others and re
       <p>Correct answer: A, B, E</p>
     </details>
   
-49. In Amazon EC2, you are billed instance-hours when […].
+48. In Amazon EC2, you are billed instance-hours when […].
     - A.  your EC2 instance is in a running state.
     - B.  the instance exits from Amazon S3 console.
     - C.  your instance still exits the EC2 console.
@@ -474,7 +484,7 @@ If this practice exam has been helpful to you please share it with others and re
       <p>Correct answer: A</p>
     </details>
   
-50. Which of the below mentioned options is a possible solution to avoid any security threat?
+49. Which of the below mentioned options is a possible solution to avoid any security threat?
     - A.  Use the IAM based single sign between the AWS resources and the organization application.
     - B.  Use the IAM role and assign it to the instance.
     - C.  Since the application is hosted on EC2, it does not need credentials to access S3.
@@ -484,7 +494,7 @@ If this practice exam has been helpful to you please share it with others and re
       <p>Correct answer: B</p>
     </details>
   
-51. In Amazon EC2 Container Service components, what is the name of a logical grouping of container instances on which you can place tasks?
+50. In Amazon EC2 Container Service components, what is the name of a logical grouping of container instances on which you can place tasks?
     - A.  A cluster.
     - B.  A container instance.
     - C.  A container.
@@ -494,17 +504,6 @@ If this practice exam has been helpful to you please share it with others and re
       <p>Correct answer: A</p>
     </details>
   
-52. You are looking to migrate your Development (Dev) and Test environments to AWS. You have decided to use separate AWS accounts to host each environment. You plan to link each accounts bill to a Master AWS account using Consolidated Billing. To make sure you Keep within budget you would like to implement a way for administrators in the Master account to have access to stop, delete and/or terminate resources in both the Dev and Test accounts. Identify which option will allow you to achieve this goal.
-    - A.  Create IAM users in the Master account with full Admin permissions. Create cross-account roles in the Dev and Test accounts that grant the Master account access to the resources in the account by inheriting permissions from the Master account.
-    - B.  Create IAM users and a cross-account role in the Master account that grants full Admin permissions to the Dev and Test accounts.
-    - C.  Create IAM users in the Master account Create cross-account roles in the Dev and Test accounts that have full Admin permissions and grant the Master.
-    - D.  Link the accounts using Consolidated Billing. This will give IAM users in the Master account access to resources in the Dev and Test accounts.
-
-    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
-      <p>Correct answer: C</p>
-    </details>
-  
-
 Please feel free to comment below if any information is inaccurate or if any answers need correction.
 
 [<img align="center" src="../images/list.png" height="30" width="30"/> Exam List](./README.md)
