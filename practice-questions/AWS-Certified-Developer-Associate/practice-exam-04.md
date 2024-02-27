@@ -11,7 +11,7 @@ If this practice exam has been helpful to you please share it with others and re
     - B. Use S3 bucket policies to restrict read access to specific IAM users.
     - C. Use Amazon Cognito to provide access using authenticated and unauthenticated roles.
     - D. Create a new IAM user for each user and grant read access.
-    -     -     -     - E. Use the AWS IAM service and let the application assume the different roles using the AWS Security Token Service (AWS STS) AssumeRole action depending on the type of user and provide read access to Amazon S3 using theassumed role.
+    - E. Use the AWS IAM service and let the application assume the different roles using the AWS Security Token Service (AWS STS) AssumeRole action depending on the type of user and provide read access to Amazon S3 using theassumed role.
 
     <details markdown=1><summary markdown='span'>Answer</summary>
       <p>Correct answer: A, B</p>
@@ -42,7 +42,7 @@ If this practice exam has been helpful to you please share it with others and re
     - B. Ask an administrator in Account B to allow the EC2 IAM role permission to assume the AccessPII role with predefined service control policies.
     - C. Ask an administrator in Account A to allow the EC2 IAM role permission to assume the AccessPII role with predefined service control policies.
     - D. Include the AssumeRole API in the application code logic to obtain credentials to access the PII table.
-    -     -     -     - E. Include the GetSessionToken API in the application code logic to obtain credentials to access the PII table.
+    - E.  Include the GetSessionToken API in the application code logic to obtain credentials to access the PII table.
 
     <details markdown=1><summary markdown='span'>Answer</summary>
       <p>Correct answer: C, E</p>
@@ -203,7 +203,7 @@ If this practice exam has been helpful to you please share it with others and re
     - B. Call sam package to create the deployment package. Call sam deploy to deploy the package afterward.
     - C. Call aws s3 cp to upload the AWS SAM template to Amazon S3. Call aws lambda update-function-code to create the application.
     - D. Create a ZIP package locally and call aws serverlessrepo create-application to create the application.
-    -     -     -     - E. Create a ZIP package and upload it to Amazon S3. Call aws cloudformation create-stack to create the application.
+    - E.  Create a ZIP package and upload it to Amazon S3. Call aws cloudformation create-stack to create the application.
 
     <details markdown=1><summary markdown='span'>Answer</summary>
       <p>Correct answer: C, E</p>
@@ -214,7 +214,7 @@ If this practice exam has been helpful to you please share it with others and re
     - B. Send multi-factor authentication text codes to users with the Amazon SNS Publish API call in the app code.
     - C. Enable multi-factor authentication for the Amazon Cognito user pool.
     - D. Use AWS IAM to create IAM users.
-    -     -     -     - E. Enable multi-factor authentication for the users created in AWS IAM.
+    - E.  Enable multi-factor authentication for the users created in AWS IAM.
 
     <details markdown=1><summary markdown='span'>Answer</summary>
       <p>Correct answer: C, E</p>
