@@ -14,7 +14,7 @@ If this practice exam has been helpful to you please share it with others and re
     - D. Reduce the time required to merge AWS CodeCommit branchesImprove performance of compute-intensive applications.  
     - E. Improve performance of compute-intensive applications.  
   
-    <details markdown=1><summary markdown='span'>Answer</summary>  
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>  
       Correct answer: C, E  
     </details>  
   
@@ -27,7 +27,7 @@ If this practice exam has been helpful to you please share it with others and re
     - E. Simple Storage Service.  
   
   
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       Correct answer: A, C, E
     </details>
 
@@ -39,7 +39,7 @@ If this practice exam has been helpful to you please share it with others and re
     - D. Enable the multi-value headers on the ALB.
 
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       Correct answer: D
     </details>
 
@@ -52,7 +52,7 @@ If this practice exam has been helpful to you please share it with others and re
     - E. Write to the backend first and invalidate the cache.
 
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       Correct answer: E
     </details>
 
@@ -65,7 +65,7 @@ If this practice exam has been helpful to you please share it with others and re
     - E. Set up Server-Side Encryption with S3-Managed Keys.
 
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       Correct answer: B, D
     </details>
 
@@ -77,7 +77,7 @@ If this practice exam has been helpful to you please share it with others and re
     - D. Client-side encryption with AWS KMS-managed keys.
 
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       Correct answer: B
     </details>
 
@@ -89,7 +89,7 @@ If this practice exam has been helpful to you please share it with others and re
     - D. Create an IAM user with an access key in each audited account. Write code in Account A that uses those access keys.
 
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       Correct answer: A
     </details>
 
@@ -102,7 +102,7 @@ If this practice exam has been helpful to you please share it with others and re
     - E. The instance role does not have ‘xray:PutTraceSegments’ and ‘xray:PutTelemetryRecords’ permissions.
 
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       Correct answer: B, E
     </details>
 
@@ -114,7 +114,7 @@ If this practice exam has been helpful to you please share it with others and re
     - D. Use AWS CodeBuild to automatically deploy the latest build to the latest EC2 instances.
 
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       Correct answer: B
     </details>
 
@@ -126,7 +126,7 @@ If this practice exam has been helpful to you please share it with others and re
     - D. Modify the S3 bucket policy to only allow specific users to download the documents Revert the change after 15 minutes.
 
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       Correct answer: B
     </details>
 
@@ -138,7 +138,7 @@ If this practice exam has been helpful to you please share it with others and re
     - D. AWS CodePipeline.
 
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       Correct answer: B
     </details>
 
@@ -150,7 +150,7 @@ If this practice exam has been helpful to you please share it with others and re
     - D. Create a new Amazon Machine Image (AMI) with an encrypted root volume and store the data to ephemeral disks.
 
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       Correct answer: A
     </details>
 
@@ -162,7 +162,7 @@ If this practice exam has been helpful to you please share it with others and re
     - D. Submit a ticket to AWS support to request a rate limit increase for the S3 bucket.
 
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       Correct answer: B
     </details>
 
@@ -174,7 +174,7 @@ If this practice exam has been helpful to you please share it with others and re
     - D. The Developer can select FIFO, (first-in, first-out), LIFO (last-in, last-out), random, or request specific record using the getRecords AP.
 
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       Correct answer: C
     </details>
 
@@ -186,7 +186,7 @@ If this practice exam has been helpful to you please share it with others and re
     - D. Use a custom KMS customer master key created for S3 in the Lambda function code.
 
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       Correct answer: C
     </details>
 
@@ -198,7 +198,7 @@ If this practice exam has been helpful to you please share it with others and re
     - D. Configure the cdfonts bucket to allow cross-origin requests by creating a CORS configuration.
 
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       Correct answer: D
     </details>
 
@@ -211,7 +211,7 @@ If this practice exam has been helpful to you please share it with others and re
     - E. Sam publish.
 
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       Correct answer: A, D
     </details>
 
@@ -223,7 +223,7 @@ If this practice exam has been helpful to you please share it with others and re
     - D. Immutable.
 
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       Correct answer: D
     </details>
 
@@ -235,7 +235,7 @@ If this practice exam has been helpful to you please share it with others and re
     - D. Get the application to run IPCONFIG to get the public IP address.
 
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       Correct answer: A
     </details>
 
@@ -247,7 +247,7 @@ If this practice exam has been helpful to you please share it with others and re
     - D. Enable the cache for development and test environments only when needed.
 
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       Correct answer: D
     </details>
 
@@ -259,7 +259,7 @@ If this practice exam has been helpful to you please share it with others and re
     - D. Add a connection string to use a read replica on an EC2 instance.
 
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       Correct answer: C
     </details>
 
@@ -271,7 +271,7 @@ If this practice exam has been helpful to you please share it with others and re
     - D. Schedule driven.
 
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       Correct answer: A
     </details>
 
@@ -284,7 +284,7 @@ If this practice exam has been helpful to you please share it with others and re
     - E. Ensure that clients use Compute Engine internal DNS by connecting to the instance name with the url https://[API_NAME]/[API_VERSION]/.
 
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       Correct answer: D
     </details>
 
@@ -296,7 +296,7 @@ If this practice exam has been helpful to you please share it with others and re
     - D. Create a RESTful API with the API Gateway; transform the incoming XML into a valid message for the SOAP interface using mapping templates.
 
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       Correct answer: A
     </details>
 
@@ -308,7 +308,7 @@ If this practice exam has been helpful to you please share it with others and re
     - D. Client-side encryption.
 
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       Correct answer: D
     </details>
 
@@ -320,7 +320,7 @@ If this practice exam has been helpful to you please share it with others and re
     - D. Configure the credentials file with a new access key/secret access key.
 
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       Correct answer: A
     </details>
 
@@ -332,7 +332,7 @@ If this practice exam has been helpful to you please share it with others and re
     - D. 1.
 
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       Correct answer: B
     </details>
 
@@ -344,7 +344,7 @@ If this practice exam has been helpful to you please share it with others and re
     - D. Create an AWS Lambda function that queries the AWS CloudTrail logs for the CPU Utihzation metric every 15 minutes and sends a notification to an Amazon SNS topic when the CPU utilization exceeds 80%.
 
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       Correct answer: C
     </details>
 
@@ -356,7 +356,7 @@ If this practice exam has been helpful to you please share it with others and re
     - D. Amazon Cognito.
 
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       Correct answer: D
     </details>
 
@@ -368,7 +368,7 @@ If this practice exam has been helpful to you please share it with others and re
     - D. Create an Amazon SNS topic that has a subscription to the Lambda function with a 600-second timer.
 
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       Correct answer: C
     </details>
 
@@ -380,7 +380,7 @@ If this practice exam has been helpful to you please share it with others and re
     - D. Usage plans.
 
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       Correct answer: D
     </details>
 
@@ -392,7 +392,7 @@ If this practice exam has been helpful to you please share it with others and re
     - D. In the same folder as the application configuration files.
 
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       Correct answer: A
     </details>
 
@@ -405,7 +405,7 @@ If this practice exam has been helpful to you please share it with others and re
     - E. Package the application code into a .zip file, create a new application version from the AWS Management Console, then rebuild the environment by using AWS CLI.
 
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       Correct answer: C, D
     </details>
 
@@ -417,7 +417,7 @@ If this practice exam has been helpful to you please share it with others and re
     - D. Cache the file in Amazon S3.
 
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       Correct answer: A
     </details>
 
@@ -429,7 +429,7 @@ If this practice exam has been helpful to you please share it with others and re
     - D. Strongly consistent reads of 15 read capacity units reading items that are 1 KB in size.
 
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       Correct answer: B
     </details>
 
@@ -441,7 +441,7 @@ If this practice exam has been helpful to you please share it with others and re
     - D. Load balance the reads to the table using an Application Load Balancer.
 
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       Correct answer: C
     </details>
 
@@ -453,7 +453,7 @@ If this practice exam has been helpful to you please share it with others and re
     - D. Create a mapping template.
 
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       Correct answer: D
     </details>
 
@@ -465,7 +465,7 @@ If this practice exam has been helpful to you please share it with others and re
     - D. Set up a federation through an Amazon Cognito user pool.
 
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       Correct answer: A
     </details>
 
@@ -477,7 +477,7 @@ If this practice exam has been helpful to you please share it with others and re
     - D. Strongly consistent reads use variable throughput depending on read activity.
 
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       Correct answer: B
     </details>
 
@@ -489,7 +489,7 @@ If this practice exam has been helpful to you please share it with others and re
     - D. Modify the ebextensions folder to add a source option to services.
 
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       Correct answer: A
     </details>
 
@@ -501,7 +501,7 @@ If this practice exam has been helpful to you please share it with others and re
     - D. Option D.
 
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       Correct answer: A
     </details>
 
@@ -513,7 +513,7 @@ If this practice exam has been helpful to you please share it with others and re
     - D. AWS CodeCommit.
 
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       Correct answer: D
     </details>
 
@@ -526,7 +526,7 @@ If this practice exam has been helpful to you please share it with others and re
     - E. Amazon ElastiCache.
 
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       Correct answer: A, D
     </details>
 
@@ -539,7 +539,7 @@ If this practice exam has been helpful to you please share it with others and re
     - E. Define an inline Swagger definition in a Lambda function. Invoke the Lambda function.
 
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       Correct answer: C, D
     </details>
 
@@ -551,7 +551,7 @@ If this practice exam has been helpful to you please share it with others and re
     - D. Update the underlying Lambda function, create an Amazon CloudFront distribution with the updated Lambda function as its origin.
 
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       Correct answer: C
     </details>
 
@@ -563,7 +563,7 @@ If this practice exam has been helpful to you please share it with others and re
     - D. Create three aliases: new, existing, and router Point the existing alias to the current version Have the router alias direct 100% of users to the existing alias Update the application to use the router alias Deploy the new version of the code Point the new alias to this version Update the router alias to direct 10% of users to the new alias If too many errors are encountered, send 100% of traffic to the existing alias.
 
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       Correct answer: A
     </details>
 
@@ -575,7 +575,7 @@ If this practice exam has been helpful to you please share it with others and re
     - D. Use the AWS IAM decode-authorization-message API to decode this message.
 
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       Correct answer: B
     </details>
 
@@ -588,7 +588,7 @@ If this practice exam has been helpful to you please share it with others and re
     - E. Ensure that clients use Compute Engine internal DNS by connecting to the instance name with the url https://[API_NAME]/[API_VERSION]/.
 
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       Correct answer: D
     </details>
 
@@ -600,7 +600,7 @@ If this practice exam has been helpful to you please share it with others and re
     - D. Use multiple Elastic Beanstalk environments for the background task component but one environment tor the HTTP component.
 
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       Correct answer: A
     </details>
 
@@ -612,7 +612,7 @@ If this practice exam has been helpful to you please share it with others and re
     - D. Implement Client-side encryption using Amazon S3 managed keys.
 
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       Correct answer: C
     </details>
 
