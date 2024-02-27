@@ -8,6 +8,7 @@ Are you ready? Make use of these complimentary practice questions to evaluate yo
 Feel welcome to provide feedback below if you spot any inaccuracies or if any answers require correction.
 
 If you found this guide beneficial, kindly share it with others and leave a reaction in the comments section.
+</div>
 
 ### Exam List
 
@@ -37,4 +38,3 @@ If you found this guide beneficial, kindly share it with others and leave a reac
 Feel free to reach out to me! 👨‍💻 <br />
 
 <a href="https://www.linkedin.com/in/rogertn">LinkedIn</a>
-</div>
