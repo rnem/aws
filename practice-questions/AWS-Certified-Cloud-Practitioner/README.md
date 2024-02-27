@@ -1,5 +1,6 @@
 <div align="center">
-<h1>Free AWS Certified Cloud Practitioner Practice Exams with answers</h1>
+<h1>AWS Certified Cloud Practitioner</h1>
+<h2>Free Practice Exams with answers</h2>
 
 <img src="../images/AWS-Certified-Cloud-Practitioner_badge.png">
 </div>
