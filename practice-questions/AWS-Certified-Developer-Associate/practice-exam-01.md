@@ -14,9 +14,9 @@ C. Improve latency and throughput for read-heavy application workloads.
 D. Reduce the time required to merge AWS CodeCommit branchesImprove performance of compute-intensive applications.  
 E. Improve performance of compute-intensive applications.  
   
-    <details markdown=1><summary markdown='span'>Answer</summary>
-      Correct answer: C, E 
-    </details>
+    <details markdown=1><summary markdown='span'>Answer</summary>  
+      Correct answer: C, E  
+    </details>  
   
 2. Which of the following services are key/value stores? Choose 3 answers
 
