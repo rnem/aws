@@ -468,7 +468,7 @@ If this practice exam has been helpful to you please share it with others and re
     - C.  Use Amazon S3 server-side encryption with EC2 key pair.
     - D.  Use Amazon S3 bucket policies to restrict access to the data at rest.
     - E.  Encrypt the data on the client-side before ingesting to Amazon S3 using their own master key.
-    48. F. Use SSL to encrypt the data while in transit to Amazon S3.
+    - F. Use SSL to encrypt the data while in transit to Amazon S3.
 
     <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: A, B, E</p>
