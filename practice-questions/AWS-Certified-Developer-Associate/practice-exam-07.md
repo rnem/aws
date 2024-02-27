@@ -13,7 +13,7 @@ If this practice exam has been helpful to you please share it with others and re
     - D. Java.
     - E. SQL.
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: B, D</p>
     </details>
   
@@ -24,7 +24,7 @@ If this practice exam has been helpful to you please share it with others and re
     - D. 600 write capacity units.
     - E. 3600 write capacity units.
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: B</p>
     </details>
   
@@ -34,7 +34,7 @@ If this practice exam has been helpful to you please share it with others and re
     - C. 306 HTTP response code.
     - D. 4xx HTTP response code.
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: D</p>
     </details>
   
@@ -44,7 +44,7 @@ If this practice exam has been helpful to you please share it with others and re
     - C. Set the imaging queue MessageRetentionPeriod attribute to 20 seconds.
     - D. Set the DelaySeconds parameter of a message to 20 seconds.
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: B</p>
     </details>
   
@@ -54,7 +54,7 @@ If this practice exam has been helpful to you please share it with others and re
     - C. myawsbucket.amazonaws.com.
     - D. myawsbucket.tokyo.amazonaws.com.
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: B</p>
     </details>
   
@@ -64,7 +64,7 @@ If this practice exam has been helpful to you please share it with others and re
     - C. Delete the table and create a new table per hour.
     - D. Create a new table per hour.
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: C</p>
     </details>
   
@@ -75,7 +75,7 @@ If this practice exam has been helpful to you please share it with others and re
     - D. Use ElastiCache to save session state.
     - E. Use Glacier to save session slate.
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: D</p>
     </details>
   
@@ -85,7 +85,7 @@ If this practice exam has been helpful to you please share it with others and re
     - C. Use CloudFront distributions for static content.
     - D. Block the IPs of the offending websites in Security Groups.
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: B</p>
     </details>
   
@@ -96,7 +96,7 @@ If this practice exam has been helpful to you please share it with others and re
     - D. DynamoDB restricts item access during reads.
     - E. DynamoDB restricts item access during writes.
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: B, C</p>
     </details>
   
@@ -106,7 +106,7 @@ If this practice exam has been helpful to you please share it with others and re
     - C. Implement a token vending service to handle the registration.
     - D. Call the CreatePlatformEndPoint API function to register multiple device tokens.
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: D</p>
     </details>
   
@@ -117,7 +117,7 @@ If this practice exam has been helpful to you please share it with others and re
     - D. You’re exceeding your capacity on a particular Sort Key.
     - E. You haven’t configured DynamoDB Auto Scaling triggers.
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: C</p>
     </details>
   
@@ -128,7 +128,7 @@ If this practice exam has been helpful to you please share it with others and re
     - D. HH-DD-MM-YYYY-log_instancelD.
     - E. YYYY-MM-DD-HH-logJnstancelD.
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: D</p>
     </details>
   
@@ -138,7 +138,7 @@ If this practice exam has been helpful to you please share it with others and re
     - C. Messages will be delivered one or more times and messages will be delivered in First in, First out order.
     - D. Messages will be delivered one or more times and message delivery order is indeterminate.
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: D</p>
     </details>
   
@@ -149,7 +149,7 @@ If this practice exam has been helpful to you please share it with others and re
     - D. Develop an identity broker which authenticates against LDAP, and then calls IAM Security Token Service to get IAM federated user credentials. The application calls the identity broker to get IAM federated user credentials with access to the appropriate S3 bucket.
     - E. Develop an identity broker which authenticates against IAM Security Token Service to assume an IAM Role to get temporary AWS security credentials. The application calls the identity broker to get AWS temporary security credentials with access to the appropriate S3 bucket.
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: B, D</p>
     </details>
   
@@ -160,7 +160,7 @@ If this practice exam has been helpful to you please share it with others and re
     - D. Move the index.html page to a welcome subfolder.
     - E. Set the Error Document property to welcome.html.
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: A, C</p>
     </details>
   
@@ -170,7 +170,7 @@ If this practice exam has been helpful to you please share it with others and re
     - C. Blowfish.
     - D. RC5.
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: B</p>
     </details>
   
@@ -180,7 +180,7 @@ If this practice exam has been helpful to you please share it with others and re
     - C. Configure the necessary X-Ray environment variables.
     - D. Install required plugins for the appropriate AWS SDK.
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: A</p>
     </details>
   
@@ -190,7 +190,7 @@ If this practice exam has been helpful to you please share it with others and re
     - C. 1. Clone the existing environment, changing the associated load balancer type. 2. Deploy the same application version as used in the original environment. 3. Run the swap-environment-cnames action.
     - D. 1. Edit the environment definitions in the existing deployment. 2. Change the associated load balancer type according to the requirements. 3. Rebuild the environment with the new load balancer type.
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: A</p>
     </details>
   
@@ -200,7 +200,7 @@ If this practice exam has been helpful to you please share it with others and re
     - C. AWS Code Build.
     - D. AWS CodeCommit.
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: D</p>
     </details>
   
@@ -210,7 +210,7 @@ If this practice exam has been helpful to you please share it with others and re
     - C. AWS Elastic Beanstalk.
     - D. AWS CodeDeploy.
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: D</p>
     </details>
   
@@ -220,7 +220,7 @@ If this practice exam has been helpful to you please share it with others and re
     - C. Implement error handling within the application code.
     - D. Contact AWS Support to increase the concurrent execution limits.
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: B</p>
     </details>
   
@@ -230,7 +230,7 @@ If this practice exam has been helpful to you please share it with others and re
     - C. Create an Amazon ElastiCache Memcached cluster, then implement session handling at the application level to leverage the cluster for session data storage.
     - D. Create an Amazon DynamoDB table, then implement session handling at the application level to leverage the table for session data storage.
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: A</p>
     </details>
   
@@ -240,7 +240,7 @@ If this practice exam has been helpful to you please share it with others and re
     - C. Amazon DynamoDB Streams is not enabled on the table.
     - D. A large write operation is being performed against another table.
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: D</p>
     </details>
   
@@ -250,7 +250,7 @@ If this practice exam has been helpful to you please share it with others and re
     - C. Atomic writes.
     - D. Batch writes.
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: B</p>
     </details>
   
@@ -260,7 +260,7 @@ If this practice exam has been helpful to you please share it with others and re
     - C. Map an Amazon SNS topic to the DynamoDB streams.
     - D. Increase the maximum execution time (timeout) setting of the Lambda function.
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: A</p>
     </details>
   
@@ -270,7 +270,7 @@ If this practice exam has been helpful to you please share it with others and re
     - C. Deploy an application in each audited account with its own role. Have Account A authenticate with the application.
     - D.  Create an IAM user with an access key in each audited account. Write code in Account A that uses those access keys.
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: D</p>
     </details>
   
@@ -280,7 +280,7 @@ If this practice exam has been helpful to you please share it with others and re
     - C. Create a standard-resolution custom Amazon CloudWatch metric for user activity data, then publish data every 30 seconds.
     - D. Create a standard-resolution custom Amazon CloudWatch metric for user activity data, then publish data every 5 seconds.
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: B</p>
     </details>
   
@@ -290,7 +290,7 @@ If this practice exam has been helpful to you please share it with others and re
     - C. Use AWS Data Pipeline to automate the movement and transformation of data.
     - D. Use Amazon Kinesis Data Streams with Kinesis Client Library to ingest and deliver messages.
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: D</p>
     </details>
   
@@ -300,7 +300,7 @@ If this practice exam has been helpful to you please share it with others and re
     - C. “codecommit:Update*”
     - D. “codecommit:*”
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: C</p>
     </details>
   
@@ -311,7 +311,7 @@ If this practice exam has been helpful to you please share it with others and re
     - D. AWS KMS.
     - E. Amazon GuardDuty.
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: B, D</p>
     </details>
   
@@ -321,7 +321,7 @@ If this practice exam has been helpful to you please share it with others and re
     - C. appspec.yml
     - D. ebextensions.config
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: C</p>
     </details>
   
@@ -331,7 +331,7 @@ If this practice exam has been helpful to you please share it with others and re
     - C. Invoke the GenerateDataKey API to retrieve the encrypted version of the data encryption key to encrypt the data.
     - D. Invoke the GenerateDataKey API to retrieve the plaintext version of the data encryption key to encrypt the data.
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: A</p>
     </details>
   
@@ -342,7 +342,7 @@ If this practice exam has been helpful to you please share it with others and re
     - D. Latency.
     - E. Count.
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: A, D</p>
     </details>
   
@@ -352,7 +352,7 @@ If this practice exam has been helpful to you please share it with others and re
     - C. Use Amazon CloudFront with AWS Lambda@Edge.
     - D. Use Amazon API Gateway and AWS Lambda to control access to an S3 bucket.
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: A</p>
     </details>
   
@@ -362,7 +362,7 @@ If this practice exam has been helpful to you please share it with others and re
     - C. Put an Elastic Load Balancer in front of the Lambda function.
     - D. Cache the file in Amazon S3.
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: D</p>
     </details>
   
@@ -372,7 +372,7 @@ If this practice exam has been helpful to you please share it with others and re
     - C. Pass API calls through Amazon API Gateway.
     - D. Send the items to DynamoDB through Amazon Kinesis Data Firehose.
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: A</p>
     </details>
   
@@ -382,7 +382,7 @@ If this practice exam has been helpful to you please share it with others and re
     - C. Store the session state in Amazon S3.
     - D. Enable session stickiness using elastic load balancers.
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: A</p>
     </details>
   
@@ -392,7 +392,7 @@ If this practice exam has been helpful to you please share it with others and re
     - C. An AWS serverless application model.
     - D. A CloudFormation serverless plugin.
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: C</p>
     </details>
   
@@ -403,7 +403,7 @@ If this practice exam has been helpful to you please share it with others and re
     - D. Store session state data in an Amazon DynamoDB table.
     - E. Use an ELB with an Auto Scaling group.
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: D, E</p>
     </details>
   
@@ -413,7 +413,7 @@ If this practice exam has been helpful to you please share it with others and re
     - C. Use AWS X-Ray, then examine the segments and errors.
     - D. Run Amazon Inspector agents and then analyze performance.
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: C</p>
     </details>
   
@@ -423,7 +423,7 @@ If this practice exam has been helpful to you please share it with others and re
     - C. The log group for CloudWatch Logs should be first streamed to Amazon Elasticsearch Service before metric filtering returns the results.
     - D. Metric data points for logs groups can be filtered only after they are exported to an Amazon S3 bucket.
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: B</p>
     </details>
   
@@ -433,7 +433,7 @@ If this practice exam has been helpful to you please share it with others and re
     - C. Transform.
     - D. Properties.
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: D</p>
     </details>
   
@@ -443,7 +443,7 @@ If this practice exam has been helpful to you please share it with others and re
     - C. Amazon ElastiCache.
     - D. Amazon RDS read replica.
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: A</p>
     </details>
   
@@ -453,7 +453,7 @@ If this practice exam has been helpful to you please share it with others and re
     - C. Configure the second Lambda function’s concurrency execution limit.
     - D. Reduce the throttling limits in the API Gateway /MyAPI endpoint
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: C</p>
     </details>
   
@@ -463,7 +463,7 @@ If this practice exam has been helpful to you please share it with others and re
     - C. The web server’s primary disk.
     - D. An Amazon EC2 instance dedicated to session data.
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: A</p>
     </details>
   
@@ -473,7 +473,7 @@ If this practice exam has been helpful to you please share it with others and re
     - C. Change the configuration section from options_settings to resources.
     - D. Change the namespace of the option settings to a custom namespace.
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: C</p>
     </details>
   
@@ -483,7 +483,7 @@ If this practice exam has been helpful to you please share it with others and re
     - C. Specify a larger compute capacity when calling the Lambda function.
     - D. Increase the allocated memory for the Lambda function.
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: C</p>
     </details>
   
@@ -494,7 +494,7 @@ If this practice exam has been helpful to you please share it with others and re
     - D. Call the database asynchronously so the code can continue executing.
     - E. Batch login requests from hundreds of users together as a single read request to the database.
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: B, D</p>
     </details>
   
@@ -504,7 +504,7 @@ If this practice exam has been helpful to you please share it with others and re
     - C. Use Cognito Sync.
     - D. Use Cognito events.
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: A</p>
     </details>
   
@@ -514,7 +514,7 @@ If this practice exam has been helpful to you please share it with others and re
     - C. The importApiKeys method must be called to import all newly created API keys into the current stage of the API.
     - D. The createUsagePlanKey method must be called to associate the newly created API key with the correct usage plan.
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: C</p>
     </details>
   

@@ -12,7 +12,7 @@ If this practice exam has been helpful to you please share it with others and re
     - C. Create a new EC2 instance with an IAM role that allows access to the new RDS database.
     - D. Create an AWS Lambda function that will route traffic, from the EC2 instance to the RDS database.
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: A</p>
     </details>
   
@@ -22,7 +22,7 @@ If this practice exam has been helpful to you please share it with others and re
     - C. Service scheduler.
     - D. Step scaling policy.
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: D</p>
     </details>
   
@@ -32,7 +32,7 @@ If this practice exam has been helpful to you please share it with others and re
     - C. Amazon Cognito user pools.
     - D. AWS Directory Service.
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: C</p>
     </details>
   
@@ -42,7 +42,7 @@ If this practice exam has been helpful to you please share it with others and re
     - C. Modify the integration requests to require the credentials, then grant API Gateway access to the authentication table.
     - D. Implement an Amazon Cognito authorizer that references the DynamoDB authentication table.
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: D</p>
     </details>
   
@@ -52,7 +52,7 @@ If this practice exam has been helpful to you please share it with others and re
     - C. GetSessionToken.
     - D. DecodeAutherizationMessage.
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: C</p>
     </details>
   
@@ -63,7 +63,7 @@ If this practice exam has been helpful to you please share it with others and re
     - D. Import a customer master key (CMK) with a larger key size.
     - E. Use more than one customer master key (CMK) to encrypt S3 data.
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: C, D</p>
     </details>
   
@@ -73,7 +73,7 @@ If this practice exam has been helpful to you please share it with others and re
     - C. Publish the processed data to an Amazon SNS topic.
     - D. Push the processed data to Amazon SQS.
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: B</p>
     </details>
   
@@ -83,7 +83,7 @@ If this practice exam has been helpful to you please share it with others and re
     - C. Use AWS KMS with automatic key rotation.
     - D. Export a key from AWS KMS to encrypt the data.
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: B</p>
     </details>
   
@@ -93,7 +93,7 @@ If this practice exam has been helpful to you please share it with others and re
     - C. Create an API Gateway resource policy to isolate versions and provide context to the Lambda function(s).
     - D. Deploy the API versions as unique stages with unique endpoints and use stage variables to provide further context.
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: C</p>
     </details>
   
@@ -105,7 +105,7 @@ If this practice exam has been helpful to you please share it with others and re
     - C. Make an GenerateDataKey API call that returns a plaintext key and an encrypted copy of a data key. Use a plaintext key to encrypt the data.
     - D. Make an GenerateDataKeyWithoutPlaintext API call that returns an encrypted copy of a data key. Use an encrypted key to encrypt the data.
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: D</p>
     </details>
   
@@ -115,7 +115,7 @@ If this practice exam has been helpful to you please share it with others and re
     - C. A set of Git credentials generated from IAM.
     - D. An Amazon EC2 IAM role with CodeCommit permissions.
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: C</p>
     </details>
   
@@ -125,7 +125,7 @@ If this practice exam has been helpful to you please share it with others and re
     - C. Change the integration type.
     - D. Create a mapping template.
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: C</p>
     </details>
   
@@ -135,7 +135,7 @@ If this practice exam has been helpful to you please share it with others and re
     - C. GetMultipleltems.
     - D. GetltemRange.
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: B</p>
     </details>
   
@@ -145,7 +145,7 @@ If this practice exam has been helpful to you please share it with others and re
     - C. Disabling the Source/Destination Check attribute on the NAT instance.
     - D. Attaching an Elastic IP address to the instance in the private subnet.
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: C</p>
     </details>
   
@@ -155,7 +155,7 @@ If this practice exam has been helpful to you please share it with others and re
     - C. US-STANDARD imposes a 1 second delay before new objects are readable.
     - D. ou exceeded the bucket object limit, and once this limit is raised the object will be visible.
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: A</p>
     </details>
   
@@ -166,7 +166,7 @@ If this practice exam has been helpful to you please share it with others and re
     - D. 500 per account.
     - E. 100 per IAM user.
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: A</p>
     </details>
   
@@ -178,7 +178,7 @@ If this practice exam has been helpful to you please share it with others and re
     - E. Create an IAM Role that allows write access to the DynamoDB table.
 F. Launch an EC2 Instance with the IAM User included in the launch configuration.
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: D, E</p>
     </details>
   
@@ -189,7 +189,7 @@ F. Launch an EC2 Instance with the IAM User included in the launch configuration
     - D. An explicit deny does not override an explicit allow.
     - E. By default, all request are allowed.
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: A, C</p>
     </details>
   
@@ -199,7 +199,7 @@ F. Launch an EC2 Instance with the IAM User included in the launch configuration
     - C. Configure a publically routable IP Address In the host OS of the fourth instance.
     - D. Assign an Elastic IP address to the fourth instance.
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: D</p>
     </details>
   
@@ -210,7 +210,7 @@ F. Launch an EC2 Instance with the IAM User included in the launch configuration
     - D. forever.
     - E. 30 seconds.
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: E</p>
     </details>
   
@@ -220,7 +220,7 @@ F. Launch an EC2 Instance with the IAM User included in the launch configuration
     - C. An XML object containing Messageld, DuplicateFlag, Message and other values.
     - D. An JSON object containing Messageld, unsubscribeURL, Subject, Message and other values.
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: D</p>
     </details>
   
@@ -231,7 +231,7 @@ F. Launch an EC2 Instance with the IAM User included in the launch configuration
     - D. Simple Workflow Service.
     - E. Simple Storage Service.
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: B, C, D</p>
     </details>
   
@@ -241,7 +241,7 @@ F. Launch an EC2 Instance with the IAM User included in the launch configuration
     - C. x-amz-security-token.
     - D. x-amz-server-side-encryption.
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: D</p>
     </details>
   
@@ -251,7 +251,7 @@ F. Launch an EC2 Instance with the IAM User included in the launch configuration
     - C. Add the Content-MD5 header to the request for webfonts in the cdfonts bucket from the website.
     - D. Configure the cdfonts bucket to allow cross-origin requests by creating a CORS configuration.
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: D</p>
     </details>
   
@@ -262,7 +262,7 @@ F. Launch an EC2 Instance with the IAM User included in the launch configuration
     - D. Oracle JBoss
     - E. Jetty
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: A, B</p>
     </details>
   
@@ -272,7 +272,7 @@ F. Launch an EC2 Instance with the IAM User included in the launch configuration
     - C. “Fn::Join”:[ “”.[“http://”, {“Ref : “ElasticLoadBalancerUrl”}]].
     - D.  “Fn::Join”:[ “”.[“http://”, {“Ref : “ElasticLoadBalancer”,”DNSName”}]].
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: A</p>
     </details>
   
@@ -283,7 +283,7 @@ F. Launch an EC2 Instance with the IAM User included in the launch configuration
     - D. Set an S3 ACL on the bucket or the object.
     - E. Create a CloudFront distribution for the bucket.
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: B, D</p>
     </details>
   
@@ -293,7 +293,7 @@ F. Launch an EC2 Instance with the IAM User included in the launch configuration
     - C. The stack creation continues, and the final results indicate which steps failed.
     - D. CloudFormation templates are parsed in advance so stack creation is guaranteed to succeed.
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: B</p>
     </details>
   
@@ -305,7 +305,7 @@ F. Launch an EC2 Instance with the IAM User included in the launch configuration
     - E. Message.
 F. Language.
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: B, C, E</p>
     </details>
   
@@ -315,7 +315,7 @@ F. Language.
     - C. Query the local instance userdata.
     - D. Query the local instance metadata.
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: D</p>
     </details>
   
@@ -325,7 +325,7 @@ F. Language.
     - C. Only be used to launch EC2 instances in the same AWS region as the AMI is stored.
     - D. Only be used to launch EC2 instances in the same AWS availability zone as the AMI is stored
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: C</p>
     </details>
   
@@ -336,7 +336,7 @@ F. Language.
     - D. GetAMIs.
     - E. You cannot retrieve a list of AMIs as there are over 10,000 AMIs.
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: C</p>
     </details>
   
@@ -348,7 +348,7 @@ F. Language.
     - E. Controlling physical access to compute resources.
 F. Patch management on the EC2 instance’s operating system.
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: A, B, C, F</p>
     </details>
   
@@ -358,7 +358,7 @@ F. Patch management on the EC2 instance’s operating system.
     - C. Define a range index on the table.
     - D. Prewarm the table by updating all items.
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: C</p>
     </details>
   
@@ -369,7 +369,7 @@ F. Patch management on the EC2 instance’s operating system.
     - D. Encrypt the volume using the S3 server-side encryption service.
     - E. Encrypt the volume using the S3 server-side encryption service.
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: D</p>
     </details>
   
@@ -380,7 +380,7 @@ F. Patch management on the EC2 instance’s operating system.
     - D. eu-west-1.
     - E. us-central-1.
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: C</p>
     </details>
   
@@ -392,7 +392,7 @@ F. Patch management on the EC2 instance’s operating system.
     - E. SWF uses deciders and workers to complete tasks.
 F. SWF requires at least 1 EC2 instance per domain.
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: A, C, E</p>
     </details>
   
@@ -403,7 +403,7 @@ F. SWF requires at least 1 EC2 instance per domain.
     - D. Configure ELB and Auto Scaling to distribute across us-west-2a and us-west-2c.
     - E. Configure ELB session stickiness to use the app-specific session cookie.
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: B, D</p>
     </details>
   
@@ -414,7 +414,7 @@ F. SWF requires at least 1 EC2 instance per domain.
     - D. DynamoDB.
     - E. Named Pipes.
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: A, C</p>
     </details>
   
@@ -424,7 +424,7 @@ F. SWF requires at least 1 EC2 instance per domain.
     - C. Add an image data type to the “Product” table to store the images in binary format.
     - D. Store the images in Amazon S3 and add an S3 URL pointer to the “Product” table item for each image.
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: D</p>
     </details>
   
@@ -435,7 +435,7 @@ F. SWF requires at least 1 EC2 instance per domain.
     - D. The number of local secondary indexes per account.
     - E. The number of provisioned throughput units per account.
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: C, E</p>
     </details>
   
@@ -445,7 +445,7 @@ F. SWF requires at least 1 EC2 instance per domain.
     - C. Retrieve the message with increased DelaySeconds, process the message, delete the message from the queue.
     - D. Retrieve the message with increased DelaySeconds, delete the message from the queue, process the message.
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: A</p>
     </details>
   
@@ -455,7 +455,7 @@ F. SWF requires at least 1 EC2 instance per domain.
     - C. Add a bucket policy that requires Multi-Factor Authentication for requests to access the S3 bucket objects.
     - D. Enable server side encryption on the S3 bucket for data protection against the non-paying website visitors.
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: B</p>
     </details>
   
@@ -465,7 +465,7 @@ F. SWF requires at least 1 EC2 instance per domain.
     - C. Device ID, where one is by far more popular than all the others.
     - D. Game Type, where there are three possible game types.
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: A</p>
     </details>
   
@@ -475,7 +475,7 @@ F. SWF requires at least 1 EC2 instance per domain.
     - C. Configure a hash index on the name attribute and no range index.
     - D. Configure a hash index on the office Identifier attribute and no range index.
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: B</p>
     </details>
   
@@ -485,7 +485,7 @@ F. SWF requires at least 1 EC2 instance per domain.
     - C. Auto scaling requires using Amazon EBS-backed instances.
     - D. Instance-store backed instances can be stopped and restarted.
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: B</p>
     </details>
   
@@ -497,7 +497,7 @@ F. SWF requires at least 1 EC2 instance per domain.
     - E. CloudFormation.
 F. Simple Workflow Service.
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: C, E</p>
     </details>
   
@@ -508,7 +508,7 @@ F. Simple Workflow Service.
     - D. Contact support to increase your object size limit.
     - E. Upload to a different region.
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: B</p>
     </details>
   
@@ -520,7 +520,7 @@ F. Simple Workflow Service.
     - E. Elastic IP addresses.
 F. SQS Queues.
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: A, C, D</p>
     </details>
   
@@ -530,7 +530,7 @@ F. SQS Queues.
     - C. Request temporary security credentials using web identity federation to sign the requests.
     - D. Establish cross account access between the mobile app and the DynamoDB table to sign the requests
 
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: C</p>
     </details>
   

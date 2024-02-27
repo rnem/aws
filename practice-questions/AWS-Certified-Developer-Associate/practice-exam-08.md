@@ -12,7 +12,7 @@ If this practice exam has been helpful to you please share it with others and re
     - C. Use AWS IAM Access/Secret keys in the application code to allow Get* on the S3 bucket.
     - D. Use AWS STS AssumeRole in the application code and assume a role with Get* permissions on the S3 bucket.
 
-     <details markdown=1><summary markdown='span'>Answer</summary>
+     <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: A</p>
     </details>
   
@@ -22,7 +22,7 @@ If this practice exam has been helpful to you please share it with others and re
     - C. Launch a new EC2 instance, configure Amazon CloudWatch Events, and then install the application.
     - D. Install the Amazon CloudWatch Logs agent on the EC2 instance that the application is running on.
 
-     <details markdown=1><summary markdown='span'>Answer</summary>
+     <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: D</p>
     </details>
   
@@ -32,7 +32,7 @@ If this practice exam has been helpful to you please share it with others and re
     - C. Write a recursive function that scans and calls out DeleteItem.
     - D. Create and then delete the table after the task has completed.
 
-     <details markdown=1><summary markdown='span'>Answer</summary>
+     <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: A</p>
     </details>
   
@@ -42,7 +42,7 @@ If this practice exam has been helpful to you please share it with others and re
     - C. There was an S3 outage, which caused duplicate entries of the sale log file.
     - D. The application stopped intermittently and then resumed.
 
-     <details markdown=1><summary markdown='span'>Answer</summary>
+     <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: B</p>
     </details>
   
@@ -52,7 +52,7 @@ If this practice exam has been helpful to you please share it with others and re
     - C. Amazon SQS.
     - D. Amazon API Gateway.
 
-     <details markdown=1><summary markdown='span'>Answer</summary>
+     <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: D</p>
     </details>
   
@@ -62,7 +62,7 @@ If this practice exam has been helpful to you please share it with others and re
     - C. Amazon ECS and Redis.
     - D. AWS Lambda and Amazon API Gateway.
 
-     <details markdown=1><summary markdown='span'>Answer</summary>
+     <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: A</p>
     </details>
   
@@ -72,7 +72,7 @@ If this practice exam has been helpful to you please share it with others and re
     - C. Create a custom event with a unique metric name for each application.
     - D. Create a custom alarm with a unique metric name for each application.
 
-     <details markdown=1><summary markdown='span'>Answer</summary>
+     <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: B</p>
     </details>
   
@@ -82,7 +82,7 @@ If this practice exam has been helpful to you please share it with others and re
     - C. Amazon Cognito user pools and AWS KMS.
     - D. Amazon Cognito user pools and identity pools.
 
-     <details markdown=1><summary markdown='span'>Answer</summary>
+     <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: B</p>
     </details>
   
@@ -92,7 +92,7 @@ If this practice exam has been helpful to you please share it with others and re
     - C. Use AWS Data Pipeline to create multiple data pipeline provisions to deploy the application.
     - D. Use AWS CodeDeploy to create multiple deployment groups.
 
-     <details markdown=1><summary markdown='span'>Answer</summary>
+     <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: C</p>
     </details>
   
@@ -102,7 +102,7 @@ If this practice exam has been helpful to you please share it with others and re
     - C. Add a random number suffix to the partition key values.
     - D. Add a global secondary index to the DynamoDB table.
 
-     <details markdown=1><summary markdown='span'>Answer</summary>
+     <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: B</p>
     </details>
   
@@ -112,7 +112,7 @@ If this practice exam has been helpful to you please share it with others and re
     - C. Amazon ElastiCache.
     - D. Amazon Kinesis.
 
-     <details markdown=1><summary markdown='span'>Answer</summary>
+     <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: C</p>
     </details>
   
@@ -122,7 +122,7 @@ If this practice exam has been helpful to you please share it with others and re
     - C. A Dockerfile in an application package.
     - D. A CLI for Elastic Beanstalk.
 
-     <details markdown=1><summary markdown='span'>Answer</summary>
+     <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: A</p>
     </details>
   
@@ -132,7 +132,7 @@ If this practice exam has been helpful to you please share it with others and re
     - C. Use AWS root user to make requests to the application.
     - D. Store and retrieve credentials from AWS CodeCommit.
 
-     <details markdown=1><summary markdown='span'>Answer</summary>
+     <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: C</p>
     </details>
   
@@ -142,7 +142,7 @@ If this practice exam has been helpful to you please share it with others and re
     - C. Push callback data to Amazon Kinesis Data Streams and invoke an AWS Lambda function that stores data in Amazon DynamoDB and sends the required alerts.
     - D. Push callback data to Amazon CloudWatch as a custom metric and use the CloudWatch alerting mechanisms to alert System Administrators.
 
-     <details markdown=1><summary markdown='span'>Answer</summary>
+     <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: C</p>
     </details>
   
@@ -152,7 +152,7 @@ If this practice exam has been helpful to you please share it with others and re
     - C. Snapshots.
     - D. Immutable.
 
-     <details markdown=1><summary markdown='span'>Answer</summary>
+     <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: D</p>
     </details>
   
@@ -162,7 +162,7 @@ If this practice exam has been helpful to you please share it with others and re
     - C. Use local storage and memory on Amazon EC2 instances to cache data.
     - D. Use Amazon ElastiCache in front of the primary database to cache data.
 
-     <details markdown=1><summary markdown='span'>Answer</summary>
+     <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: B</p>
     </details>
   
@@ -172,7 +172,7 @@ If this practice exam has been helpful to you please share it with others and re
     - C. Read: 6 read capacity unitsWrite: 10 write capacity units.
     - D. Read: 3 read capacity unitsWrite: 10 write capacity units.
 
-     <details markdown=1><summary markdown='span'>Answer</summary>
+     <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: B</p>
     </details>
   
@@ -182,7 +182,7 @@ If this practice exam has been helpful to you please share it with others and re
     - C. The Lambda function did not handle the error, and the Lambda service attempted to reprocess the data.
     - D. The Lambda function is not keeping up with the amount of data coming from the stream.
 
-     <details markdown=1><summary markdown='span'>Answer</summary>
+     <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: A</p>
     </details>
   
@@ -192,7 +192,7 @@ If this practice exam has been helpful to you please share it with others and re
     - C. Configure the application to store secrets in Amazon S3 object metadata.
     - D. Hard code the database secrets in the application code itself.
 
-     <details markdown=1><summary markdown='span'>Answer</summary>
+     <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: A</p>
     </details>
   
@@ -202,7 +202,7 @@ If this practice exam has been helpful to you please share it with others and re
     - C. Remove the earlier .ZIP file first, then add the new .ZIP file.
     - D. Call the create-alias API.
 
-     <details markdown=1><summary markdown='span'>Answer</summary>
+     <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: B</p>
     </details>
   
@@ -213,7 +213,7 @@ If this practice exam has been helpful to you please share it with others and re
     - D. Modify the default configuration of the Lambda function to associate it with a VPC public subnet.
     - E. Add an environmental variable to the Lambda function to allow outbound internet access.
 
-     <details markdown=1><summary markdown='span'>Answer</summary>
+     <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: A, C</p>
     </details>
   
@@ -223,7 +223,7 @@ If this practice exam has been helpful to you please share it with others and re
     - C. Ensure that the function source code is base64-encoded before uploading the deployment package to S3.
     - D. Modify the execution role of the Lambda function to allow S3 access permission to the deployment package .ZIP file.
 
-     <details markdown=1><summary markdown='span'>Answer</summary>
+     <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: D</p>
     </details>
   
@@ -235,7 +235,7 @@ If this practice exam has been helpful to you please share it with others and re
     - E. Register the application with X-Ray.
 F. Configure and use an IAM role for tasks.
 
-     <details markdown=1><summary markdown='span'>Answer</summary>
+     <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: B, C, D</p>
     </details>
   
@@ -245,7 +245,7 @@ F. Configure and use an IAM role for tasks.
     - C. Use aws:SecureTransport as a condition in the S3 bucket policy.
     - D. Turn on S3 default encryption for the S3 bucket.
 
-     <details markdown=1><summary markdown='span'>Answer</summary>
+     <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: D</p>
     </details>
   
@@ -255,7 +255,7 @@ F. Configure and use an IAM role for tasks.
     - C. Mappings.
     - D. Resources.
 
-     <details markdown=1><summary markdown='span'>Answer</summary>
+     <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: C</p>
     </details>
   
@@ -265,7 +265,7 @@ F. Configure and use an IAM role for tasks.
     - C. Query operation using eventually-consistent reads.
     - D. Scan operation using strongly-consistent reads.
 
-     <details markdown=1><summary markdown='span'>Answer</summary>
+     <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: C</p>
     </details>
   
@@ -275,7 +275,7 @@ F. Configure and use an IAM role for tasks.
     - C. Invalidate all the application objects from the edge caches.
     - D. Disable the CloudFront distribution and enable it again to update all the edge locations.
 
-     <details markdown=1><summary markdown='span'>Answer</summary>
+     <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: A</p>
     </details>
   
@@ -286,7 +286,7 @@ F. Configure and use an IAM role for tasks.
     - D. Upload a .ZIP file to AWS CloudFormation containing the function code, then add a reference to it in an AWS::Lambda::Function resource in the template.
     - E. Upload the function code to a private Git repository, then add a reference to it in an AWS::Lambda::Function resource in the template.
 
-     <details markdown=1><summary markdown='span'>Answer</summary>
+     <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: B, D</p>
     </details>
   
@@ -296,7 +296,7 @@ F. Configure and use an IAM role for tasks.
     - C. Import the necessary Lambda blueprint when creating the function.
     - D. Modify the function runtime to include the necessary library.
 
-     <details markdown=1><summary markdown='span'>Answer</summary>
+     <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: D</p>
     </details>
   
@@ -307,7 +307,7 @@ F. Configure and use an IAM role for tasks.
     - D. Install SSL certificates on the EC2 instances.
     - E. Configure an Elastic Load Balancer with SSL termination.
 
-     <details markdown=1><summary markdown='span'>Answer</summary>
+     <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: B, D</p>
     </details>
   
@@ -317,7 +317,7 @@ F. Configure and use an IAM role for tasks.
     - C. Create a ZIP file with the source code. Stage the dependent libraries on an Amazon S3 bucket indicated by the Lambda environment variable LD_LIBRARY_PATH.
     - D. Create a ZIP file with the source code and a buildspec.yaml file that installs the dependent libraries on AWS Lambda.
 
-     <details markdown=1><summary markdown='span'>Answer</summary>
+     <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: B</p>
     </details>
   
@@ -327,7 +327,7 @@ F. Configure and use an IAM role for tasks.
     - C. Use Amazon DynamoDB to perform scalable session hadling.
     - D. Use Elastic Load Balancer connection draining to stop sending requests to failing instances.
 
-     <details markdown=1><summary markdown='span'>Answer</summary>
+     <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: A</p>
     </details>
   
@@ -337,7 +337,7 @@ F. Configure and use an IAM role for tasks.
     - C. Use Amazon Kinesis Data Firehouse to deliver all changes from the Accounts database to the Payments database.
     - D. Use Amazon DynamoDB Streams to deliver all changes from the Accounts database to the Payments database.
 
-     <details markdown=1><summary markdown='span'>Answer</summary>
+     <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: D</p>
     </details>
   
@@ -347,7 +347,7 @@ F. Configure and use an IAM role for tasks.
     - C. AWS CodeCommit.
     - D. AWS CodeStar.
 
-     <details markdown=1><summary markdown='span'>Answer</summary>
+     <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: C</p>
     </details>
   
@@ -357,7 +357,7 @@ F. Configure and use an IAM role for tasks.
     - C. Use a DynamoDB scan operation to retrieve scores and user_id based on sport_name, and order the results based on the score attribute.
     - D. Create a local secondary index with a primary key of sport_name and a sort key of score and get the results based on the score attribute.
 
-     <details markdown=1><summary markdown='span'>Answer</summary>
+     <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: D</p>
     </details>
   
@@ -367,7 +367,7 @@ F. Configure and use an IAM role for tasks.
     - C. Create credentials using AWS KMS and apply these credentials to users when using the application.
     - D. Use Amazon Cognito to associate unauthenticated users with an IAM role that has limited access to resources.
 
-     <details markdown=1><summary markdown='span'>Answer</summary>
+     <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: C</p>
     </details>
   
@@ -378,7 +378,7 @@ F. Configure and use an IAM role for tasks.
     - D. Grant access to the key in the S3 bucket’s ACL.
     - E. Create a Systems Manager parameter that exposes the KMS key to the EC2 instances.
 
-     <details markdown=1><summary markdown='span'>Answer</summary>
+     <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: A, E</p>
     </details>
   
@@ -388,7 +388,7 @@ F. Configure and use an IAM role for tasks.
     - C. The consumer can poll the queue for a configurable amount of time before retrieving a message.
     - D. Message cannot be deleted for a configurable amount of time after they are consumed from the queue.
 
-     <details markdown=1><summary markdown='span'>Answer</summary>
+     <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: A</p>
     </details>
   
@@ -398,7 +398,7 @@ F. Configure and use an IAM role for tasks.
     - C. Create an AWS CodeCommit repository, allow the Developers to commit code to it, and then directly deploy the code to Elastic Beanstalk.
     - D. Create a code repository on an Amazon EC2 instance so that all Developers can update the code, and deploy the application from the instance to Elastic Beanstalk.
 
-     <details markdown=1><summary markdown='span'>Answer</summary>
+     <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: C</p>
     </details>
   
@@ -408,7 +408,7 @@ F. Configure and use an IAM role for tasks.
     - C. Amazon SQS.
     - D. Amazon CloudFront.
 
-     <details markdown=1><summary markdown='span'>Answer</summary>
+     <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: B</p>
     </details>
   
@@ -418,7 +418,7 @@ F. Configure and use an IAM role for tasks.
     - C. Use AWS Lambda to encrypt and decrypt objects as they are placed into the S3 bucket.
     - D. Use client-side encryption/decryption with Amazon S3 and AWS KMS.
 
-     <details markdown=1><summary markdown='span'>Answer</summary>
+     <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: D</p>
     </details>
   
@@ -428,7 +428,7 @@ F. Configure and use an IAM role for tasks.
     - C. Permission associated with the IAM principal that owns the AccessKeyID ASgeIAIOSFODNN7EXAMPLE.
     - D. Permissions associated with the account that owns the AWS service.
 
-     <details markdown=1><summary markdown='span'>Answer</summary>
+     <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: C</p>
     </details>
   
@@ -438,7 +438,7 @@ F. Configure and use an IAM role for tasks.
     - C. Use parameter values.
     - D. Use quoting strings.
 
-     <details markdown=1><summary markdown='span'>Answer</summary>
+     <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: A</p>
     </details>
   
@@ -448,7 +448,7 @@ F. Configure and use an IAM role for tasks.
     - C. Container agent.
     - D. Task definition.
 
-     <details markdown=1><summary markdown='span'>Answer</summary>
+     <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: D</p>
     </details>
   
@@ -458,7 +458,7 @@ F. Configure and use an IAM role for tasks.
     - C. 4.
     - D. 1.
 
-     <details markdown=1><summary markdown='span'>Answer</summary>
+     <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: C</p>
     </details>
   
@@ -468,7 +468,7 @@ F. Configure and use an IAM role for tasks.
     - C. AWS Lambda.
     - D. Amazon RDS.
 
-     <details markdown=1><summary markdown='span'>Answer</summary>
+     <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: A</p>
     </details>
   
@@ -478,7 +478,7 @@ F. Configure and use an IAM role for tasks.
     - C. Amazon CloudSearch.
     - D. AWS CloudTrail
 
-     <details markdown=1><summary markdown='span'>Answer</summary>
+     <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: B</p>
     </details>
   
@@ -488,7 +488,7 @@ F. Configure and use an IAM role for tasks.
     - C. Increase the shard count of the stream using UpdateShardCount.
     - D. Ingest multiple records into the stream in a single call using PutRecords.
 
-     <details markdown=1><summary markdown='span'>Answer</summary>
+     <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: A</p>
     </details>
   
@@ -498,7 +498,7 @@ F. Configure and use an IAM role for tasks.
     - C. Remove mappings to decrease the number of variables.
     - D. Use AWS::Include to reference publicly-hosted template files.
 
-     <details markdown=1><summary markdown='span'>Answer</summary>
+     <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: A</p>
     </details>
   
@@ -508,7 +508,7 @@ F. Configure and use an IAM role for tasks.
     - C. Client-side encryption with a client-side symmetric master key.
     - D. Client-side encryption with AWS KMS-managed keys.
 
-     <details markdown=1><summary markdown='span'>Answer</summary>
+     <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: A</p>
     </details>
   

@@ -12,7 +12,7 @@ If this practice exam has been helpful to you please share it with others and re
     - C. Investigate the Metadata section.
     - D. Investigate the Resources section.
     
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: A</p>
     </details>
   
@@ -22,7 +22,7 @@ If this practice exam has been helpful to you please share it with others and re
     - C. Create aliases and versions In AWS Lambda.
     - D. Tag the AWS Lambda functions with different names.
     
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: B</p>
     </details>
   
@@ -32,7 +32,7 @@ If this practice exam has been helpful to you please share it with others and re
     - C. Create an HTTPS redirect on the EC2 instances.
     - D. Create a bucket policy that denies traffic where SecureTransport is false.
     
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: D</p>
     </details>
   
@@ -43,7 +43,7 @@ If this practice exam has been helpful to you please share it with others and re
     - D. Amazon API Gateway; AWS LambdaAmazon S3; Amazon CloudFront.
     - E. Amazon S3; Amazon CloudFront.
     
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: D, E</p>
     </details>
   
@@ -53,7 +53,7 @@ If this practice exam has been helpful to you please share it with others and re
     - C. Amazon EBS.
     - D. Amazon S3.
     
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: A</p>
     </details>
   
@@ -63,7 +63,7 @@ If this practice exam has been helpful to you please share it with others and re
     - C. Use a dedicated Amazon RDS instance for caching profile data. Use a write-through caching strategy.
     - D. Create an ElastiCache cluster to cache the user profile data. Use a write-through caching strategy.
     
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: B</p>
     </details>
   
@@ -73,7 +73,7 @@ If this practice exam has been helpful to you please share it with others and re
     - C. Deploy the website code in an AWS Elastic Beanstalk environment. Use Auto Scaling to scale the numbers of instance.
     - D. Use Amazon S3 to host the website. Use Amazon CloudFornt to deliver the content at scale.
     
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: C</p>
     </details>
   
@@ -83,7 +83,7 @@ If this practice exam has been helpful to you please share it with others and re
     - C. Obtain the request identifier from the Lambda event object Architect the application to write logs to the console.
     - D. Obtain the request identifier from the Lambda context object Architect the application to write logs to a file.
     
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: A</p>
     </details>
   
@@ -100,7 +100,7 @@ If this practice exam has been helpful to you please share it with others and re
     - C. Ask an Administrator in Account A to allow the EG2 IAM role permission to assume the AccessPII role with predefined service control policies.
     - D. Include the AssumeRole API in the application code logic to obtain credentials to access the PlI table.
     - E. Include the GetSession token API in the application code logic to obtain credentials to access the Pll table.
-        <details markdown=1><summary markdown='span'>Answer</summary>
+        <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: B, D</p>
     </details>
   
@@ -110,7 +110,7 @@ If this practice exam has been helpful to you please share it with others and re
     - C. Limit Lambda to no more than five concurrent invocations Monitor from the Lambda console.
     - D. Enable AWS X-Ray tracing for the function. View the traces from the X-Ray service.
     
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: A</p>
     </details>
   
@@ -120,7 +120,7 @@ If this practice exam has been helpful to you please share it with others and re
     - C. Implement Amazon ElastiCache in front of Amazon RDS to buffer the write traffic.
     - D. Use Amazon DynamoDB instead of Amazon RDS to buffer the read traffic.
     
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: B</p>
     </details>
   
@@ -131,7 +131,7 @@ If this practice exam has been helpful to you please share it with others and re
     - D. Group the changes in the queue. Update the table based on the grouped changesCreate a transaction table in an Amazon Aurora DB cluster to manage the transactions Write a backend process to sync the Aurora DB table and the DynamoDB table.
     - E. Create a transaction table in an Amazon Aurora DB cluster to manage the transactions Write a backend process to sync the Aurora DB table and the DynamoDB table.
     
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: B</p>
     </details>
   
@@ -141,7 +141,7 @@ If this practice exam has been helpful to you please share it with others and re
     - C. Use the CloudWatch PutMetricData API call to submit a custom metric to CloudWatch. Provide the required credentials to enable the API call.
     - D. Use the CloudWatch PutMetricData API call to submit a custom metric to CloudWatch. Launch the EC2 instance with the required IAM role to enable the API call.
     
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: D</p>
     </details>
   
@@ -151,7 +151,7 @@ If this practice exam has been helpful to you please share it with others and re
     - C. Use Amazon EBS and the Amazon SQS CL.
     - D. Use Amazon EFS and the Amazon SQS CL.
     
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: B</p>
     </details>
   
@@ -161,7 +161,7 @@ If this practice exam has been helpful to you please share it with others and re
     - C. Periodically log thread count data to Amazon S3. Use Amazon Kinesis to process the data into a graph.
     - D. Periodically write the current thread count to a table using Amazon DynarnoDB and use Amazon CloudFront to create a graph.
     
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: D</p>
     </details>
   
@@ -171,7 +171,7 @@ If this practice exam has been helpful to you please share it with others and re
     - C. Create an Amazon CloudWatch event rule to verify that all objects stored in the Amazon S3 bucket are encrypted.
     - D. Configure an Amazon S3 bucket policy to prevent the upload of objects that contain the x-amz-server-sideencryption header.
     
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: B</p>
     </details>
   
@@ -181,7 +181,7 @@ If this practice exam has been helpful to you please share it with others and re
     - C. Edit the cross-origin resource sharing (CORS) configuration of the assets bucket to allow any origin to access the assets.
     - D. Change the code bucket to use AWS Lambda functions instead of static website hosting.
     
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: C</p>
     </details>
   
@@ -191,7 +191,7 @@ If this practice exam has been helpful to you please share it with others and re
     - C. Logging into the same bucket caused exponential log growth.
     - D. An S3 lifecycle policy has moved the entire CSS file to S3 Infrequent Access.
     
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: B</p>
     </details>
   
@@ -201,7 +201,7 @@ If this practice exam has been helpful to you please share it with others and re
     - C. AWS Directory Service.
     - D. Amazon IAM.
     
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: B</p>
     </details>
   
@@ -211,7 +211,7 @@ If this practice exam has been helpful to you please share it with others and re
     - C. Modify the CloudWatch metric policies to allow the PutMetricData permission to instances from the Auto Scaling group.
     - D. Create an IAM role with PutMetricData permission and modify the Auto Scaling launching configuration to launch instances using that role. The Lambda function below is being called through an API using Amazon API Gateway. The average execution time for the Lambda function is about 1 second. The pseudocode for the Lambda function is as shown in the exhibit.
     
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: D</p>
     </details>
   
@@ -222,7 +222,7 @@ If this practice exam has been helpful to you please share it with others and re
     - D. Implement custom database connection pooling with the Lambda function.
     - E. Implement local caching of Amazon RDS data so Lambda can re-use the cache.
     
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: A, E</p>
     </details>
   
@@ -232,7 +232,7 @@ If this practice exam has been helpful to you please share it with others and re
     - C. Use an Amazon CloudWatch API-error metric and use Amazon SES for notification.
     - D. Publish a custom metric on Amazon CloudWatch and use Amazon SNS for notification.
     
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: D</p>
     </details>
   
@@ -242,7 +242,7 @@ If this practice exam has been helpful to you please share it with others and re
     - C. Disable the stage transition to allow manual approval.
     - D. Disable a stage just prior the deployment stage.
     
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: D</p>
     </details>
   
@@ -252,7 +252,7 @@ If this practice exam has been helpful to you please share it with others and re
     - C. Implement Amazon ElastiCache Memcached.
     - D. Migrate the database to Amazon Redshift.
     
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: A</p>
     </details>
   
@@ -262,7 +262,7 @@ If this practice exam has been helpful to you please share it with others and re
     - C. Create an S3 event notification with a Lambda function destination. Create a new Lambda function to generate and store thumbnails.
     - D. Create an S3 event notification to an SQS Queue. Create a scheduled Lambda function that processes the queue, and generates and stores thumbnails.
     
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: A</p>
     </details>
   
@@ -272,7 +272,7 @@ If this practice exam has been helpful to you please share it with others and re
     - C. Lambda functions have a maximum execution limit of 300 seconds, therefore the function is not completing.
     - D. There is a problem with the Java runtime for Lambda, and the function needs to be converted to node.js.
     
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: C</p>
     </details>
   
@@ -282,7 +282,7 @@ If this practice exam has been helpful to you please share it with others and re
     - C. Encrypt the data once it is at rest with a Lambda function.
     - D. Enable server-side encryption in Kinesis Streams.
     
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: D</p>
     </details>
   
@@ -292,7 +292,7 @@ If this practice exam has been helpful to you please share it with others and re
     - C. Use API Gateway to deploy a new stage named v2 to the API and provide users with its UR.
     - D. Update the underlying Lambda function, create an Amazon CloudFront distribution with the updated Lambda function as its origin.
     
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: B</p>
     </details>
   
@@ -302,7 +302,7 @@ If this practice exam has been helpful to you please share it with others and re
     - C. AWS IAM.
     - D. Amazon EC2.
     
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: B</p>
     </details>
   
@@ -312,7 +312,7 @@ If this practice exam has been helpful to you please share it with others and re
     - C. Create an HTTPS redirect on the EC2 instances.
     - D. Create a bucket policy that denies traffic where SecureTransport is false.
     
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: B</p>
     </details>
   
@@ -322,7 +322,7 @@ If this practice exam has been helpful to you please share it with others and re
     - C. Amazon CloudFront to leverage AWS Edge Locations.
     - D. A Custom Amazon CloudWatch metric for concurrent users.
     
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: D</p>
     </details>
   
@@ -332,7 +332,7 @@ If this practice exam has been helpful to you please share it with others and re
     - C. Use syntax conforming to the Serverless Application Model in the AWS CloudFormation template to define the Lambda function resource.
     - D. Create a bash script which uses AWS CLI to package and deploy the application.
     
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: A</p>
     </details>
   
@@ -342,7 +342,7 @@ If this practice exam has been helpful to you please share it with others and re
     - C. Stage data in SQS queues to inject metadata before accessing DynamoD.
     - D. Read records from DynamoDB and discard irrelevant data client-side.
     
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: B</p>
     </details>
   
@@ -353,7 +353,7 @@ If this practice exam has been helpful to you please share it with others and re
     - D. Make API calls by passing user credentials to the APIs for authentication and authorization.
     - E. Use Amazon RDS to store user credentials and pass them to the APIs for authentications and authorization.
     
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: A</p>
     </details>
   
@@ -363,7 +363,7 @@ If this practice exam has been helpful to you please share it with others and re
     - C. Amazon Cognito with unauthenticated access enabled.
     - D. IAM with SAML integration.
     
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: B</p>
     </details>
   
@@ -373,7 +373,7 @@ If this practice exam has been helpful to you please share it with others and re
     - C. Use aws lambda zip to package the source file together with the CloudFormation template and deploy the resulting zip archive.
     - D. Use aws serverless create-package to embed the source file directly into the existing CloudFormation template.
     
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: D</p>
     </details>
   
@@ -383,7 +383,7 @@ If this practice exam has been helpful to you please share it with others and re
     - C. Break the function into multiple smaller Lambda functions.
     - D. ZIP the ZIP file twice to compress it further.
     
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: C</p>
     </details>
   
@@ -393,7 +393,7 @@ If this practice exam has been helpful to you please share it with others and re
     - C. In the local filesystem.
     - D. In an SQLite session table using CDSQLITE_ENABLE_SESSION.
     
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: A</p>
     </details>
   
@@ -403,7 +403,7 @@ If this practice exam has been helpful to you please share it with others and re
     - C. Immediately retry the failed read requests.
     - D. Use the DynamoDB ‘UpdateItem’ API to increase the provisioned throughput capacity of the table.
     
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: B</p>
     </details>
   
@@ -413,7 +413,7 @@ If this practice exam has been helpful to you please share it with others and re
     - C. All at Once.
     - D. Rolling with additional batch.
     
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: A</p>
     </details>
   
@@ -423,7 +423,7 @@ If this practice exam has been helpful to you please share it with others and re
     - C. Better error handling.
     - D. Creating a new instance per invocation.
     
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: B</p>
     </details>
   
@@ -433,7 +433,7 @@ If this practice exam has been helpful to you please share it with others and re
     - C. Amazon Elastic MapReduce.
     - D. AWS Step Functions.
     
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: D</p>
     </details>
   
@@ -443,7 +443,7 @@ If this practice exam has been helpful to you please share it with others and re
     - C. Create four distinct IAM roles, each containing the required permissions for the associated ECS service, then, create an IAM group and configure the ECS cluster to reference that group.
     - D. Create four distinct IAM roles, each containing the required permissions for the associated ECS service, then configure each ECS task definition to referenсe the associated IAM role.
     
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: C</p>
     </details>
   
@@ -453,7 +453,7 @@ If this practice exam has been helpful to you please share it with others and re
     - C. Use AWS Lambda to asynchronously call a Lambda function for each vendor, and join the results.
     - D. Use Amazon CloudWatch Events to orchestrate the Lambda functions.
     
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: D</p>
     </details>
   
@@ -463,7 +463,7 @@ If this practice exam has been helpful to you please share it with others and re
     - C. Analyze the applications and remove the API call.
     - D. Retry the call with exponential backoff.
     
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: B</p>
     </details>
   
@@ -474,7 +474,7 @@ If this practice exam has been helpful to you please share it with others and re
     - D. Define a Swagger file. Deploy a SAM template that references the Swagger file.
     - E. Define an inline Swagger definition in a Lambda function. Invoke the Lambda function.
     
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: D, E</p>
     </details>
   
@@ -484,7 +484,7 @@ If this practice exam has been helpful to you please share it with others and re
     - C. Amazon Kinesis Firehouse.
     - D. Amazon Kinesis Streams.
     
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: D</p>
     </details>
   
@@ -494,7 +494,7 @@ If this practice exam has been helpful to you please share it with others and re
     - C. Amazon SQS.
     - D. Amazon SNS.
     
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: A</p>
     </details>
   
@@ -504,7 +504,7 @@ If this practice exam has been helpful to you please share it with others and re
     - C. Copy the external libraries to Amazon S3, and reference the external libraries to the S3 location.
     - D. Install the external libraries in Lambda to be available to all Lambda functions.
     
-    <details markdown=1><summary markdown='span'>Answer</summary>
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary>
       <p>Correct answer: D</p>
     </details>
 
