@@ -6,18 +6,18 @@ If this practice exam has been helpful to you please share it with others and re
 
 ---
 
-1. Which of the following are good use cases for how Amazon ElastiCache can help an application? (Select TWO.)
+1. Which of the following are good use cases for how Amazon ElastiCache can help an application? (Select TWO.)  
 
-A. Improve the performance of S3 PUT operations.
-B. Improve the latency of deployments performed by AWS CodeDeploy.
-C. Improve latency and throughput for read-heavy application workloads.
-D. Reduce the time required to merge AWS CodeCommit branchesImprove performance of compute-intensive applications.
-E. Improve performance of compute-intensive applications.
-
+A. Improve the performance of S3 PUT operations.  
+B. Improve the latency of deployments performed by AWS CodeDeploy.  
+C. Improve latency and throughput for read-heavy application workloads.  
+D. Reduce the time required to merge AWS CodeCommit branchesImprove performance of compute-intensive applications.  
+E. Improve performance of compute-intensive applications.  
+  
     <details markdown=1><summary markdown='span'>Answer</summary>
       Correct answer: C, E 
     </details>
-
+  
 2. Which of the following services are key/value stores? Choose 3 answers
 
 A. Amazon ElastiCache.
