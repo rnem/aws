@@ -25,6 +25,8 @@ If you found this guide beneficial, kindly share it with others and leave a reac
 - [Practice Exam - 10](./practice-exam-10.md)
 - [Practice Exam - 11](./practice-exam-11.md)
 - [Practice Exam - 12](./practice-exam-12.md)
+- [Practice Exam - 13](./practice-exam-13.md)
+- [Practice Exam - 14](./practice-exam-14.md)
 
 ## Contact
 
