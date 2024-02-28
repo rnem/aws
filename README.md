@@ -12,6 +12,7 @@
 
 - [Projects](#projects)
 - [Cloudformation](#cloudformation)
+- [Free AWS Certification Practice Exams](/practice-questions)
 
 ### Projects
 
