@@ -2,7 +2,7 @@
 
 <img src="images/intro.jpg">
 
-To help individuals study and prepare for AWS Certification exams, I have released here some practice exams with answers to help individuals test their knowledge before taking the final exam.
+I have released some practice exams with answers to help individuals study, prepare, and test their knowledge for different AWS Certifications before taking the final tests.
 
 - [AWS Certified Cloud Practitioner](AWS-Certified-Cloud-Practitioner)
 - [AWS Certified Solutions Architect Associate](AWS-Certified-Solutions-Architect-Associate)
