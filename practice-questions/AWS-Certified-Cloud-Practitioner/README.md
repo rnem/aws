@@ -5,7 +5,7 @@
 <img src="../images/AWS-Certified-Cloud-Practitioner_badge.png">
 </div>
 
-Are you ready? Make use of these complimentary practice questions to evaluate your comprehension. Assess your understanding with these complimentary practice questions, designed to assist you prior to the exam. Simply review the following tests. You'll find sample questions along with accurate answers and thorough explanations or reference links.
+Are you ready? Utilize these complimentary practice questions to evaluate your comprehension. Designed to assist you before the exam, these tests include sample questions with accurate answers and thorough explanations on reference links. Simply review the following tests to get started.
 
 Feel welcome to provide feedback below if you spot any inaccuracies or if any answers require correction.
 
