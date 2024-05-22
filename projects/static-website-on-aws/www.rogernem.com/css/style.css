@@ -1024,7 +1024,7 @@ p.mt-3, p.my-3 {
     padding: 10px;
     width: 100%;
     font-weight: bold;
-	color: white;
+	color: #fff;
 }
 
 .certifications_item .certifications_item_hover .item_info span {
@@ -1065,6 +1065,11 @@ p.mt-3, p.my-3 {
     opacity: 1;
     -webkit-transform: translateX(0);
     transform: translateX(0);
+	color: #fff;
+}
+
+.certifications_item span {
+	color: #fff;
 }
 
 .certifications .categories-grid .categories ul li {
