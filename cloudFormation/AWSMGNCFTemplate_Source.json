@@ -1,0 +1,595 @@
+{
+    "AWSTemplateFormatVersion": "2010-09-09",
+    "Description": "This template deploys four simulated Primary workloads in a separate AWS VPC for DR testing with AWSMGN. *WARNING* This template creates resources that are billable. You will be billed for the AWS resources used if you create a stack from this template. Please remember to manually delete the CloudFormation stack after you have finished testing.",
+    "Parameters": {
+        "IPRange": {
+            "Type": "String",
+            "Default": "172.31.0.0/20",
+            "AllowedValues" : ["172.31.0.0/20"],
+            "MinLength": 9,
+            "MaxLength": 18,
+            "Description": "IP range to use for AWSMGN Source Instances/Servers",
+            "ConstraintDescription": "Invalid. Please input a correct IP range in the format 172.29.253.0/24."
+        },
+        "InstanceTypeWindowsIIS": {
+            "Description": "The Amazon EC2 instance type for the Application Tier running PHP on Windows Server IIS - 1.",
+            "Type": "String",
+            "Default": "t3a.large",
+            "AllowedValues": [
+                "t3a.large",
+                "t3a.xlarge"
+            ],
+            "ConstraintDescription": "Must be a valid EC2 instance type."
+        },
+        "InstanceTypeWindowsIIS2": {
+            "Description": "The Amazon EC2 instance type for the Application Tier running PHP on Windows Server IIS - 2.",
+            "Type": "String",
+            "Default": "t3a.large",
+            "AllowedValues": [
+                "t3a.large",
+                "t3a.xlarge"
+            ],
+            "ConstraintDescription": "Must be a valid EC2 instance type."
+        },
+        "InstanceTypeWindowsIIS3": {
+            "Description": "The Amazon EC2 instance type for the Application Tier running PHP on Windows Server IIS - 3.",
+            "Type": "String",
+            "Default": "t3a.large",
+            "AllowedValues": [
+                "t3a.large",
+                "t3a.xlarge"
+            ],
+            "ConstraintDescription": "Must be a valid EC2 instance type."
+        },
+        "InstanceTypeWindowsSQL": {
+            "Description": "The Amazon EC2 instance type for the Database Tier running SQL Server on Windows Server.",
+            "Type": "String",
+            "Default": "t3a.large",
+            "AllowedValues": [
+                "t3a.large",
+                "t3a.xlarge"
+            ],
+            "ConstraintDescription": "Must be a valid EC2 instance type."
+        }
+    },
+    "Mappings": {
+        "RegionMap": {
+            "us-east-1": { 
+                "AmiWindowsIIS": "ami-03c312f0b0f394f16",
+                "AmiWindowsSQL": "ami-078f1c68e538dfead"
+            },
+            "us-east-2": {
+                "AmiWindowsIIS" : "ami-08c0f5771f45074c3",
+                "AmiWindowsSQL" : "ami-00304e0ec6d2d2cb8"
+            }
+        }
+    },
+    "Resources": {
+        "vpcSource": {
+            "Type": "AWS::EC2::VPC",
+            "Properties": {
+                "CidrBlock": {
+                    "Ref": "IPRange"
+                },
+                "EnableDnsHostnames": "true",
+                "EnableDnsSupport": "true",
+                "Tags": [
+                    {
+                        "Key": "Name",
+                        "Value": "AWSMGNSource-VPC"
+                    }
+                ]
+            },
+            "Metadata": {
+                "AWS::CloudFormation::Designer": {
+                    "id": "6a99246b-041c-4544-9059-8ece6f92ac18"
+                }
+            }
+        },
+        "subnetVPCSource": {
+            "Type": "AWS::EC2::Subnet",
+            "Properties": {
+                "VpcId": {
+                    "Ref": "vpcSource"
+                },
+                "CidrBlock": {
+                    "Ref": "IPRange"
+                },
+                "AvailabilityZone": {
+                    "Fn::Select": [
+                        0,
+                        {
+                            "Fn::GetAZs": ""
+                        }
+                    ]
+                },
+                "Tags": [
+                    {
+                        "Key": "Name",
+                        "Value": "AWSMGNSource-Subnet"
+                    }
+                ]
+            },
+            "Metadata": {
+                "AWS::CloudFormation::Designer": {
+                    "id": "e883e570-5580-493a-82c7-331a6f05124e"
+                }
+            }
+        },
+        "rtbSource": {
+            "Type": "AWS::EC2::RouteTable",
+            "Properties": {
+                "VpcId": {
+                    "Ref": "vpcSource"
+                },
+                "Tags": [
+                    {
+                        "Key": "Name",
+                        "Value": "AWSMGNSource-RouteTable"
+                    }
+                ]
+            },
+            "Metadata": {
+                "AWS::CloudFormation::Designer": {
+                    "id": "f6bdcff7-2cd4-4c5e-b5e6-10bd4848a5ab"
+                }
+            }
+        },
+        "igwSource": {
+            "Type": "AWS::EC2::InternetGateway",
+            "Properties": {
+                "Tags": [
+                    {
+                        "Key": "Name",
+                        "Value": "AWSMGNSource-IGW"
+                    }
+                ]
+            },
+            "Metadata": {
+                "AWS::CloudFormation::Designer": {
+                    "id": "b612bc52-ad9f-432a-8a22-9440325d212d"
+                }
+            }
+        },
+        "igwSourceAttachment": {
+            "Type": "AWS::EC2::VPCGatewayAttachment",
+            "Properties": {
+                "VpcId": {
+                    "Ref": "vpcSource"
+                },
+                "InternetGatewayId": {
+                    "Ref": "igwSource"
+                }
+            }
+        },
+        "rtigwsource": {
+            "Type": "AWS::EC2::Route",
+            "Properties": {
+                "RouteTableId": {
+                    "Ref": "rtbSource"
+                },
+                "DestinationCidrBlock": "0.0.0.0/0",
+                "GatewayId": {
+                    "Ref": "igwSource"
+                }
+            },
+            "Metadata": {
+                "AWS::CloudFormation::Designer": {
+                    "id": "181fe147-edf9-461f-b84d-c0ff2ec58178"
+                }
+            }
+        },
+        "sourcesubnetrtbAssociation": {
+            "Type": "AWS::EC2::SubnetRouteTableAssociation",
+            "Properties": {
+                "RouteTableId": {
+                    "Ref": "rtbSource"
+                },
+                "SubnetId": {
+                    "Ref": "subnetVPCSource"
+                }
+            }
+        },
+        "sgSource": {
+            "Type": "AWS::EC2::SecurityGroup",
+            "Properties": {
+                "GroupDescription": "Security Group (firewall) protecting source machines for AWSMGN",
+                "GroupName": "AWSMGN-Instances",
+                "SecurityGroupEgress": [
+                    {
+                        "IpProtocol": -1,
+                        "CidrIp": "0.0.0.0/0"
+                    }
+                ],
+                "VpcId": {
+                    "Ref": "vpcSource"
+                },
+                "Tags": [
+                    {
+                        "Key": "Name",
+                        "Value": "AWSMGN-SecurityGroup"
+                    }
+                ]
+            },
+            "Metadata": {
+                "AWS::CloudFormation::Designer": {
+                    "id": "55386b97-5ffd-46c6-bd31-4cccddeee935"
+                }
+            }
+        },
+		"sgSourceIngress":{
+			"Type" : "AWS::EC2::SecurityGroupIngress",
+			"Properties" : {
+				"Description" : "All Intra-VPC traffic allowed",
+				"GroupId" : {
+                    "Fn::GetAtt": [
+                        "sgSource",
+                        "GroupId"
+                    ]
+                },
+				"IpProtocol" : -1,
+				"SourceSecurityGroupId" : {
+                    "Fn::GetAtt": [
+                        "sgSource",
+                        "GroupId"
+                    ]
+                }
+			}
+		},        
+        "ec2SourceIIS": {
+            "Type": "AWS::EC2::Instance",
+            "Properties": {
+                "InstanceType": {
+                    "Ref": "InstanceTypeWindowsIIS"
+                },
+                "ImageId": {
+                    "Fn::FindInMap": ["RegionMap", { "Ref": "AWS::Region" }, "AmiWindowsIIS"]
+                },
+                "Tags": [
+                    {
+                        "Key": "Name",
+                        "Value": "AWSMGN-Windows-IIS-1"
+                    }
+                ],
+                "NetworkInterfaces": [
+                    {
+                        "AssociatePublicIpAddress": "true",
+                        "DeviceIndex": "0",
+                        "GroupSet": [
+                            {
+                                "Ref": "sgSource"
+                            }
+                        ],
+                        "SubnetId":{"Ref":"subnetVPCSource"}
+                    }
+                ]
+            },
+            "Metadata": {
+                "AWS::CloudFormation::Designer": {
+                    "id": "6522d866-0863-432b-9640-171af86d14c7"
+                }
+            }
+        },
+       "ec2SourceIIS2": {
+            "Type": "AWS::EC2::Instance",
+            "Properties": {
+                "InstanceType": {
+                    "Ref": "InstanceTypeWindowsIIS2"
+                },
+                "ImageId": {
+                    "Fn::FindInMap": ["RegionMap", { "Ref": "AWS::Region" }, "AmiWindowsIIS"]
+                },
+                "Tags": [
+                    {
+                        "Key": "Name",
+                        "Value": "AWSMGN-Windows-IIS-2"
+                    }
+                ],
+                "NetworkInterfaces": [
+                    {
+                        "AssociatePublicIpAddress": "true",
+                        "DeviceIndex": "0",
+                        "GroupSet": [
+                            {
+                                "Ref": "sgSource"
+                            }
+                        ],
+                        "SubnetId":{"Ref":"subnetVPCSource"}
+                    }
+                ]
+            },
+            "Metadata": {
+                "AWS::CloudFormation::Designer": {
+                    "id": "6522d866-0863-432b-9640-171af86d14c7"
+                }
+            }
+        },
+       "ec2SourceIIS3": {
+            "Type": "AWS::EC2::Instance",
+            "Properties": {
+                "InstanceType": {
+                    "Ref": "InstanceTypeWindowsIIS3"
+                },
+                "ImageId": {
+                    "Fn::FindInMap": ["RegionMap", { "Ref": "AWS::Region" }, "AmiWindowsIIS"]
+                },
+                "Tags": [
+                    {
+                        "Key": "Name",
+                        "Value": "AWSMGN-Windows-IIS-3"
+                    }
+                ],
+                "NetworkInterfaces": [
+                    {
+                        "AssociatePublicIpAddress": "true",
+                        "DeviceIndex": "0",
+                        "GroupSet": [
+                            {
+                                "Ref": "sgSource"
+                            }
+                        ],
+                        "SubnetId":{"Ref":"subnetVPCSource"}
+                    }
+                ]
+            },
+            "Metadata": {
+                "AWS::CloudFormation::Designer": {
+                    "id": "6522d866-0863-432b-9640-171af86d14c7"
+                }
+            }
+        },
+        "ec2SourceSQL": {
+            "Type": "AWS::EC2::Instance",
+            "Properties": {
+                "InstanceType": {
+                    "Ref": "InstanceTypeWindowsSQL"
+                },
+                "ImageId": {
+                    "Fn::FindInMap": ["RegionMap", { "Ref": "AWS::Region" }, "AmiWindowsSQL"]
+                },
+                "Tags": [
+                    {
+                        "Key": "Name",
+                        "Value": "AWSMGN-Windows-SQL"
+                    }
+                ],
+                "NetworkInterfaces": [
+                    {
+                        "AssociatePublicIpAddress": "true",
+                        "DeviceIndex": "0",
+                        "GroupSet": [
+                            {
+                                "Ref": "sgSource"
+                            }
+                        ],
+                        "SubnetId":{"Ref":"subnetVPCSource"},
+                        "PrivateIpAddress":"172.31.12.40"
+                    }
+                ]
+            },
+            "Metadata": {
+                "AWS::CloudFormation::Designer": {
+                    "id": "e409aeeb-36c3-4f26-8ab4-dd3e271ff603"
+                }
+            }
+        }
+    },
+    "Metadata": {
+        "AWS::CloudFormation::Designer": {
+            "41d3b8a7-8c9b-4eac-a454-2d5bb36ee8aa": {
+                "size": {
+                    "width": 60,
+                    "height": 60
+                },
+                "position": {
+                    "x": 1980,
+                    "y": 290
+                },
+                "z": 1,
+                "embeds": []
+            },
+            "bcff6af8-5b15-4a94-8a0b-9616f6a934b2": {
+                "size": {
+                    "width": 90,
+                    "height": 80
+                },
+                "position": {
+                    "x": 1770,
+                    "y": 250
+                },
+                "z": 2,
+                "parent": "90d01b69-c70e-4d8e-a417-87c7e2fc143e",
+                "embeds": [
+                    "d71ceac2-46ed-490e-b3d1-140f1b5f4446"
+                ],
+                "iscontainedinside": [
+                    "90d01b69-c70e-4d8e-a417-87c7e2fc143e"
+                ]
+            },
+            "d71ceac2-46ed-490e-b3d1-140f1b5f4446": {
+                "size": {
+                    "width": 60,
+                    "height": 60
+                },
+                "position": {
+                    "x": 1790,
+                    "y": 270
+                },
+                "z": 3,
+                "parent": "bcff6af8-5b15-4a94-8a0b-9616f6a934b2",
+                "embeds": [],
+                "isassociatedwith": [
+                    "41d3b8a7-8c9b-4eac-a454-2d5bb36ee8aa"
+                ],
+                "iscontainedinside": [
+                    "bcff6af8-5b15-4a94-8a0b-9616f6a934b2",
+                    "bcff6af8-5b15-4a94-8a0b-9616f6a934b2"
+                ]
+            },
+            "c930a58a-3671-45ff-8cd6-6a0accc42c47": {
+                "size": {
+                    "width": 700,
+                    "height": 560
+                },
+                "position": {
+                    "x": 1070,
+                    "y": 120
+                },
+                "z": 2,
+                "parent": "90d01b69-c70e-4d8e-a417-87c7e2fc143e",
+                "embeds": [],
+                "iscontainedinside": [
+                    "90d01b69-c70e-4d8e-a417-87c7e2fc143e",
+                    "90d01b69-c70e-4d8e-a417-87c7e2fc143e"
+                ]
+            },
+            "90d01b69-c70e-4d8e-a417-87c7e2fc143e": {
+                "size": {
+                    "width": 850,
+                    "height": 680
+                },
+                "position": {
+                    "x": 1030,
+                    "y": 90
+                },
+                "z": 1,
+                "embeds": [
+                    "c930a58a-3671-45ff-8cd6-6a0accc42c47",
+                    "bcff6af8-5b15-4a94-8a0b-9616f6a934b2"
+                ]
+            },
+            "b612bc52-ad9f-432a-8a22-9440325d212d": {
+                "size": {
+                    "width": 60,
+                    "height": 60
+                },
+                "position": {
+                    "x": -120,
+                    "y": 490
+                },
+                "z": 1,
+                "embeds": []
+            },
+            "6a99246b-041c-4544-9059-8ece6f92ac18": {
+                "size": {
+                    "width": 830,
+                    "height": 680
+                },
+                "position": {
+                    "x": 60,
+                    "y": 90
+                },
+                "z": 1,
+                "embeds": [
+                    "f6bdcff7-2cd4-4c5e-b5e6-10bd4848a5ab",
+                    "e883e570-5580-493a-82c7-331a6f05124e"
+                ]
+            },
+            "e409aeeb-36c3-4f26-8ab4-dd3e271ff603": {
+                "size": {
+                    "width": 60,
+                    "height": 60
+                },
+                "position": {
+                    "x": 220,
+                    "y": 240
+                },
+                "z": 3,
+                "parent": "e883e570-5580-493a-82c7-331a6f05124e",
+                "embeds": [],
+                "iscontainedinside": [
+                    "e883e570-5580-493a-82c7-331a6f05124e"
+                ]
+            },
+            "6522d866-0863-432b-9640-171af86d14c7": {
+                "size": {
+                    "width": 60,
+                    "height": 60
+                },
+                "position": {
+                    "x": 360,
+                    "y": 240
+                },
+                "z": 3,
+                "parent": "e883e570-5580-493a-82c7-331a6f05124e",
+                "embeds": [],
+                "iscontainedinside": [
+                    "e883e570-5580-493a-82c7-331a6f05124e"
+                ]
+            },
+            "181fe147-edf9-461f-b84d-c0ff2ec58178": {
+                "size": {
+                    "width": 60,
+                    "height": 60
+                },
+                "position": {
+                    "x": 100,
+                    "y": 330
+                },
+                "z": 3,
+                "parent": "f6bdcff7-2cd4-4c5e-b5e6-10bd4848a5ab",
+                "embeds": [],
+                "isassociatedwith": [
+                    "b612bc52-ad9f-432a-8a22-9440325d212d"
+                ],
+                "iscontainedinside": [
+                    "f6bdcff7-2cd4-4c5e-b5e6-10bd4848a5ab"
+                ]
+            },
+            "f6bdcff7-2cd4-4c5e-b5e6-10bd4848a5ab": {
+                "size": {
+                    "width": 90,
+                    "height": 90
+                },
+                "position": {
+                    "x": 80,
+                    "y": 310
+                },
+                "z": 2,
+                "parent": "6a99246b-041c-4544-9059-8ece6f92ac18",
+                "embeds": [
+                    "181fe147-edf9-461f-b84d-c0ff2ec58178"
+                ],
+                "iscontainedinside": [
+                    "6a99246b-041c-4544-9059-8ece6f92ac18"
+                ]
+            },
+            "e883e570-5580-493a-82c7-331a6f05124e": {
+                "size": {
+                    "width": 650,
+                    "height": 510
+                },
+                "position": {
+                    "x": 190,
+                    "y": 190
+                },
+                "z": 2,
+                "parent": "6a99246b-041c-4544-9059-8ece6f92ac18",
+                "embeds": [
+                    "e409aeeb-36c3-4f26-8ab4-dd3e271ff603",
+                    "6522d866-0863-432b-9640-171af86d14c7",
+                    "55386b97-5ffd-46c6-bd31-4cccddeee935"
+                ],
+                "iscontainedinside": [
+                    "6a99246b-041c-4544-9059-8ece6f92ac18"
+                ]
+            },
+            "55386b97-5ffd-46c6-bd31-4cccddeee935": {
+                "size": {
+                    "width": 60,
+                    "height": 60
+                },
+                "position": {
+                    "x": 290,
+                    "y": 240
+                },
+                "z": 3,
+                "parent": "e883e570-5580-493a-82c7-331a6f05124e",
+                "embeds": [],
+                "iscontainedinside": [
+                    "6a99246b-041c-4544-9059-8ece6f92ac18"
+                ]
+            }
+        }
+    }
+}
