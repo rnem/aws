@@ -4,6 +4,8 @@
 
 I have released some practice exams with answers to help individuals study, prepare, and test their knowledge for different AWS Certifications before taking the final tests.
 
+:warning: These practice exams **are NOT** Amazon Web Services Exam Dumps :warning:
+
 - [AWS Certified Cloud Practitioner](AWS-Certified-Cloud-Practitioner)
 - [AWS Certified Solutions Architect Associate](AWS-Certified-Solutions-Architect-Associate)
 - [AWS Certified Solutions Developer Associate](AWS-Certified-Developer-Associate)
