@@ -180,7 +180,7 @@ credentials. Use the Secrets Manager rotate-secret command in the AWS CLI to for
 
 <details markdown=1><summary markdown='span'><b>Answer</b></summary> Correct Answer(s): A, D</details>
 
-17. A security engineer logs in to the AWS Lambda console with administrator permissions. The security engineer is trying to view logs in Amazon CloudWatch for a Lambda function that is named my Function. When the security engineer chooses the option in the Lambda console to view logs in CloudWatch, an `error loading Log Streams` message appears. The IAM policy for the Lambda function's execution role contains the following. How should the security engineer correct the error?
+17. A security engineer logs in to the AWS Lambda console with administrator permissions. The security engineer is trying to view logs in Amazon CloudWatch for a Lambda function that is named my Function. When the security engineer chooses the option in the Lambda console to view logs in CloudWatch, an **error loading Log Streams** message appears. The IAM policy for the Lambda function's execution role contains the following. How should the security engineer correct the error?
 
 ![Question 17](../images/aws_SCS_C02_pt2_17.jpg)
 
