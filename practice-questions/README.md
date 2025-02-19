@@ -6,10 +6,15 @@ I have released some practice exams with answers to help individuals study, prep
 
 :warning: These practice exams **are NOT** Amazon Web Services Exam Dumps :warning:
 
+### Practitioner
 - [AWS Certified Cloud Practitioner](AWS-Certified-Cloud-Practitioner)
+### Associate 
 - [AWS Certified Solutions Architect Associate](AWS-Certified-Solutions-Architect-Associate)
 - [AWS Certified Solutions Developer Associate](AWS-Certified-Developer-Associate)
+### Professional
 - [AWS Certified Solutions Architect Professional](AWS-Certified-Solutions-Architect-Professional)
+### Specialty
+- [AWS Certified Security - Specialty](AWS-Certified-Security-Specialty)
 
 ## Contact
 
