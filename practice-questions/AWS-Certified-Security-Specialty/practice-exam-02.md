@@ -65,13 +65,13 @@ credentials. Use the Secrets Manager rotate-secret command in the AWS CLI to for
 7. A company deploys a set of standard IAM roles in AWS accounts. The IAM roles are based on job functions within the company. To balance operational efficiency and security, a security engineer implemented AWS Organizations SCPs to restrict access to critical security services in all company accounts. All of the company's accounts and OUs within AWS Organizations have a default FullAWSAccess SCP that is attached. The security engineer needs to ensure that no one can disable Amazon GuardDuty and AWS Security Hub. The security engineer also must not override other permissions that are granted by IAM policies that are defined in the accounts. Which SCP should the security engineer attach to the root of the organization to meet these requirements?
 
     - A) Option A.
-![Question 7 option A](../images/question7_A.jpg)
+![Question 7 option A](../images/aws_SCS_C02_pt2_7_A.jpg)
     - B) Option B.
-![Question 7 option B](../images/question7_B.jpg)
+![Question 7 option B](../images/aws_SCS_C02_pt2_7_B.jpg)
     - C) Option C.
-![Question 7 option C](../images/question7_C.jpg)
+![Question 7 option C](../images/aws_SCS_C02_pt2_7_C.jpg)
     - D) Option D.
-![Question 7 option D](../images/question7_D.jpg)
+![Question 7 option D](../images/aws_SCS_C02_pt2_7_D.jpg)
 
 
 <details markdown=1><summary markdown='span'><b>Answer</b></summary> Correct Answer(s): A</details>
@@ -100,13 +100,13 @@ credentials. Use the Secrets Manager rotate-secret command in the AWS CLI to for
 10. Which of the following bucket policies will ensure that objects being uploaded to a bucket called 'demo' are encrypted?
 
     - A) Option A.
-![Question 10 option A](../images/question10_A.jpg)
+![Question 10 option A](../images/aws_SCS_C02_pt2_10_A.jpg)
     - B) Option B.
-![Question 10 option B](../images/question10_B.jpg)
+![Question 10 option B](../images/aws_SCS_C02_pt2_10_B.jpg)
     - C) Option C.
-![Question 10 option C](../images/question10_C.jpg)
+![Question 10 option C](../images/aws_SCS_C02_pt2_10_C.jpg)
     - D) Option D.
-![Question 10 option D](../images/question10_D.jpg)
+![Question 10 option D](../images/aws_SCS_C02_pt2_10_D.jpg)
 
 
 <details markdown=1><summary markdown='span'><b>Answer</b></summary> Correct Answer(s): A</details>
@@ -148,13 +148,13 @@ credentials. Use the Secrets Manager rotate-secret command in the AWS CLI to for
 14. A Security Engineer is troubleshooting an issue with a company's custom logging application. The application logs are written to an Amazon S3 bucket with event notifications enabled to send events to an Amazon SNS topic. All logs are encrypted at rest using an AWS KMS CMK. The SNS topic is subscribed to an encrypted Amazon SQS queue. The logging application polls the queue for new messages that contain metadata about the S3 object. The application then reads the content of the object from the S3 bucket for indexing. The Logging team reported that Amazon CloudWatch metrics for the number of messages sent or received is showing zero. No tags are being received. What should the Security Engineer do to troubleshoot this issue?
 
     - A) Option A: Add the following statement to the IAM managed CMKs.
-![Question 14 option A](../images/question14_A.jpg)
+![Question 14 option A](../images/aws_SCS_C02_pt2_14_A.jpg)
     - B) Option B: Add the following statement to the CMK key policy.
-![Question 14 option B](../images/question14_B.jpg)
+![Question 14 option B](../images/aws_SCS_C02_pt2_14_B.jpg)
     - C) Option C: Add the following statement to the CMK key policy.
-![Question 14 option C](../images/question14_C.jpg)
+![Question 14 option C](../images/aws_SCS_C02_pt2_14_C.jpg)
     - D) Option D: Add the following statement to the CMK key policy.
-![Question 14 option D](../images/question14_D.jpg)
+![Question 14 option D](../images/aws_SCS_C02_pt2_14_D.jpg)
 
 
 <details markdown=1><summary markdown='span'><b>Answer</b></summary> Correct Answer(s): B</details>
@@ -182,7 +182,7 @@ credentials. Use the Secrets Manager rotate-secret command in the AWS CLI to for
 
 17. A security engineer logs in to the AWS Lambda console with administrator permissions. The security engineer is trying to view logs in Amazon CloudWatch for a Lambda function that is named my Function. When the security engineer chooses the option in the Lambda console to view logs in CloudWatch, an `error loading Log Streams` message appears. The IAM policy for the Lambda function's execution role contains the following. How should the security engineer correct the error?
 
-![Question 17](../images/question17.jpg)
+![Question 17](../images/aws_SCS_C02_pt2_17.jpg)
 
     - A) Move the `logs:CreateLogGroup` action to the second Allow statement.
     - B) Add the `logs:PutDestination` action to the second Allow statement.
@@ -257,16 +257,16 @@ credentials. Use the Secrets Manager rotate-secret command in the AWS CLI to for
 
 24. A company uses identity federation to authenticate users into an identity account (987654321987) where the users assume an IAM role named IdentityRole. The users then assume an IAM role named JobFunctionRole in the target IAM account (123456789123) to perform their job functions. A user is unable to assume the IAM role in the target account. The policy attached to the role in the identity account is. What should be done to enable the user to assume the appropriate role in the target account?
 
-![Question 24](../images/question24.jpg)
+![Question 24](../images/aws_SCS_C02_pt2_24.jpg)
 
     - A) Option A: Update the IAM policy attached to the role in the identity account to be.
-![Question 24 option A](../images/question24_A.png)
+![Question 24 option A](../images/aws_SCS_C02_pt2_24_A.png)
     - B) Option B: Update the trust policy on the role in the target account to be.
-![Question 24 option B](../images/question24_B.png)
+![Question 24 option B](../images/aws_SCS_C02_pt2_24_B.png)
     - C) Option C: Update the trust policy on the role in the identity account to be.
-![Question 24 option C](../images/question24_C.png)
+![Question 24 option C](../images/aws_SCS_C02_pt2_24_C.png)
     - D) Option D: Update the IAM policy attached to the role in the target account to be.
-![Question 24 option D](../images/question24_D.png)
+![Question 24 option D](../images/aws_SCS_C02_pt2_24_D.png)
 
 
 <details markdown=1><summary markdown='span'><b>Answer</b></summary> Correct Answer(s): B</details>
@@ -314,13 +314,13 @@ credentials. Use the Secrets Manager rotate-secret command in the AWS CLI to for
 29. A System Administrator is unable to start an Amazon EC2 instance in the eu-west-1 Region using an IAM role The same System Administrator is able to start an EC2 instance in the eu-west-2 and eu-west-3 Regions. The IAMSystemAdministrator access policy attached to the System Administrator IAM role allows unconditional access to all IAM services and resources within the account. Which configuration caused this issue?
 
     - A) Option A: An SCP is attached to the account with the following permission statement.
-![Question 29 option A](../images/question29_A.jpg)
+![Question 29 option A](../images/aws_SCS_C02_pt2_29_A.jpg)
     - B) Option B: A permission boundary policy is attached to the System Administrator role with the following permission statement.
-![Question 29 option B](../images/question29_B.jpg)
+![Question 29 option B](../images/aws_SCS_C02_pt2_29_B.jpg)
     - C) Option C: A permission boundary is attached to the System Administrator role with the following permission statement.
-![Question 29 option C](../images/question29_C.jpg)
+![Question 29 option C](../images/aws_SCS_C02_pt2_29_C.jpg)
     - D) Option D: An SCP is attached to the account with the following statement.
-![Question 29 option D](../images/question29_D.jpg)
+![Question 29 option D](../images/aws_SCS_C02_pt2_29_D.jpg)
 
 
 <details markdown=1><summary markdown='span'><b>Answer</b></summary> Correct Answer(s): B</details>
@@ -338,13 +338,13 @@ credentials. Use the Secrets Manager rotate-secret command in the AWS CLI to for
 31. A company stores sensitive documents in Amazon S3 by using server-side encryption with an AWS Key Management Service (AWS KMS) CMK. A new requirement mandates that the CMK that is used for these documents can be used only for S3 actions. Which statement should the company add to the key policy to meet this requirement?
 
     - A) Option A.
-![Question 31 option A](../images/question31_A.png)
+![Question 31 option A](../images/aws_SCS_C02_pt2_31_A.png)
     - B) Option B.
-![Question 31 option B](../images/question31_B.png)
+![Question 31 option B](../images/aws_SCS_C02_pt2_31_B.png)
     - C) Option C.
-![Question 31 option C](../images/question31_C.png)
+![Question 31 option C](../images/aws_SCS_C02_pt2_31_C.png)
     - D) Option D.
-![Question 31 option D](../images/question31_D.png)
+![Question 31 option D](../images/aws_SCS_C02_pt2_31_D.png)
 
 
 <details markdown=1><summary markdown='span'><b>Answer</b></summary> Correct Answer(s): C</details>
@@ -667,13 +667,13 @@ credentials. Use the Secrets Manager rotate-secret command in the AWS CLI to for
 62. A company uses an Amazon S3 bucket to store reports Management has mandated that all new objects stored in this bucket must be encrypted at rest using server-side encryption with a client-specified IAM Key Management Service (AWS KMS) CMK owned by the same account as the S3 bucket. The IAM account number is 111122223333, and the bucket name is report bucket. The company's security specialist must write the S3 bucket policy to ensure the mandate can be Implemented. Which statement should the security specialist include in the policy?
 
     - A) Option A.
-![Question 62 option A](../images/question62_A.jpg)
+![Question 62 option A](../images/aws_SCS_C02_pt2_62_A.jpg)
     - B) Option B.
-![Question 62 option B](../images/question62_B.jpg)
+![Question 62 option B](../images/aws_SCS_C02_pt2_62_B.jpg)
     - C) Option C.
-![Question 62 option C](../images/question62_C.jpg)
+![Question 62 option C](../images/aws_SCS_C02_pt2_62_C.jpg)
     - D) Option D.
-![Question 62 option D](../images/question62_D.jpg)
+![Question 62 option D](../images/aws_SCS_C02_pt2_62_D.jpg)
 
 
 <details markdown=1><summary markdown='span'><b>Answer</b></summary> Correct Answer(s): D</details>
