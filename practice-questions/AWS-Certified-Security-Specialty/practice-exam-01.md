@@ -336,3 +336,223 @@ If this practice exam has been helpful to you please share it with others and re
 		Explanation: Amazon CloudFront provides content delivery with built-in support for DDoS mitigation. AWS WAF protects your application by filtering malicious web traffic such as SQL injection and cross-site scripting (XSS) attacks. AWS Shield offers DDoS protection at both the network and application layers, ensuring your application remains protected against large-scale attacks. Option A (Network Firewall, Guard, and Config) provides good traffic filtering and threat detection but doesn't fully address the web application layer security or DDoS protection as CloudFront, WAF, and Shield do. Option B (Flow logs, Security Hub, and IAM roles) focuses on monitoring and threat management but does not provide the necessary protections for DDoS attacks and malicious web traffic. Option D (VPN, S3, and CloudTrail) focuses on secure connectivity and logging but does not offer adequate protection against malicious traffic or DDoS threats.
     </details>
 
+
+31. Data Protection and Encryption - A financial services company needs to implement encryption for all data stored in their AWS environment, both at rest and in transit. They also need to maintain strict control over their encryption keys. Which combination of AWS services provides the most comprehensive solution for their requirements?
+    - A) Use AWS Certificate Manager for SSL/TLS certificates, Amazon S3 server-side encryption, and store keys in AWS Secrets Manager
+    - B) Implement AWS KMS for key management, use AWS CloudHSM for hardware-based key storage, and enable encryption across AWS services
+    - C) Configure AWS Shield for data protection, use AWS WAF for traffic filtering, and store encryption keys in AWS Systems Manager Parameter Store
+    - D) Use Amazon Macie for data discovery, AWS Config for tracking encryption settings, and AWS IAM for key access control
+
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary> Correct Answer(s): B
+		<br><br>
+		Explanation: AWS KMS (Key Management Servic    - E) provides centralized control over encryption keys and integrates with many AWS services for data encryption. AWS CloudHSM offers dedicated hardware security modules for additional security and compliance requirements. Together, these services enable comprehensive encryption for data at rest and in transit while maintaining strict control over encryption keys. Option A lacks the hardware security module capabilities that CloudHSM provides. Option C focuses on network security rather than encryption. Option D addresses data discovery and access control but doesn't provide the comprehensive encryption capabilities needed.
+    </details>
+
+32. Compliance and Governance - A healthcare organization needs to ensure their AWS environment meets HIPAA compliance requirements and maintain continuous monitoring of their compliance status. Which combination of AWS services should they implement?
+    - A) Use AWS Config for resource monitoring, AWS CloudWatch for metrics, and AWS Systems Manager for patch management
+    - B) Implement AWS Security Hub with security standards enabled, AWS Audit Manager for assessments, and AWS Config for continuous monitoring
+    - C) Configure AWS Guard for threat detection, AWS CloudTrail for logging, and AWS IAM for access control
+    - D) Use Amazon Inspector for vulnerability assessment, AWS Trusted Advisor for best practices, and VPC Flow Logs for network monitoring
+
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary> Correct Answer(s): B 
+		<br><br>
+		Explanation: AWS Security Hub provides a comprehensive view of security and compliance status, including built-in security standards checks. AWS Audit Manager helps automate the assessment process for various compliance frameworks, including HIPAA. AWS Config provides continuous monitoring and recording of AWS resource configurations, essential for maintaining compliance. This combination offers comprehensive compliance monitoring, assessment, and reporting capabilities. Option A lacks specific compliance assessment tools. Option C focuses on security monitoring but doesn't address compliance assessment needs. Option D provides good security tools but lacks the compliance-specific features needed for HIPAA requirements.
+    </details>
+
+33. Identity and Access Management - A multinational corporation is implementing a new access management strategy for their AWS environment. They need to manage user access across multiple AWS accounts and want to implement single sign-on capabilities while maintaining strict security controls. Which solution should they implement?
+    - A) Create individual IAM users in each account and use cross-account roles for access
+    - B) Use AWS IAM Identity Center (formerly AWS SSO) to manage access based on predefined roles and assign them to users based on their environment
+    - C) Implement AWS Cognito for user authentication and AWS IAM roles for resource access
+    - D) Configure AWS Directory Service and manage access through security groups
+
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary> Correct Answer(s): B
+		<br><br>
+		Explanation: Based on the transcript, AWS IAM Identity Center (formerly AWS SSO) is the best solution for managing access across different environments. It allows for centralized control over access, streamlines authentication while ensuring users only have necessary permissions for each environment. It integrates well with AWS services, allows for role-based access control, and simplifies the management of large numbers of users. Option A requires manual management which becomes cumbersome at scale. Option C (Cognito) is better suited for customer-facing applications. Option D doesn't provide the same level of centralized access management as IAM Identity Center.
+    </details>
+
+34. Network Security - A company is deploying a three-tier application architecture in AWS and needs to ensure proper network segmentation and security. The web tier needs to be publicly accessible while the application and database tiers must remain private. Which network architecture should they implement?
+    - A) Place all tiers in private subnets and use a NAT gateway for internet access
+    - B) Deploy the web tier in a public subnet with an elastic load balancer, and place the application and database tiers in private subnets
+    - C) Use VPC peering to connect all tiers and implement security groups for access control
+    - D) Place all tiers in public subnets and use network ACLs to control access
+
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary> Correct Answer(s): B
+		<br><br>
+		Explanation: Based on the transcript, the most secure architecture is to deploy the web tier in a public subnet with an elastic load balancer while placing the application and database layers in private subnets. This setup ensures that the database and application layers are not exposed to the internet, maintaining their security. The elastic load balancer handles external traffic while keeping other layers secure. Option A would make the web tier inaccessible. Option C doesn't provide proper separation of public and private resources. Option D exposes all tiers to potential external threats, which is not secure for the application and database tiers.
+    </details>
+
+35. Security Monitoring and Threat Detection - A company needs to implement comprehensive security monitoring across their AWS environment to detect potential security threats and vulnerabilities. Which combination of AWS services should they implement for effective threat detection and monitoring?
+    - A) Use AWS CloudWatch for metrics and AWS Config for configuration tracking
+    - B) Implement AWS Guard for threat detection, AWS Security Hub for centralized security management, and CloudWatch for alerting
+    - C) Configure VPC Flow Logs and AWS CloudTrail for activity monitoring
+    - D) Use AWS Inspector for vulnerability scanning and AWS Systems Manager for patch management
+
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary> Correct Answer(s): B
+		<br><br>
+		Explanation: Based on the transcript, AWS Guard provides threat detection for AWS resources by identifying anomalies and potential security threats. AWS Security Hub aggregates findings from multiple AWS security services, while CloudWatch can be used for setting up custom alarms based on Guard findings. This combination provides comprehensive threat detection, centralized security management, and real-time alerting capabilities. Option A lacks specific threat detection capabilities. Option C provides logging but doesn't include threat detection. Option D focuses on vulnerability management but doesn't provide comprehensive security monitoring.
+    </details>
+
+36. Data Protection and Compliance - A company needs to ensure that their sensitive data stored in AWS is properly classified, protected, and compliant with regulatory requirements. Which combination of AWS services should they implement?
+    - A) Use Amazon Macie to classify sensitive data and then apply server-side encryption with Amazon's managed keys (SSE-S3) for data at rest
+    - B) Enable AWS Config to track configuration changes and AWS CloudTrail for API activity logging
+    - C) Use AWS KMS for encryption key management, enable encryption at rest using AWS KMS for S3 buckets, and use SSL for data in transit
+    - D) Implement AWS Backup for data protection and AWS Systems Manager for configuration management
+
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary> Correct Answer(s): C
+		<br><br>
+		Explanation: Based on the transcript, the highest level of security would be achieved by enabling encryption at rest using AWS KMS for S3 buckets, which provides a centralized and manageable approach to encrypting sensitive data. Additionally, SSL should be used for encrypting data in transit, ensuring end-to-end protection during transmission. This combination follows security best practices for both compliance and protection of sensitive data. Option A, while useful for discovering and classifying sensitive data, doesn't provide the same level of encryption management as KMS. Option B focuses on tracking changes but doesn't address data protection directly. Option D addresses backup and configuration but lacks the encryption capabilities needed for sensitive data protection.
+    </details>
+
+37. Incident Response Automation - A security team needs to implement automated responses to security incidents detected in their AWS environment. When Guard detects an anomaly suggesting a compromised EC2 instance, what automated response should they implement?
+    - A) Set up AWS Lambda to automatically isolate the compromised EC2 instance by updating its Security Group rules to block all incoming traffic
+    - B) Use AWS Config to record configuration changes and trigger an SNS notification to alert the security team
+    - C) Configure AWS Security Hub to integrate with AWS CloudTrail to directly block the instance and notify the team
+    - D) Set up Guard to invoke an AWS Lambda function that automatically reboots the EC2 instance to mitigate the risk
+
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary> Correct Answer(s): A
+		<br><br>
+		Explanation: Based on the transcript, the best approach is to configure AWS Lambda to isolate the compromised EC2 instance automatically by adjusting its Security Group rules to block incoming traffic. This step immediately halts further communication with the instance, mitigating potential damage. AWS Lambda can be triggered by Guard findings, allowing for an automated and timely response. Option B tracks changes but doesn't take direct action. Option C isn't designed to block instances directly. Option D (rebooting) is not an appropriate response to a compromised EC2 instance as it doesn't remove the threat.
+    </details>
+
+38. Audit and Compliance Documentation - A company needs to demonstrate compliance with various regulatory standards and provide evidence of security controls during audits. Which AWS service should they primarily use to access compliance reports and documentation?
+    - A) AWS CloudTrail for API activity logs
+    - B) AWS Config for configuration history
+    - C) AWS Artifact to download compliance reports and documentation
+    - D) AWS Security Hub for security findings
+
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary> Correct Answer(s): C
+		<br><br>
+		Explanation: Based on the transcript, AWS Artifact is the best service for accessing compliance reports and documentation. It provides on-demand access to AWS security and compliance reports, which are essential for audits and proving regulatory compliance. This service allows organizations to download compliance reports and documentation needed for demonstrating adherence to various regulatory standards. Option A provides activity logs but not compliance documentation. Option B tracks configuration changes but doesn't provide compliance reports. Option D aggregates security findings but doesn't provide the specific compliance documentation needed for audits.
+	</details>
+
+39. Network Security and Access Control - A company needs to implement secure connectivity between their VPCs across multiple regions while ensuring no unauthorized external access. Which solution provides the most secure and efficient architecture?
+    - A) Use VPC peering to connect resources across regions and restrict access using Network ACLs
+    - B) Configure a private subnet with no direct internet access and allow internal communications via Transit Gateway between regions
+    - C) Set up an internet gateway in the VPC and configure security groups to allow only internal communication
+    - D) Create a VPN connection between regions and only allow traffic through the VPN
+
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary> Correct Answer(s): B
+		<br><br>
+		Explanation: Based on the transcript, to ensure resources are secure while allowing internal communication between regions, the best approach is to configure a private subnet with no direct access to the internet and use AWS Transit Gateway. Transit Gateway allows for secure, scalable, and centralized management of VPC connectivity between regions, ensuring internal communication is allowed without exposing resources to external threats. Option A is not ideal for cross-region connectivity. Option C exposes resources to potential external threats. Option D is more complex and less scalable compared to Transit Gateway.
+    </details>
+
+40. Data Encryption Management - A company needs to store highly sensitive financial data in S3 and ensure that only authorized users can decrypt and access the data. Which solution should they implement?
+    - A) Use S3 bucket encryption with Amazon managed keys (SSE-S3) and configure IAM policies to restrict access to the S3 bucket
+    - B) Enable S3 bucket encryption with AWS KMS and ensure that only authorized IAM roles have access to the KMS key for decryption
+    - C) Use client-side encryption with a custom encryption key and upload encrypted files directly to S3
+    - D) Set up server-side encryption with AWS KMS but store the encryption keys in a separate AWS account for added security
+
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary> Correct Answer(s): B
+		<br><br>
+		Explanation: Based on the transcript, for highly sensitive data, the best solution is to enable S3 bucket encryption using AWS KMS. This approach allows for more granular control over encryption keys and ensures that only authorized users with specific IAM roles can decrypt and access the data. KMS also integrates with AWS compliance tools and ensures that encryption practices are auditable. Option A offers basic encryption but lacks the same level of control as KMS. Option C complicates compliance and audit processes. Option D is more complex and typically unnecessary unless extra layers of security are required.
+    </details>
+
+41. Security Monitoring Integration - A company uses AWS Guard, AWS Security Hub, and AWS Config to monitor security events. They need to ensure comprehensive monitoring and automated response to security findings. Which integration approach should they implement?
+    - A) Configure AWS Config to track changes and use CloudWatch for alerts
+    - B) Use AWS Security Hub to aggregate findings and Guard to detect threats, then trigger Lambda functions for automated responses
+    - C) Enable CloudTrail for API monitoring and use Systems Manager for remediation
+    - D) Implement VPC Flow Logs and use CloudWatch for monitoring network traffic
+
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary> Correct Answer(s): B
+		<br><br>
+		Explanation: Based on the transcript, the most effective approach is to use AWS Security Hub to aggregate security findings from multiple sources, Guard for threat detection, and Lambda functions for automated responses to security incidents. This combination provides comprehensive security monitoring and automated remediation capabilities. Guard continuously monitors for threats, Security Hub centralizes findings, and Lambda enables automated responses to security events. Option A lacks threat detection capabilities. Option C doesn't provide the same level of security finding aggregation. Option D focuses only on network monitoring.
+     </details>
+
+42. Multi-Account Security Management - A company operates multiple AWS accounts and needs to ensure consistent security controls and compliance across all accounts. Which combination of services should they implement?
+    - A) Use AWS Organizations for account management and implement separate security controls in each account
+    - B) Configure AWS Config with conformance packs to monitor resource compliance and generate detailed reports for each account
+    - C) Enable CloudTrail in each account and manually review logs for security issues
+    - D) Use IAM roles for cross-account access and implement Security Hub in each account separately
+
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary> Correct Answer(s): B
+		<br><br>
+		Explanation: Based on the transcript, AWS Config with conformance packs is the most effective solution for ensuring continuous compliance across multiple AWS accounts. It helps monitor the configuration of resources and ensures they align with security best practices and compliance requirements. Conformance packs are preconfigured collections of AWS Config rules designed to monitor specific compliance frameworks. This enables automated compliance checks and detailed reporting across all accounts. Option A lacks centralized control. Option C requires manual effort and doesn't provide automated compliance monitoring. Option D doesn't address the need for consistent security controls across accounts.
+    </details>
+
+43. Logging and Monitoring Strategy - A company needs to implement a comprehensive logging solution that retains logs for seven years to comply with industry regulations. Which solution provides the most secure and compliant approach for log retention?
+    - A) Store logs in AWS S3 and implement VPC Flow Logs to capture network traffic data 
+    - B) Implement AWS Backup to create daily backups of log files and set up Amazon Glacier for long-term storage 
+    - C) Use AWS CloudTrail to track API logs and store them in AWS RDS for better control over retention policies 
+    - D) Use Amazon S3 with S3 Object Lock to retain logs immutably for the required retention period and configure CloudTrail to log all API activities
+
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary> Correct Answer(s): D
+		<br><br>
+		Explanation: Based on the transcript, Amazon S3 with S3 Object Lock is the ideal solution for ensuring immutability and retention compliance. Object Lock prevents objects from being deleted or overwritten for a specified retention period, which is required for regulatory compliance. Additionally, CloudTrail can log all API activities, providing a detailed audit trail. This combination ensures both immutable storage and comprehensive logging of activities.
+    </details>
+
+44. Security Hub Integration - A company uses multiple AWS security services and needs to centralize security findings and automate responses. Which combination of services provides the most effective solution?
+    - A) Use AWS Config for tracking changes and CloudWatch for monitoring alerts
+    - B) Enable CloudTrail for logging and Systems Manager for automation
+    - C) Implement AWS Security Hub to aggregate findings, use Guard for threat detection, and configure Lambda for automated responses
+    - D) Set up CloudWatch Logs and use SNS for notifications
+
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary> Correct Answer(s): C
+		<br><br>
+		Explanation: Based on the transcript, AWS Security Hub aggregates findings from multiple AWS security services, while Guard provides threat detection, and Lambda enables automated responses to security findings. This combination ensures centralized security management and automated incident response capabilities.
+    </details>
+	
+45. Cross-Region Resource Protection - A company needs to protect resources deployed across multiple regions while maintaining efficient communication between services. Which architecture provides the most secure solution?
+    - A) Use VPC peering between regions and implement security groups 
+    - B) Configure Transit Gateway for inter-region communication with private subnets and no direct internet access 
+    - C) Set up Direct Connect between regions and use Network ACLs 
+    - D) Implement VPN connections between all regions
+
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary> Correct Answer(s): B
+		<br><br>
+		Explanation: Based on the transcript, configuring Transit Gateway with private subnets and no direct internet access provides the most secure and efficient solution for cross-region communication. This setup ensures secure communication between regions while maintaining isolation from the internet and provides centralized management of connectivity.
+	</details>
+
+46. Compliance Monitoring and Reporting - A security officer needs to demonstrate continuous compliance with various regulatory requirements across multiple AWS accounts. Which solution should they implement?
+    - A) Use CloudTrail for logging and CloudWatch for monitoring 
+    - B) Enable AWS Config with conformance packs to monitor resource compliance and generate detailed reports for each region and account 
+    - C) Implement Security Hub and Guard for security monitoring 
+    - D) Set up IAM Access Analyzer and CloudWatch Logs
+
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary> Correct Answer(s): B
+		<br><br>
+		Explanation: Based on the transcript, AWS Config with conformance packs is the most effective solution for ensuring continuous compliance across multiple AWS accounts and regions. It helps monitor resource configurations and ensures they align with security best practices and compliance requirements, while providing detailed reporting capabilities.
+	</details>
+
+47. Encryption Key Management - A financial institution needs to implement centralized encryption key management for their AWS resources while maintaining strict audit controls. Which combination of services provides the most secure and manageable solution?
+    - A) Use AWS Secrets Manager to store encryption keys and CloudWatch for monitoring 
+    - B) Implement AWS KMS for key management, enable CloudTrail for key usage auditing, and configure S3 server-side encryption 
+    - C) Configure AWS Certificate Manager for key storage and IAM for access control 
+    - D) Use AWS Systems Manager Parameter Store for key management and CloudWatch for monitoring
+
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary> Correct Answer(s): B 
+		<br><br>
+		Explanation: Based on the transcript, AWS KMS provides centralized control over encryption keys and integrates with CloudTrail for comprehensive key usage auditing. This combination ensures secure key management and detailed logging of all key-related activities, while S3 server-side encryption provides data protection at rest.
+	</details>
+
+48. Web Application Security - A company is deploying a global web application and needs to protect it against various threats while ensuring optimal performance. Which security architecture should they implement?
+    - A) Use Security Groups and Network ACLs for traffic control 
+    - B) Implement AWS Shield, WAF, and CloudFront for comprehensive protection 
+    - C) Configure VPC endpoints and Direct Connect for secure access 
+    - D) Enable Guard and Security Hub for threat detection
+
+    <details markdown=1><summary markdown='span'><b>Answer</b></summary> Correct Answer(s): B 
+		<br><br>
+		Explanation: Based on the transcript, the combination of AWS Shield for DDoS protection, WAF for filtering malicious web traffic, and CloudFront for content delivery provides comprehensive protection while ensuring optimal performance. This solution protects against various threats including DDoS attacks and common web vulnerabilities.
+	</details>
+
+49. Security Incident Response - A company needs to implement automated responses to security incidents detected by Guard. What is the most effective approach for immediate threat mitigation?
+    - A) Configure Lambda to automatically isolate compromised instances by updating security group rules 
+    - B) Use CloudWatch to monitor and alert on security events 
+    - C) Implement Systems Manager for manual remediation 
+    - D) Enable Config rules for automated responses
+
+	<details markdown=1><summary markdown='span'><b>Answer</b></summary> Correct Answer(s): A 
+		<br><br>
+		Explanation: Based on the transcript, setting up AWS Lambda to automatically isolate compromised instances by updating security group rules provides the most immediate and effective response to security incidents. This approach immediately halts potential damage by blocking all incoming traffic to the compromised instance. 
+	</details>
+
+50. Compliance Documentation - An organization needs to provide evidence of compliance with multiple regulatory standards during audits. Which AWS service should they primarily use?
+    - A) CloudTrail for activity logging 
+    - B) AWS Artifact for downloading compliance reports and documentation 
+    - C) Config for configuration tracking 
+    - D) Security Hub for compliance monitoring
+
+	<details markdown=1><summary markdown='span'><b>Answer</b></summary> Correct Answer(s): B 
+		<br><br>
+		Explanation: Based on the transcript, AWS Artifact is the best service for accessing and downloading compliance reports and documentation. It provides on-demand access to AWS security and compliance reports, which are essential for demonstrating regulatory compliance during audits.
+	</details>
