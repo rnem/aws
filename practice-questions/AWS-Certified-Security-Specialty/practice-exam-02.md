@@ -1,3 +1,11 @@
+# Practice Exam 2
+
+Click on the **Answer** button for the correct answer and its explanation.
+
+If this practice exam has been helpful to you please share it with others and react to this below.
+
+---
+
 1. A business requires a forensic logging solution for hundreds of Docker-based apps running on Amazon EC2. The solution must analyze logs in real time, provide message replay, and persist logs. Which Amazon Web Offerings (IAM) services should be employed to satisfy these requirements? (Select TWO)
 
     - A) Amazon Athena.
