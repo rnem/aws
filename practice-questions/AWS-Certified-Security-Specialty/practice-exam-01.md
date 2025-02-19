@@ -13,6 +13,6 @@ If this practice exam has been helpful to you please share it with others and re
     - D) Setup Guard to invoke AWS Lambda function that automatically reboots the EC2 instance to mitigate the risk
 
 <details markdown=1><summary markdown='span'><b>Answer</b></summary> Correct Answer(s): A
-<br>
+<br><br>
 Explanation: The best approach for Mr Peterson is to configure AWS Lambda to isolate the compromised EC2 instance automatically by adjusting its Security Group rules to block incoming traffic. This step immediately halts further communication with the instance, mitigating potential damage. AWS Lambda can be triggered by Guard findings, allowing for an automated and timely response. AWS Guard detects suspicious activity and can invoke Lambda functions in response to specific findings, allowing automatic isolation of the affected instance. AWS config tracks configuration changes but it doesn't take direct action like isolating an instance. AWS security hub consolidates security findings but is not designed to block instances directly without additional tools like Lambda. Rebooting an instance is not an appropriate response to a compromised EC2 instance as rebooting does not necessarily remove the threat.
 </details>
