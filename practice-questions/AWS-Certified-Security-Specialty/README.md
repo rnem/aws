@@ -14,6 +14,12 @@ If you found this guide beneficial, kindly share it with others and leave a reac
 ### Exam List
 
 - [Practice Exam - 1](./practice-exam-01.md)
+- [Practice Exam - 2](./practice-exam-02.md)
+- [Practice Exam - 3](./practice-exam-03.md)
+- [Practice Exam - 4](./practice-exam-04.md)
+- [Practice Exam - 5](./practice-exam-05.md)
+- [Practice Exam - 6](./practice-exam-06.md)
+- [Practice Exam - 7](./practice-exam-07.md)
 
 ## Contact
 
