@@ -10,9 +10,17 @@
 
 ## Table of contents
 
+- [Free AWS Certification Practice Exams](/practice-questions)
 - [Projects](#projects)
 - [Cloudformation](#cloudformation)
-- [Free AWS Certification Practice Exams](/practice-questions)
+
+<br />
+
+### Free AWS Certification Practice Exams
+
+I have released some practice exams with answers to help individuals study, prepare, and test their knowledge for different AWS Certifications before taking the final tests.
+
+:warning: These practice exams **are NOT** Amazon Web Services Exam Dumps :warning:
 
 ### Projects
 
@@ -21,6 +29,8 @@ This compilation showcases a diverse array of projects I have undertaken, with s
 ### CloudFormation
 
 A collection of some of my CloudFormation templates
+
+<br />
 
 ## Creator
 
