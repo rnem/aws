@@ -6,18 +6,18 @@ If this practice exam has been helpful to you please share it with others and re
 
 ---
 
-Question #1. A company has an AWS Lambda function that creates image thumbnails from larger images. The Lambda function needs read and write access to an Amazon S3 bucket in the same AWS account.
+1. A company has an AWS Lambda function that creates image thumbnails from larger images. The Lambda function needs read and write access to an Amazon S3 bucket in the same AWS account.
 Which solutions will provide the Lambda function this access? (Choose two.)
 
-    - A. Create an IAM user that has only programmatic access. Create a new access key pair. Add environmental variables to the Lambda function with the access key ID and secret access key. Modify the Lambda function to use the environmental variables at run time during communication with Amazon S3.
-    - B. Generate an Amazon EC2 key pair. Store the private key in AWS Secrets Manager. Modify the Lambda function to retrieve the private key from Secrets Manager and to use the private key during communication with Amazon S3.
-    - C. Create an IAM role for the Lambda function. Attach an IAM policy that allows access to the S3 bucket.
-    - D. Create an IAM role for the Lambda function. Attach a bucket policy to the S3 bucket to allow access. Specify the function's IAM role as the principal.
-    - E. Create a security group. Attach the security group to the Lambda function. Attach a bucket policy that allows access to the S3 bucket through the security group ID.
+    - A. Create an IAM user that has only programmatic access. Create a new access key pair. Add environmental variables to the Lambda function with the access key ID and secret access key. Modify the Lambda function to use the environmental variables at run time during communication with Amazon S3
+    - B. Generate an Amazon EC2 key pair. Store the private key in AWS Secrets Manager. Modify the Lambda function to retrieve the private key from Secrets Manager and to use the private key during communication with Amazon S3
+    - C. Create an IAM role for the Lambda function. Attach an IAM policy that allows access to the S3 bucket
+    - D. Create an IAM role for the Lambda function. Attach a bucket policy to the S3 bucket to allow access. Specify the function's IAM role as the principal
+    - E. Create a security group. Attach the security group to the Lambda function. Attach a bucket policy that allows access to the S3 bucket through the security group ID
 
 <details markdown=1><summary markdown='span'><b>Answer</b></summary> Correct Answer(s): C, D</details>
 
-Question #2. A security engineer is configuring a new website that is named example.com. The security engineer wants to secure communications with the website by requiring users to connect to example.com through HTTPS.
+2. A security engineer is configuring a new website that is named example.com. The security engineer wants to secure communications with the website by requiring users to connect to example.com through HTTPS.
 Which of the following is a valid option for storing SSL/TLS certificates?
 
     - A. Custom SSL certificate that is stored in AWS Key Management Service (AWS KMS)
@@ -27,7 +27,7 @@ Which of the following is a valid option for storing SSL/TLS certificates?
 
 <details markdown=1><summary markdown='span'><b>Answer</b></summary> Correct Answer(s): C</details>
 
-Question #3. A security engineer needs to develop a process to investigate and respond to potential security events on a company's Amazon EC2 instances. All the EC2 instances are backed by Amazon Elastic Block Store (Amazon EBS). The company uses AWS Systems Manager to manage all the EC2 instances and has installed Systems Manager Agent (SSM Agent) on all the EC2 instances.
+3. A security engineer needs to develop a process to investigate and respond to potential security events on a company's Amazon EC2 instances. All the EC2 instances are backed by Amazon Elastic Block Store (Amazon EBS). The company uses AWS Systems Manager to manage all the EC2 instances and has installed Systems Manager Agent (SSM Agent) on all the EC2 instances.
 The process that the security engineer is developing must comply with AWS security best practices and must meet the following requirements:
 A compromised EC2 instance's volatile memory and non-volatile memory must be preserved for forensic purposes.
 A compromised EC2 instance's metadata must be updated with corresponding incident ticket information.
@@ -44,7 +44,7 @@ Which combination of steps should the security engineer take to meet these requi
 
 <details markdown=1><summary markdown='span'><b>Answer</b></summary> Correct Answer(s): A, C, E</details>
 
-Question #4. A company has an organization in AWS Organizations. The company wants to use AWS CloudFormation StackSets in the organization to deploy various AWS design patterns into environments. These patterns consist of Amazon EC2 instances, Elastic Load Balancing (ELB) load balancers, Amazon RDS databases, and Amazon Elastic Kubernetes Service (Amazon EKS) clusters or Amazon Elastic Container Service (Amazon ECS) clusters.
+4. A company has an organization in AWS Organizations. The company wants to use AWS CloudFormation StackSets in the organization to deploy various AWS design patterns into environments. These patterns consist of Amazon EC2 instances, Elastic Load Balancing (ELB) load balancers, Amazon RDS databases, and Amazon Elastic Kubernetes Service (Amazon EKS) clusters or Amazon Elastic Container Service (Amazon ECS) clusters.
 Currently, the company’s developers can create their own CloudFormation stacks to increase the overall speed of delivery. A centralized CI/CD pipeline in a shared services AWS account deploys each CloudFormation stack.
 The company's security team has already provided requirements for each service in accordance with internal standards. If there are any resources that do not comply with the internal standards, the security team must receive notification to take appropriate action. The security team must implement a notification solution that gives developers the ability to maintain the same overall delivery speed that they currently have.
 Which solution will meet these requirements in the MOST operationally efficient way?
@@ -56,7 +56,7 @@ Which solution will meet these requirements in the MOST operationally efficient 
 
 <details markdown=1><summary markdown='span'><b>Answer</b></summary> Correct Answer(s): B</details>
 
-Question #5. A company is migrating one of its legacy systems from an on-premises data center to AWS. The application server will run on AWS, but the database must remain in the on-premises data center for compliance reasons. The database is sensitive to network latency. Additionally, the data that travels between the on-premises data center and AWS must have IPsec encryption.
+5. A company is migrating one of its legacy systems from an on-premises data center to AWS. The application server will run on AWS, but the database must remain in the on-premises data center for compliance reasons. The database is sensitive to network latency. Additionally, the data that travels between the on-premises data center and AWS must have IPsec encryption.
 Which combination of AWS solutions will meet these requirements? (Choose two.)
 
     - A. AWS Site-to-Site VPN
