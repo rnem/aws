@@ -6,7 +6,7 @@ If this practice exam has been helpful to you please share it with others and re
 
 ---
 
-1. Incident response in security automation - Mr Peterson is the AWS security architect for his organization. The team uses AWS Guard, AWS Security Hub and AWS config to monitor security events. One day Guard detects an anomaly suggesting that an EC2 instance might have been compromised. Mr Peterson needs to trigger an automated incident response action. Which of the following steps should Mr Peterson take to ensure that the response is timely accurate and effective?
+1. Incident response in security automation - Mr Peterson is the AWS security architect for his organization. The team uses AWS Guard Duty, AWS Security Hub and AWS config to monitor security events. One day Guard detects an anomaly suggesting that an EC2 instance might have been compromised. Mr Peterson needs to trigger an automated incident response action. Which of the following steps should Mr Peterson take to ensure that the response is timely accurate and effective?
     - A) Setup AWS Lambda to automatically isolate the compromised EC2 instance by updating its Security Group rules to block all incoming traffic
     - B) Use AWS config to record configuration changes and trigger an SNS notification to alert the security team
     - C) Configure AWS security Hub to integrate with AWS cloudtrail to directly block the instance and notify the team
