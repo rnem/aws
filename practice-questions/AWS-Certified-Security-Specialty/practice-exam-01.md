@@ -6,15 +6,15 @@ If this practice exam has been helpful to you please share it with others and re
 
 ---
 
-1. Incident response in security automation - Mr Peterson is the AWS security architect for his organization. The team uses AWS Guard Duty, AWS Security Hub and AWS config to monitor security events. One day Guard detects an anomaly suggesting that an EC2 instance might have been compromised. Mr Peterson needs to trigger an automated incident response action. Which of the following steps should Mr Peterson take to ensure that the response is timely accurate and effective?
+1. Incident response in security automation - Mr Peterson is the AWS security architect for his organization. The team uses AWS GuardDuty, AWS Security Hub and AWS config to monitor security events. One day GuardDuty detects an anomaly suggesting that an EC2 instance might have been compromised. Mr Peterson needs to trigger an automated incident response action. Which of the following steps should Mr Peterson take to ensure that the response is timely accurate and effective?
     - A) Setup AWS Lambda to automatically isolate the compromised EC2 instance by updating its Security Group rules to block all incoming traffic
     - B) Use AWS config to record configuration changes and trigger an SNS notification to alert the security team
     - C) Configure AWS security Hub to integrate with AWS cloudtrail to directly block the instance and notify the team
-    - D) Setup Guard to invoke AWS Lambda function that automatically reboots the EC2 instance to mitigate the risk
+    - D) Setup GuardDuty to invoke AWS Lambda function that automatically reboots the EC2 instance to mitigate the risk
 
     <details markdown=1><summary markdown='span'><b>Answer</b></summary> Correct Answer(s): A
 		<br><br>
-		Explanation: The best approach for Mr Peterson is to configure AWS Lambda to isolate the compromised EC2 instance automatically by adjusting its Security Group rules to block incoming traffic. This step immediately halts further communication with the instance, mitigating potential damage. AWS Lambda can be triggered by Guard findings, allowing for an automated and timely response. AWS Guard detects suspicious activity and can invoke Lambda functions in response to specific findings, allowing automatic isolation of the affected instance. AWS config tracks configuration changes but it doesn't take direct action like isolating an instance. AWS security hub consolidates security findings but is not designed to block instances directly without additional tools like Lambda. Rebooting an instance is not an appropriate response to a compromised EC2 instance as rebooting does not necessarily remove the threat.
+		Explanation: The best approach for Mr Peterson is to configure AWS Lambda to isolate the compromised EC2 instance automatically by adjusting its Security Group rules to block incoming traffic. This step immediately halts further communication with the instance, mitigating potential damage. AWS Lambda can be triggered by GuardDuty findings, allowing for an automated and timely response. AWS GuardDuty detects suspicious activity and can invoke Lambda functions in response to specific findings, allowing automatic isolation of the affected instance. AWS config tracks configuration changes but it doesn't take direct action like isolating an instance. AWS security hub consolidates security findings but is not designed to block instances directly without additional tools like Lambda. Rebooting an instance is not an appropriate response to a compromised EC2 instance as rebooting does not necessarily remove the threat.
     </details>
 
 2. Identity and Access Management (IAM) - Your company is setting up a new AWS account for its project teams. The project manager Ms Taylor is concerned about the best way to manage access to resources across different environments (development, staging, production) while maintaining security and scalability. What IAM solution should Ms Taylor implement to streamline authentication and ensure that users only have the necessary permissions for each environment?
@@ -40,36 +40,36 @@ If this practice exam has been helpful to you please share it with others and re
     </details>
 
 4. Logging and Monitoring - Mr Lopez is managing AWS infrastructure with a complex setup of EC2 instances, Lambda functions and RDS databases. He needs to ensure that all API calls made to his AWS environment are captured and analyzed for potential security risks. Given the scope of his infrastructure, what would be the most efficient and effective way to implement centralized logging and monitoring?
-    - A) Use Amazon Guard to monitor API calls for security events and integrate it with AWS security hub for automatic threat detection
+    - A) Use Amazon GuardDuty to monitor API calls for security events and integrate it with AWS security hub for automatic threat detection
     - B) Enable AWS CloudTrail and configure it to log all API calls and events, storing the logs in S3 bucket for analysis
     - C) Configure CloudWatch logs to capture all API calls from EC2 instances, Lambda and RDS databases and set up CloudWatch alarms for abnormal activity
     - D) Enable AWS config to track changes in the configuration of AWS resources and generate daily reports of activity
 
     <details markdown=1><summary markdown='span'><b>Answer</b></summary> Correct Answer(s): B
 		<br><br>
-		Explanation: The most efficient approach is to enable AWS CloudTrail to log all API calls and events in the AWS environment, storing the logs in an S3 bucket for further analysis. CloudTrail is a fundamental service for logging activity, providing comprehensive coverage of all AWS services. By storing logs in an S3 bucket, Mr Lopez can easily perform log analysis using tools like Amazon Athena or integrate with third-party tools for security analytics. Guard focuses more on threat detection rather than logging API activity. While useful, it doesn't serve as a comprehensive logging solution. CloudWatch is more focused on real-time monitoring but doesn't provide the full auditing capabilities of CloudTrail for API calls. AWS Config provides configuration tracking rather than detailed API call logs, making it insufficient for this specific need.
+		Explanation: The most efficient approach is to enable AWS CloudTrail to log all API calls and events in the AWS environment, storing the logs in an S3 bucket for further analysis. CloudTrail is a fundamental service for logging activity, providing comprehensive coverage of all AWS services. By storing logs in an S3 bucket, Mr Lopez can easily perform log analysis using tools like Amazon Athena or integrate with third-party tools for security analytics. GuardDuty focuses more on threat detection rather than logging API activity. While useful, it doesn't serve as a comprehensive logging solution. CloudWatch is more focused on real-time monitoring but doesn't provide the full auditing capabilities of CloudTrail for API calls. AWS Config provides configuration tracking rather than detailed API call logs, making it insufficient for this specific need.
     </details>
 
 5. Compliance and Risk Management - Miss Newman is preparing for a security audit of her company's AWS environment. The audit requires her to demonstrate that all security controls are properly implemented and that the organization is complying with industry regulations such as GDPR and HIPAA. Which AWS tool or combination of tools should Miss Newman use to ensure that she can provide evidence of compliance and control implementation?
     - A) Use AWS Artifact to download compliance reports and AWS Config to show configuration history and changes for critical resources
     - B) Use AWS Security Hub to generate a compliance dashboard that summarizes security posture and then use CloudTrail to show API call logs
-    - C) Enable AWS Macie to classify sensitive data and use Guard to track security threats related to compliance data
+    - C) Enable AWS Macie to classify sensitive data and use GuardDuty to track security threats related to compliance data
     - D) Implement AWS Trusted Adviser to check for best practice violations and use IAM Access Analyzer to review user permissions
 
     <details markdown=1><summary markdown='span'><b>Answer</b></summary> Correct Answer(s): A
 		<br><br>
-		Explanation: AWS Artifact provides on-demand access to compliance reports which are essential for audits and proving regulatory compliance. In addition, AWS Config can be used to show the configuration history and changes for critical resources, helping to demonstrate that security controls have been consistently applied across the environment. This combination provides comprehensive audit trails and compliance evidence. Security Hub is helpful for ongoing security monitoring but doesn't provide the specific compliance reports needed for auditing purposes. Macie and Guard focus on security threat detection which is important but doesn't directly address compliance reporting. Trusted Advisor helps with reviewing AWS best practices and IAM permissions but doesn't provide the comprehensive compliance evidence required for regulatory audits.
+		Explanation: AWS Artifact provides on-demand access to compliance reports which are essential for audits and proving regulatory compliance. In addition, AWS Config can be used to show the configuration history and changes for critical resources, helping to demonstrate that security controls have been consistently applied across the environment. This combination provides comprehensive audit trails and compliance evidence. Security Hub is helpful for ongoing security monitoring but doesn't provide the specific compliance reports needed for auditing purposes. Macie and GuardDuty focus on security threat detection which is important but doesn't directly address compliance reporting. Trusted Advisor helps with reviewing AWS best practices and IAM permissions but doesn't provide the comprehensive compliance evidence required for regulatory audits.
     </details>
 
 6. Security Auditing and Monitoring - Mr Jiang is in charge of security auditing for a large-scale application running in multiple AWS accounts. He wants to ensure that all IAM policies, roles, and user activities are regularly reviewed for compliance and security risks. What would be the most efficient method for auditing IAM configurations across these multiple accounts ensuring a continuous review process?
-    - A) Setup AWS Guard across all accounts to monitor for suspicious activity related to IAM users and roles
+    - A) Setup AWS GuardDuty across all accounts to monitor for suspicious activity related to IAM users and roles
     - B) Use AWS Config to continuously monitor IAM changes and integrate it with AWS CloudTrail for detailed audit logs of user activity
     - C) Use AWS Security Hub to aggregate findings related to IAM security across accounts and generate periodic compliance reports
     - D) Implement Amazon Macie to track sensitive IAM roles and configurations and use IAM Access Analyzer to identify misconfigured permissions
 
     <details markdown=1><summary markdown='span'><b>Answer</b></summary> Correct Answer(s): B
 		<br><br>
-		Explanation: The most efficient method for auditing IAM configurations across multiple accounts is using AWS Config to monitor IAM changes while integrating it with AWS CloudTrail to provide detailed audit logs of user activity. This allows for continuous monitoring of changes in IAM configurations and detailed activity logs, ensuring that the system is regularly reviewed for security risks and compliance. Guard is focused more on detecting suspicious activities and threats but does not provide continuous auditing of IAM roles or configurations. Security Hub aggregates findings but doesn't actively monitor or continuously audit IAM policies and configurations. Macie focuses on tracking sensitive data and permissions, but AWS Config is more suited for comprehensive continuous auditing of IAM configurations across multiple accounts.
+		Explanation: The most efficient method for auditing IAM configurations across multiple accounts is using AWS Config to monitor IAM changes while integrating it with AWS CloudTrail to provide detailed audit logs of user activity. This allows for continuous monitoring of changes in IAM configurations and detailed activity logs, ensuring that the system is regularly reviewed for security risks and compliance. GuardDuty is focused more on detecting suspicious activities and threats but does not provide continuous auditing of IAM roles or configurations. Security Hub aggregates findings but doesn't actively monitor or continuously audit IAM policies and configurations. Macie focuses on tracking sensitive data and permissions, but AWS Config is more suited for comprehensive continuous auditing of IAM configurations across multiple accounts.
     </details>
 
 7. Infrastructure Security - Mr Davis is setting up a secure VPC architecture for an application that needs to handle sensitive customer data. The application must be deployed in a multi-region environment ensuring that no unauthorized external access can occur. What should Mr Davis do to ensure that all resources within the VPC are properly secured while still allowing legitimate internal communications?
@@ -96,24 +96,24 @@ If this practice exam has been helpful to you please share it with others and re
 
 9. Compliance and Risk Management - Mr Scott is the security officer for a company that is operating in a highly regulated industry. The company has multiple AWS accounts across several regions. Mr Scott needs to ensure that the company's AWS environment complies with various regulatory requirements such as PCI DSS, GDPR, and HIPAA. What is the best approach Mr Scott should take to continuously monitor and enforce security controls across all AWS accounts and regions?
     - A) Use AWS Config with conformance packs to monitor resource compliance and generate detailed reports for each region and account
-    - B) Enable AWS Security Hub to aggregate findings and use AWS Guard to monitor for compliance-related threats in each account
+    - B) Enable AWS Security Hub to aggregate findings and use AWS GuardDuty to monitor for compliance-related threats in each account
     - C) Configure AWS CloudTrail in each account to log and monitor API activities and then manually review the logs for compliance violations
     - D) Use Amazon Macie to detect sensitive data in each account and apply AWS Systems Manager for continuous monitoring
 
     <details markdown=1><summary markdown='span'><b>Answer</b></summary> Correct Answer(s): A
 		<br><br>
-		Explanation: The most effective and scalable approach for ensuring continuous compliance across multiple AWS accounts and regions is to use AWS Config with conformance packs. AWS Config helps monitor the configuration of resources and ensures they are aligned with security best practices and compliance requirements. Conformance packs are preconfigured collections of AWS Config rules designed to monitor specific compliance frameworks (PCI DSS, GDPR, HIPAA). This enables Mr Scott to automate compliance checks and generate detailed reports, which is essential for audit purposes. Security Hub and Guard are excellent tools for security monitoring but do not directly enforce or track compliance configurations across resources. CloudTrail focuses on logging and auditing API calls but lacks the continuous monitoring and enforcement capabilities of AWS Config for compliance. Macie and Systems Manager are important for data protection and management but do not provide the comprehensive compliance tracking and configuration monitoring that AWS Config offers.
+		Explanation: The most effective and scalable approach for ensuring continuous compliance across multiple AWS accounts and regions is to use AWS Config with conformance packs. AWS Config helps monitor the configuration of resources and ensures they are aligned with security best practices and compliance requirements. Conformance packs are preconfigured collections of AWS Config rules designed to monitor specific compliance frameworks (PCI DSS, GDPR, HIPAA). This enables Mr Scott to automate compliance checks and generate detailed reports, which is essential for audit purposes. Security Hub and GuardDuty are excellent tools for security monitoring but do not directly enforce or track compliance configurations across resources. CloudTrail focuses on logging and auditing API calls but lacks the continuous monitoring and enforcement capabilities of AWS Config for compliance. Macie and Systems Manager are important for data protection and management but do not provide the comprehensive compliance tracking and configuration monitoring that AWS Config offers.
     </details>
 
 10. Incident Response and Security Automation - Ms Jensen is managing a secure AWS environment and needs to set up an automated response system for detected security incidents. When an abnormal event such as an unauthorized API call or a potential DoS attack is detected, she wants to immediately contain the threat by executing predefined security actions. Which combination of AWS services will provide the best solution for automating incident response in this environment?
     - A) Use AWS Config to automatically remediate security misconfigurations and integrate with AWS Lambda for automated execution of remediation actions
-    - B) Enable AWS Guard to detect threats and set up automated actions using AWS Systems Manager automation to remediate incidents
+    - B) Enable AWS GuardDuty to detect threats and set up automated actions using AWS Systems Manager automation to remediate incidents
     - C) Use AWS Security Hub to aggregate findings and trigger security responses through AWS Step Functions for incident management workflows
     - D) Use Amazon CloudWatch to monitor security events and AWS Elastic Beanstalk to automatically scale resources in response to incidents
 
     <details markdown=1><summary markdown='span'><b>Answer</b></summary> Correct Answer(s): B
 		<br><br>
-		Explanation: The most effective solution for automated incident response involves using AWS Guard for threat detection and integrating it with AWS Systems Manager automation to trigger automated remediation actions. Guard continuously monitors AWS accounts for potential threats, and Systems Manager automation allows you to define and execute workflows to respond to incidents, such as terminating compromised EC2 instances or blocking IP addresses. This combination enables rapid and scalable incident response. AWS Config and Lambda is suitable for configuration management but is less ideal for automated incident response related to threats detected in real time. Security Hub and Step Functions is more focused on aggregating findings and managing incident workflows but is not as effective for immediate automated actions during security incidents. CloudWatch and Elastic Beanstalk focuses on resource scaling and monitoring but is not designed for incident response or threat remediation.
+		Explanation: The most effective solution for automated incident response involves using AWS GuardDuty for threat detection and integrating it with AWS Systems Manager automation to trigger automated remediation actions. GuardDuty continuously monitors AWS accounts for potential threats, and Systems Manager automation allows you to define and execute workflows to respond to incidents, such as terminating compromised EC2 instances or blocking IP addresses. This combination enables rapid and scalable incident response. AWS Config and Lambda is suitable for configuration management but is less ideal for automated incident response related to threats detected in real time. Security Hub and Step Functions is more focused on aggregating findings and managing incident workflows but is not as effective for immediate automated actions during security incidents. CloudWatch and Elastic Beanstalk focuses on resource scaling and monitoring but is not designed for incident response or threat remediation.
     </details>
 
 11. Identity and Access Management (IAM) - Mr Green is configuring AWS IAM for his organization. He needs to ensure that users are granted the least privilege, meaning they should only have the permissions necessary for their job functions. However, certain users need temporary access to additional permissions for specific tasks which must be automatically revoked once the task is completed. What is the best method for managing these temporary privileges while maintaining a strong security posture?
@@ -141,12 +141,12 @@ If this practice exam has been helpful to you please share it with others and re
 13. Logging and Monitoring - Mr Clark is tasked with implementing a comprehensive logging and monitoring strategy for his AWS environment. He needs to ensure that all user activities and API calls are logged for auditing purposes and that any potential security incidents are quickly identified. Which combination of AWS services should Mr Clark use to meet these requirements while also minimizing the overhead of managing large log volumes?
     - A) Enable AWS CloudTrail to log all API activity and integrate it with Amazon CloudWatch for real-time alerting
     - B) Use AWS CloudWatch logs for centralized log storage and configure AWS Config to monitor resource configuration changes
-    - C) Set up AWS Guard to detect security anomalies and configure Amazon S3 for storing detailed logs
+    - C) Set up AWS GuardDuty to detect security anomalies and configure Amazon S3 for storing detailed logs
     - D) Use Amazon Macie for sensitive data identification and enable AWS Shield to provide threat detection and mitigation
 
     <details markdown=1><summary markdown='span'><b>Answer</b></summary> Correct Answer(s): A
 		<br><br>
-		Explanation: The best combination for logging user activities and API calls while also enabling quick detection of potential security incidents is to enable AWS CloudTrail to log all API activities and integrate it with Amazon CloudWatch for real-time monitoring and alerting. CloudTrail records API activity in an account, and CloudWatch can be used to set up alarms for specific security events such as unusual API calls or access patterns. CloudWatch logs and AWS Config is useful for monitoring configuration changes but doesn't cover user activity logging as effectively as CloudTrail. Guard and S3 is focused more on threat detection and storage, not on logging API activities or providing real-time alerts for security incidents. Macie and Shield addresses specific data security and DDoS protection but doesn't provide a comprehensive logging and monitoring strategy for user activity.
+		Explanation: The best combination for logging user activities and API calls while also enabling quick detection of potential security incidents is to enable AWS CloudTrail to log all API activities and integrate it with Amazon CloudWatch for real-time monitoring and alerting. CloudTrail records API activity in an account, and CloudWatch can be used to set up alarms for specific security events such as unusual API calls or access patterns. CloudWatch logs and AWS Config is useful for monitoring configuration changes but doesn't cover user activity logging as effectively as CloudTrail. GuardDuty and S3 is focused more on threat detection and storage, not on logging API activities or providing real-time alerts for security incidents. Macie and Shield addresses specific data security and DDoS protection but doesn't provide a comprehensive logging and monitoring strategy for user activity.
     </details>
 
 14. Compliance and Risk Management - Miss Rivera is ensuring that her organization's AWS environment complies with various data protection regulations like GDPR and PCI DSS. She needs to generate compliance reports that reflect the status of AWS security controls and the company's adherence to regulatory requirements. Which AWS service should she use to streamline compliance reporting and demonstrate regulatory adherence?
@@ -163,12 +163,12 @@ If this practice exam has been helpful to you please share it with others and re
 15. Edge Services Security - Mr Thompson's company is hosting a public-facing web application on AWS. The application is experiencing a significant increase in traffic and he is concerned about potential DoS attacks. What combination of AWS services should Mr Thompson implement to protect his application from external threats while ensuring minimal impact on the user experience?
     - A) Configure AWS Direct Connect to provide a private connection and implement Amazon S3 to store web traffic logs for analysis
     - B) Enable AWS WAF to filter incoming traffic and implement AWS VPN to secure communication between the application and users
-    - C) Use AWS Guard for threat detection and AWS Config to monitor changes to the application's infrastructure
+    - C) Use AWS GuardDuty for threat detection and AWS Config to monitor changes to the application's infrastructure
     - D) Use AWS Shield for DDoS protection and configure Amazon CloudFront to distribute traffic to edge locations for faster response times
 
     <details markdown=1><summary markdown='span'><b>Answer</b></summary> Correct Answer(s): D
 		<br><br>
-		Explanation: To protect against DoS attacks and minimize their impact on user experience, Mr Thompson should use AWS Shield for DDoS protection and Amazon CloudFront to distribute traffic to edge locations. Shield provides automatic protection against DoS attacks, and CloudFront helps distribute traffic, reduce latency, and improve the overall performance of the application, especially during high traffic periods. Direct Connect and S3 is primarily focused on private connectivity and storage, which does not address DoS mitigation or web traffic performance. WAF and VPN offer some protection against malicious traffic, but VPN isn't designed for scalable traffic distribution like CloudFront, and WAF alone doesn't protect against larger scale DoS attacks. Guard and Config focuses on threat detection and configuration monitoring but doesn't provide direct DDoS protection or improve traffic distribution.
+		Explanation: To protect against DoS attacks and minimize their impact on user experience, Mr Thompson should use AWS Shield for DDoS protection and Amazon CloudFront to distribute traffic to edge locations. Shield provides automatic protection against DoS attacks, and CloudFront helps distribute traffic, reduce latency, and improve the overall performance of the application, especially during high traffic periods. Direct Connect and S3 is primarily focused on private connectivity and storage, which does not address DoS mitigation or web traffic performance. WAF and VPN offer some protection against malicious traffic, but VPN isn't designed for scalable traffic distribution like CloudFront, and WAF alone doesn't protect against larger scale DoS attacks. GuardDuty and Config focuses on threat detection and configuration monitoring but doesn't provide direct DDoS protection or improve traffic distribution.
     </details>
 
 16. Data Protection and Cryptography - Mr Sullivan's company processes highly sensitive financial data in their AWS environment. He needs to ensure that data at rest and in transit is encrypted according to the best security practices. Which combination of AWS services should Mr Sullivan use to ensure robust encryption of sensitive data both at rest and during transmission?
@@ -183,14 +183,14 @@ If this practice exam has been helpful to you please share it with others and re
     </details>
 
 17. Network Security - Mr Duran is in charge of securing the network architecture for a large-scale application running in multiple AWS accounts. He wants to ensure that all IAM policies, roles, and user activities are regularly reviewed for compliance and security risks. What would be the most efficient method for auditing IAM configurations across these multiple accounts ensuring a continuous review process?
-    - A) Set up AWS Guard across all accounts to monitor for suspicious activity related to IAM users and roles
+    - A) Set up AWS GuardDuty across all accounts to monitor for suspicious activity related to IAM users and roles
     - B) Use AWS Config to continuously monitor IAM changes and integrate it with AWS CloudTrail for detailed audit logs of user activity
     - C) Use AWS Security Hub to aggregate findings related to IAM security across accounts and generate periodic compliance reports
     - D) Implement Amazon Macie to track sensitive IAM roles and configurations and use IAM Access Analyzer to identify misconfigured permissions
 
     <details markdown=1><summary markdown='span'><b>Answer</b></summary> Correct Answer(s): B
 		<br><br>
-		Explanation: The most efficient method for auditing IAM configurations across multiple accounts is using AWS Config to monitor IAM changes while integrating it with AWS CloudTrail to provide detailed audit logs of user activity. This allows for continuous monitoring of changes in IAM configurations and detailed activity logs, ensuring that the system is regularly reviewed for security risks and compliance. Guard is focused more on detecting suspicious activities and threats but does not provide continuous auditing of IAM roles or configurations. Security Hub aggregates findings but doesn't actively monitor or continuously audit IAM policies and configurations. Macie focuses on tracking sensitive data and permissions, but AWS Config is more suited for comprehensive continuous auditing of IAM configurations across multiple accounts.
+		Explanation: The most efficient method for auditing IAM configurations across multiple accounts is using AWS Config to monitor IAM changes while integrating it with AWS CloudTrail to provide detailed audit logs of user activity. This allows for continuous monitoring of changes in IAM configurations and detailed activity logs, ensuring that the system is regularly reviewed for security risks and compliance. GuardDuty is focused more on detecting suspicious activities and threats but does not provide continuous auditing of IAM roles or configurations. Security Hub aggregates findings but doesn't actively monitor or continuously audit IAM policies and configurations. Macie focuses on tracking sensitive data and permissions, but AWS Config is more suited for comprehensive continuous auditing of IAM configurations across multiple accounts.
     </details>
 
 18. Infrastructure Security - Mr Hernandez is designing a secure architecture for a multi-tier application on AWS, and he needs to ensure that communication between the application's web layer, application layer, and database layer is both secure and efficient. The web layer needs to be publicly accessible while the application and database layers must remain private. What is the most secure and efficient way to set up the architecture?
@@ -216,14 +216,14 @@ If this practice exam has been helpful to you please share it with others and re
     </details>
 
 20. Security Auditing and Monitoring - Mr Harrison is responsible for auditing and monitoring the security configurations of his company's AWS resources. He needs to ensure that all IAM policies, security groups, and key management settings comply with company policies and industry standards. Which AWS service should Mr Harrison primarily use to automate this auditing process?
-    - A) Set up AWS Guard to monitor suspicious activity and use CloudWatch to create alarms for unauthorized actions
+    - A) Set up AWS GuardDuty to monitor suspicious activity and use CloudWatch to create alarms for unauthorized actions
     - B) Use AWS Config to continuously monitor resource configurations and compliance with company policies
     - C) Enable AWS Inspector to scan for vulnerabilities and resource configurations and use CloudTrail for tracking IAM policy changes
     - D) Use AWS CloudTrail for logging API calls and integrate with AWS Security Hub to aggregate and analyze findings
 
     <details markdown=1><summary markdown='span'><b>Answer</b></summary> Correct Answer(s): B
 		<br><br>
-		Explanation: AWS Config is the best service for continuously monitoring and auditing resource configurations. It tracks changes to resources like IAM roles, security groups, and key management and can automatically compare these configurations against best practices and industry standards. This service also provides the ability to assess the compliance status of your AWS resources. Guard and CloudWatch is focused on threat detection and monitoring suspicious activities but doesn't provide the comprehensive auditing features required for compliance monitoring. Inspector and CloudTrail is more focused on vulnerability scanning and logging but AWS Config is better suited for policy and configuration compliance. CloudTrail and Security Hub helps with security monitoring and incident response but AWS Config is the dedicated tool for auditing configurations and ensuring compliance.
+		Explanation: AWS Config is the best service for continuously monitoring and auditing resource configurations. It tracks changes to resources like IAM roles, security groups, and key management and can automatically compare these configurations against best practices and industry standards. This service also provides the ability to assess the compliance status of your AWS resources. GuardDuty and CloudWatch is focused on threat detection and monitoring suspicious activities but doesn't provide the comprehensive auditing features required for compliance monitoring. Inspector and CloudTrail is more focused on vulnerability scanning and logging but AWS Config is better suited for policy and configuration compliance. CloudTrail and Security Hub helps with security monitoring and incident response but AWS Config is the dedicated tool for auditing configurations and ensuring compliance.
     </details>
 
 21. Compliance and Risk Management - Miss Taylor is responsible for ensuring that the company's AWS environment complies with industry-specific regulatory requirements such as GDPR and HIPAA. She needs to demonstrate that appropriate security controls are in place and that all relevant data is protected. What steps should Ms Taylor take to ensure compliance and generate the required reports?
@@ -251,12 +251,12 @@ If this practice exam has been helpful to you please share it with others and re
 23. Infrastructure Security - Mr Alvarez is tasked with securing the network architecture for a critical AWS application. He needs to ensure that incoming internet traffic is filtered and that internal services are protected from DDoS attacks. Which combination of AWS services should Mr Alvarez use to secure the network and mitigate external threats?
     - A) Use AWS Web Application Firewall (WAF) to block malicious web traffic and AWS Shield to protect against DDoS attacks
     - B) Implement AWS Network Firewall to inspect and filter traffic and use AWS CloudFront to distribute content securely
-    - C) Set up AWS Guard for threat detection and configure VPC peering to ensure secure internal communications between services
+    - C) Set up AWS GuardDuty for threat detection and configure VPC peering to ensure secure internal communications between services
     - D) Enable AWS VPC flow logs to monitor traffic, configure AWS WAF for application layer filtering, and use AWS Identity and Access Management (IAM) for user access control
 
     <details markdown=1><summary markdown='span'><b>Answer</b></summary> Correct Answer(s): A
 		<br><br>
-		Explanation: AWS WAF helps protect applications by filtering malicious web traffic based on rules that you configure to block common threats such as SQL injection and XSS. AWS Shield provides DDoS protection at both the network and application layers, ensuring that external attacks including volumetric and application layer attacks are mitigated. Network Firewall and CloudFront helps with traffic inspection and content distribution but doesn't provide specific protection against web application attacks or DoS events as effectively as WAF and Shield. Guard and VPC peering focuses on threat detection and internal communication security but does not address DDoS or web traffic filtering. VPC flow logs, WAF, and IAM helps with monitoring and access control but doesn't provide the same level of DDoS protection as Shield.
+		Explanation: AWS WAF helps protect applications by filtering malicious web traffic based on rules that you configure to block common threats such as SQL injection and XSS. AWS Shield provides DDoS protection at both the network and application layers, ensuring that external attacks including volumetric and application layer attacks are mitigated. Network Firewall and CloudFront helps with traffic inspection and content distribution but doesn't provide specific protection against web application attacks or DoS events as effectively as WAF and Shield. GuardDuty and VPC peering focuses on threat detection and internal communication security but does not address DDoS or web traffic filtering. VPC flow logs, WAF, and IAM helps with monitoring and access control but doesn't provide the same level of DDoS protection as Shield.
     </details>
 
 24. Compliance and Risk Management - Mr Chang is responsible for ensuring that the company's AWS resources comply with regulatory requirements for data retention and protection. He is specifically concerned about the company's need to retain log data for a minimum of seven years to comply with industry regulations. What should Mr Chang do to ensure that log data is securely retained and easily accessible for audit purposes?
@@ -271,25 +271,25 @@ If this practice exam has been helpful to you please share it with others and re
     </details>
 
 25. Incident Response and Security Automation - Miss Garcia needs to automate the process of detecting and responding to security incidents in her AWS environment. She wants to use AWS services to automatically remediate security findings as soon as they are detected. Which combination of services should she use to achieve this goal?
-    - A) Use Amazon Guard to detect threats, AWS Security Hub to aggregate findings, and AWS Lambda to trigger automatic remediation
+    - A) Use Amazon GuardDuty to detect threats, AWS Security Hub to aggregate findings, and AWS Lambda to trigger automatic remediation
     - B) Configure AWS Config to track configuration changes, use AWS CloudWatch for monitoring, and set up AWS Systems Manager for automated incident response
     - C) Enable AWS WAF to block malicious requests, integrate AWS Shield for DDoS protection, and use CloudTrail for logging incidents
     - D) Set up AWS Firewall Manager for policy enforcement, use AWS IAM for managing access control, and monitor incidents using AWS CloudWatch logs
 
     <details markdown=1><summary markdown='span'><b>Answer</b></summary> Correct Answer(s): A
 		<br><br>
-		Explanation: Amazon Guard provides threat detection for AWS resources by identifying anomalies and potential security threats. AWS Security Hub aggregates findings from multiple AWS security services, while AWS Lambda allows you to trigger automated remediation processes when security issues are detected. This combination ensures both detection and automated response to security incidents in real time. Config, CloudWatch, and Systems Manager provides good monitoring and management capabilities but doesn't fully automate incident response in the same way that Guard and Lambda do. WAF, Shield, and CloudTrail is useful for protection and logging but it doesn't cover the automated response aspect that Lambda provides. Firewall Manager, IAM, and CloudWatch logs focuses on policy enforcement and access control but lacks the automated remediation capabilities that are key to incident response automation.
+		Explanation: Amazon GuardDuty provides threat detection for AWS resources by identifying anomalies and potential security threats. AWS Security Hub aggregates findings from multiple AWS security services, while AWS Lambda allows you to trigger automated remediation processes when security issues are detected. This combination ensures both detection and automated response to security incidents in real time. Config, CloudWatch, and Systems Manager provides good monitoring and management capabilities but doesn't fully automate incident response in the same way that GuardDuty and Lambda do. WAF, Shield, and CloudTrail is useful for protection and logging but it doesn't cover the automated response aspect that Lambda provides. Firewall Manager, IAM, and CloudWatch logs focuses on policy enforcement and access control but lacks the automated remediation capabilities that are key to incident response automation.
     </details>
 
 26. Infrastructure Security - Mr Alvarez's task was securing the network architecture for a critical AWS application. He needs to ensure that incoming internet traffic is filtered and that internal services are protected from DDoS attacks. Which combination of AWS services should Mr Alvarez use to secure the network and mitigate external threats?
     - A) Use AWS Web Application Firewall (WAF) to block malicious web traffic and AWS Shield to protect against DDoS attacks
     - B) Implement AWS Network Firewall to inspect and filter traffic and use AWS CloudFront to distribute content securely
-    - C) Set up AWS Guard for threat detection and configure VPC peering to ensure secure internal communications between services
+    - C) Set up AWS GuardDuty for threat detection and configure VPC peering to ensure secure internal communications between services
     - D) Enable AWS VPC flow logs to monitor traffic, configure AWS WAF for application layer filtering, and use AWS Identity and Access Management (IAM) for user access control
 
     <details markdown=1><summary markdown='span'><b>Answer</b></summary> Correct Answer(s): A
 		<br><br>
-		Explanation: AWS WAF helps protect applications by filtering malicious web traffic based on rules that you configure to block common threats such as SQL injection and XSS. AWS Shield provides DDoS protection at both the network and application layers, ensuring that external attacks including volumetric and application layer attacks are mitigated. Network Firewall and CloudFront helps with traffic inspection and content distribution but doesn't provide specific protection against web application attacks or DoS events as effectively as WAF and Shield. Guard and VPC peering focuses on threat detection and internal communication security but does not address DDoS or web traffic filtering. VPC flow logs, WAF, and IAM helps with monitoring and access control but doesn't provide the same level of DDoS protection as Shield.
+		Explanation: AWS WAF helps protect applications by filtering malicious web traffic based on rules that you configure to block common threats such as SQL injection and XSS. AWS Shield provides DDoS protection at both the network and application layers, ensuring that external attacks including volumetric and application layer attacks are mitigated. Network Firewall and CloudFront helps with traffic inspection and content distribution but doesn't provide specific protection against web application attacks or DoS events as effectively as WAF and Shield. GuardDuty and VPC peering focuses on threat detection and internal communication security but does not address DDoS or web traffic filtering. VPC flow logs, WAF, and IAM helps with monitoring and access control but doesn't provide the same level of DDoS protection as Shield.
     </details>
 
 27. Compliance and Risk Management - Mr Chang is responsible for ensuring that the company's AWS resources comply with regulatory requirements for data retention and protection. He is specifically concerned about the company's need to retain log data for a minimum of seven years to comply with industry regulations. What should Mr Chang do to ensure that log data is securely retained and easily accessible for audit purposes?
@@ -304,36 +304,36 @@ If this practice exam has been helpful to you please share it with others and re
     </details>
 
 28. Incident Response and Security Automation - Miss Garcia needs to automate the process of detecting and responding to security incidents in her AWS environment. She wants to use AWS services to automatically remediate security findings as soon as they are detected. Which combination of services should she use to achieve this goal?
-    - A) Use Amazon Guard to detect threats, AWS Security Hub to aggregate findings, and AWS Lambda to trigger automatic remediation
+    - A) Use Amazon GuardDuty to detect threats, AWS Security Hub to aggregate findings, and AWS Lambda to trigger automatic remediation
     - B) Configure AWS Config to track configuration changes, use AWS CloudWatch for monitoring, and set up AWS Systems Manager for automated incident response
     - C) Enable AWS WAF to block malicious requests, integrate AWS Shield for DDoS protection, and use CloudTrail for logging incidents
     - D) Set up AWS Firewall Manager for policy enforcement, use AWS IAM for managing access control, and monitor incidents using AWS CloudWatch logs
 
     <details markdown=1><summary markdown='span'><b>Answer</b></summary> Correct Answer(s): A
 		<br><br>
-		Explanation: Amazon Guard provides threat detection for AWS resources by identifying anomalies and potential security threats. AWS Security Hub aggregates findings from multiple AWS security services, while AWS Lambda allows you to trigger automated remediation processes when security issues are detected. This combination ensures both detection and automated response to security incidents in real time. Config, CloudWatch, and Systems Manager provides good monitoring and management capabilities but doesn't fully automate incident response in the same way that Guard and Lambda do. WAF, Shield, and CloudTrail is useful for protection and logging but it doesn't cover the automated response aspect that Lambda provides. Firewall Manager, IAM, and CloudWatch logs focuses on policy enforcement and access control but lacks the automated remediation capabilities that are key to incident response automation.
+		Explanation: Amazon GuardDuty provides threat detection for AWS resources by identifying anomalies and potential security threats. AWS Security Hub aggregates findings from multiple AWS security services, while AWS Lambda allows you to trigger automated remediation processes when security issues are detected. This combination ensures both detection and automated response to security incidents in real time. Config, CloudWatch, and Systems Manager provides good monitoring and management capabilities but doesn't fully automate incident response in the same way that GuardDuty and Lambda do. WAF, Shield, and CloudTrail is useful for protection and logging but it doesn't cover the automated response aspect that Lambda provides. Firewall Manager, IAM, and CloudWatch logs focuses on policy enforcement and access control but lacks the automated remediation capabilities that are key to incident response automation.
     </details>
 
 29. Security Auditing and Monitoring - Mr. Miller is conducting an audit of his company's AWS environment. He needs to review all API activity across multiple accounts and identify any suspicious actions. Which combination of AWS services would provide the most comprehensive solution for this purpose?
     - A) Use AWS CloudWatch for monitoring application metrics, AWS Config to track resource configurations, and AWS S3 to store audit logs
-    - B) Implement AWS Guard for threat detection, use AWS Security Hub for aggregation, and enable AWS Config to track configuration changes
+    - B) Implement AWS GuardDuty for threat detection, use AWS Security Hub for aggregation, and enable AWS Config to track configuration changes
     - C) Use AWS CloudTrail to log all API calls and integrate it with Amazon CloudWatch logs for real-time monitoring and alerting
     - D) Set up AWS Identity and Access Management (IAM) to control access and configure AWS Lambda for real-time analysis of CloudTrail logs
 
     <details markdown=1><summary markdown='span'><b>Answer</b></summary> Correct Answer(s): C 
 		<br><br>
-		Explanation: AWS CloudTrail logs all API calls, providing a comprehensive audit trail of actions performed in your AWS environment. Integrating CloudTrail with Amazon CloudWatch Logs enables real-time monitoring of API activity and can trigger alerts based on suspicious or unusual behavior. This combination offers a robust auditing and monitoring solution. Option A (CloudWatch, Config, and S3) provides monitoring and configuration tracking but doesn't address API activity auditing in the way CloudTrail does. Option B (Guard, Security Hub, and Config) is more focused on threat detection and resource configuration monitoring, which complements CloudTrail but doesn't provide the same level of detailed API logging and alerting. Option D (IAM and Lambd    - A) provides control and automation but lacks the comprehensive audit logging that CloudTrail offers.
+		Explanation: AWS CloudTrail logs all API calls, providing a comprehensive audit trail of actions performed in your AWS environment. Integrating CloudTrail with Amazon CloudWatch Logs enables real-time monitoring of API activity and can trigger alerts based on suspicious or unusual behavior. This combination offers a robust auditing and monitoring solution. Option A (CloudWatch, Config, and S3) provides monitoring and configuration tracking but doesn't address API activity auditing in the way CloudTrail does. Option B (GuardDuty, Security Hub, and Config) is more focused on threat detection and resource configuration monitoring, which complements CloudTrail but doesn't provide the same level of detailed API logging and alerting. Option D (IAM and Lambd    - A) provides control and automation but lacks the comprehensive audit logging that CloudTrail offers.
     </details>
 
 30. Infrastructure Security - Mr. Rodriguez is deploying a new web application in his company's AWS environment. The application will be accessed by users worldwide, and Mr. Rodriguez needs to ensure that only legitimate traffic reaches the application while protecting it from DDoS attacks and malicious traffic. Which combination of AWS services should he use to meet these requirements?
-    - A) Deploy AWS Network Firewall to filter traffic, use AWS Guard for threat detection, and AWS Config to track changes in the environment
+    - A) Deploy AWS Network Firewall to filter traffic, use AWS GuardDuty for threat detection, and AWS Config to track changes in the environment
     - B) Set up VPC flow logs to monitor traffic, use AWS Security Hub for threat management, and configure IAM roles for user access control
     - C) Use Amazon CloudFront for content delivery, AWS WAF to filter malicious requests, and AWS Shield for DDoS protection
     - D) Implement AWS VPN for secure connections, use Amazon S3 for static content hosting, and enable AWS CloudTrail for auditing
 
     <details markdown=1><summary markdown='span'><b>Answer</b></summary> Correct Answer(s): C 
 		<br><br>
-		Explanation: Amazon CloudFront provides content delivery with built-in support for DDoS mitigation. AWS WAF protects your application by filtering malicious web traffic such as SQL injection and cross-site scripting (XSS) attacks. AWS Shield offers DDoS protection at both the network and application layers, ensuring your application remains protected against large-scale attacks. Option A (Network Firewall, Guard, and Config) provides good traffic filtering and threat detection but doesn't fully address the web application layer security or DDoS protection as CloudFront, WAF, and Shield do. Option B (Flow logs, Security Hub, and IAM roles) focuses on monitoring and threat management but does not provide the necessary protections for DDoS attacks and malicious web traffic. Option D (VPN, S3, and CloudTrail) focuses on secure connectivity and logging but does not offer adequate protection against malicious traffic or DDoS threats.
+		Explanation: Amazon CloudFront provides content delivery with built-in support for DDoS mitigation. AWS WAF protects your application by filtering malicious web traffic such as SQL injection and cross-site scripting (XSS) attacks. AWS Shield offers DDoS protection at both the network and application layers, ensuring your application remains protected against large-scale attacks. Option A (Network Firewall, GuardDuty, and Config) provides good traffic filtering and threat detection but doesn't fully address the web application layer security or DDoS protection as CloudFront, WAF, and Shield do. Option B (Flow logs, Security Hub, and IAM roles) focuses on monitoring and threat management but does not provide the necessary protections for DDoS attacks and malicious web traffic. Option D (VPN, S3, and CloudTrail) focuses on secure connectivity and logging but does not offer adequate protection against malicious traffic or DDoS threats.
     </details>
 
 
@@ -351,7 +351,7 @@ If this practice exam has been helpful to you please share it with others and re
 32. Compliance and Governance - A healthcare organization needs to ensure their AWS environment meets HIPAA compliance requirements and maintain continuous monitoring of their compliance status. Which combination of AWS services should they implement?
     - A) Use AWS Config for resource monitoring, AWS CloudWatch for metrics, and AWS Systems Manager for patch management
     - B) Implement AWS Security Hub with security standards enabled, AWS Audit Manager for assessments, and AWS Config for continuous monitoring
-    - C) Configure AWS Guard for threat detection, AWS CloudTrail for logging, and AWS IAM for access control
+    - C) Configure AWS GuardDuty for threat detection, AWS CloudTrail for logging, and AWS IAM for access control
     - D) Use Amazon Inspector for vulnerability assessment, AWS Trusted Advisor for best practices, and VPC Flow Logs for network monitoring
 
     <details markdown=1><summary markdown='span'><b>Answer</b></summary> Correct Answer(s): B 
@@ -383,13 +383,13 @@ If this practice exam has been helpful to you please share it with others and re
 
 35. Security Monitoring and Threat Detection - A company needs to implement comprehensive security monitoring across their AWS environment to detect potential security threats and vulnerabilities. Which combination of AWS services should they implement for effective threat detection and monitoring?
     - A) Use AWS CloudWatch for metrics and AWS Config for configuration tracking
-    - B) Implement AWS Guard for threat detection, AWS Security Hub for centralized security management, and CloudWatch for alerting
+    - B) Implement AWS GuardDuty for threat detection, AWS Security Hub for centralized security management, and CloudWatch for alerting
     - C) Configure VPC Flow Logs and AWS CloudTrail for activity monitoring
     - D) Use AWS Inspector for vulnerability scanning and AWS Systems Manager for patch management
 
     <details markdown=1><summary markdown='span'><b>Answer</b></summary> Correct Answer(s): B
 		<br><br>
-		Explanation: Based on the transcript, AWS Guard provides threat detection for AWS resources by identifying anomalies and potential security threats. AWS Security Hub aggregates findings from multiple AWS security services, while CloudWatch can be used for setting up custom alarms based on Guard findings. This combination provides comprehensive threat detection, centralized security management, and real-time alerting capabilities. Option A lacks specific threat detection capabilities. Option C provides logging but doesn't include threat detection. Option D focuses on vulnerability management but doesn't provide comprehensive security monitoring.
+		Explanation: Based on the transcript, AWS GuardDuty provides threat detection for AWS resources by identifying anomalies and potential security threats. AWS Security Hub aggregates findings from multiple AWS security services, while CloudWatch can be used for setting up custom alarms based on GuardDuty findings. This combination provides comprehensive threat detection, centralized security management, and real-time alerting capabilities. Option A lacks specific threat detection capabilities. Option C provides logging but doesn't include threat detection. Option D focuses on vulnerability management but doesn't provide comprehensive security monitoring.
     </details>
 
 36. Data Protection and Compliance - A company needs to ensure that their sensitive data stored in AWS is properly classified, protected, and compliant with regulatory requirements. Which combination of AWS services should they implement?
@@ -403,15 +403,15 @@ If this practice exam has been helpful to you please share it with others and re
 		Explanation: Based on the transcript, the highest level of security would be achieved by enabling encryption at rest using AWS KMS for S3 buckets, which provides a centralized and manageable approach to encrypting sensitive data. Additionally, SSL should be used for encrypting data in transit, ensuring end-to-end protection during transmission. This combination follows security best practices for both compliance and protection of sensitive data. Option A, while useful for discovering and classifying sensitive data, doesn't provide the same level of encryption management as KMS. Option B focuses on tracking changes but doesn't address data protection directly. Option D addresses backup and configuration but lacks the encryption capabilities needed for sensitive data protection.
     </details>
 
-37. Incident Response Automation - A security team needs to implement automated responses to security incidents detected in their AWS environment. When Guard detects an anomaly suggesting a compromised EC2 instance, what automated response should they implement?
+37. Incident Response Automation - A security team needs to implement automated responses to security incidents detected in their AWS environment. When GuardDuty detects an anomaly suggesting a compromised EC2 instance, what automated response should they implement?
     - A) Set up AWS Lambda to automatically isolate the compromised EC2 instance by updating its Security Group rules to block all incoming traffic
     - B) Use AWS Config to record configuration changes and trigger an SNS notification to alert the security team
     - C) Configure AWS Security Hub to integrate with AWS CloudTrail to directly block the instance and notify the team
-    - D) Set up Guard to invoke an AWS Lambda function that automatically reboots the EC2 instance to mitigate the risk
+    - D) Set up GuardDuty to invoke an AWS Lambda function that automatically reboots the EC2 instance to mitigate the risk
 
     <details markdown=1><summary markdown='span'><b>Answer</b></summary> Correct Answer(s): A
 		<br><br>
-		Explanation: Based on the transcript, the best approach is to configure AWS Lambda to isolate the compromised EC2 instance automatically by adjusting its Security Group rules to block incoming traffic. This step immediately halts further communication with the instance, mitigating potential damage. AWS Lambda can be triggered by Guard findings, allowing for an automated and timely response. Option B tracks changes but doesn't take direct action. Option C isn't designed to block instances directly. Option D (rebooting) is not an appropriate response to a compromised EC2 instance as it doesn't remove the threat.
+		Explanation: Based on the transcript, the best approach is to configure AWS Lambda to isolate the compromised EC2 instance automatically by adjusting its Security Group rules to block incoming traffic. This step immediately halts further communication with the instance, mitigating potential damage. AWS Lambda can be triggered by GuardDuty findings, allowing for an automated and timely response. Option B tracks changes but doesn't take direct action. Option C isn't designed to block instances directly. Option D (rebooting) is not an appropriate response to a compromised EC2 instance as it doesn't remove the threat.
     </details>
 
 38. Audit and Compliance Documentation - A company needs to demonstrate compliance with various regulatory standards and provide evidence of security controls during audits. Which AWS service should they primarily use to access compliance reports and documentation?
@@ -447,15 +447,15 @@ If this practice exam has been helpful to you please share it with others and re
 		Explanation: Based on the transcript, for highly sensitive data, the best solution is to enable S3 bucket encryption using AWS KMS. This approach allows for more granular control over encryption keys and ensures that only authorized users with specific IAM roles can decrypt and access the data. KMS also integrates with AWS compliance tools and ensures that encryption practices are auditable. Option A offers basic encryption but lacks the same level of control as KMS. Option C complicates compliance and audit processes. Option D is more complex and typically unnecessary unless extra layers of security are required.
     </details>
 
-41. Security Monitoring Integration - A company uses AWS Guard, AWS Security Hub, and AWS Config to monitor security events. They need to ensure comprehensive monitoring and automated response to security findings. Which integration approach should they implement?
+41. Security Monitoring Integration - A company uses AWS GuardDuty, AWS Security Hub, and AWS Config to monitor security events. They need to ensure comprehensive monitoring and automated response to security findings. Which integration approach should they implement?
     - A) Configure AWS Config to track changes and use CloudWatch for alerts
-    - B) Use AWS Security Hub to aggregate findings and Guard to detect threats, then trigger Lambda functions for automated responses
+    - B) Use AWS Security Hub to aggregate findings and GuardDuty to detect threats, then trigger Lambda functions for automated responses
     - C) Enable CloudTrail for API monitoring and use Systems Manager for remediation
     - D) Implement VPC Flow Logs and use CloudWatch for monitoring network traffic
 
     <details markdown=1><summary markdown='span'><b>Answer</b></summary> Correct Answer(s): B
 		<br><br>
-		Explanation: Based on the transcript, the most effective approach is to use AWS Security Hub to aggregate security findings from multiple sources, Guard for threat detection, and Lambda functions for automated responses to security incidents. This combination provides comprehensive security monitoring and automated remediation capabilities. Guard continuously monitors for threats, Security Hub centralizes findings, and Lambda enables automated responses to security events. Option A lacks threat detection capabilities. Option C doesn't provide the same level of security finding aggregation. Option D focuses only on network monitoring.
+		Explanation: Based on the transcript, the most effective approach is to use AWS Security Hub to aggregate security findings from multiple sources, GuardDuty for threat detection, and Lambda functions for automated responses to security incidents. This combination provides comprehensive security monitoring and automated remediation capabilities. GuardDuty continuously monitors for threats, Security Hub centralizes findings, and Lambda enables automated responses to security events. Option A lacks threat detection capabilities. Option C doesn't provide the same level of security finding aggregation. Option D focuses only on network monitoring.
      </details>
 
 42. Multi-Account Security Management - A company operates multiple AWS accounts and needs to ensure consistent security controls and compliance across all accounts. Which combination of services should they implement?
@@ -483,12 +483,12 @@ If this practice exam has been helpful to you please share it with others and re
 44. Security Hub Integration - A company uses multiple AWS security services and needs to centralize security findings and automate responses. Which combination of services provides the most effective solution?
     - A) Use AWS Config for tracking changes and CloudWatch for monitoring alerts
     - B) Enable CloudTrail for logging and Systems Manager for automation
-    - C) Implement AWS Security Hub to aggregate findings, use Guard for threat detection, and configure Lambda for automated responses
+    - C) Implement AWS Security Hub to aggregate findings, use GuardDuty for threat detection, and configure Lambda for automated responses
     - D) Set up CloudWatch Logs and use SNS for notifications
 
     <details markdown=1><summary markdown='span'><b>Answer</b></summary> Correct Answer(s): C
 		<br><br>
-		Explanation: Based on the transcript, AWS Security Hub aggregates findings from multiple AWS security services, while Guard provides threat detection, and Lambda enables automated responses to security findings. This combination ensures centralized security management and automated incident response capabilities.
+		Explanation: Based on the transcript, AWS Security Hub aggregates findings from multiple AWS security services, while GuardDuty provides threat detection, and Lambda enables automated responses to security findings. This combination ensures centralized security management and automated incident response capabilities.
     </details>
 	
 45. Cross-Region Resource Protection - A company needs to protect resources deployed across multiple regions while maintaining efficient communication between services. Which architecture provides the most secure solution?
@@ -505,7 +505,7 @@ If this practice exam has been helpful to you please share it with others and re
 46. Compliance Monitoring and Reporting - A security officer needs to demonstrate continuous compliance with various regulatory requirements across multiple AWS accounts. Which solution should they implement?
     - A) Use CloudTrail for logging and CloudWatch for monitoring 
     - B) Enable AWS Config with conformance packs to monitor resource compliance and generate detailed reports for each region and account 
-    - C) Implement Security Hub and Guard for security monitoring 
+    - C) Implement Security Hub and GuardDuty for security monitoring 
     - D) Set up IAM Access Analyzer and CloudWatch Logs
 
     <details markdown=1><summary markdown='span'><b>Answer</b></summary> Correct Answer(s): B
@@ -528,14 +528,14 @@ If this practice exam has been helpful to you please share it with others and re
     - A) Use Security Groups and Network ACLs for traffic control 
     - B) Implement AWS Shield, WAF, and CloudFront for comprehensive protection 
     - C) Configure VPC endpoints and Direct Connect for secure access 
-    - D) Enable Guard and Security Hub for threat detection
+    - D) Enable GuardDuty and Security Hub for threat detection
 
     <details markdown=1><summary markdown='span'><b>Answer</b></summary> Correct Answer(s): B 
 		<br><br>
 		Explanation: Based on the transcript, the combination of AWS Shield for DDoS protection, WAF for filtering malicious web traffic, and CloudFront for content delivery provides comprehensive protection while ensuring optimal performance. This solution protects against various threats including DDoS attacks and common web vulnerabilities.
 	</details>
 
-49. Security Incident Response - A company needs to implement automated responses to security incidents detected by Guard. What is the most effective approach for immediate threat mitigation?
+49. Security Incident Response - A company needs to implement automated responses to security incidents detected by GuardDuty. What is the most effective approach for immediate threat mitigation?
     - A) Configure Lambda to automatically isolate compromised instances by updating security group rules 
     - B) Use CloudWatch to monitor and alert on security events 
     - C) Implement Systems Manager for manual remediation 
