@@ -646,7 +646,7 @@ Send email notifications using Amazon SNS.
 
 62. A company's Security Engineer is copying all application logs to centralized Amazon S3 buckets. Currently, each of the company's application is in its own AWS account, and logs are pushed into S3 buckets associated with each account. The Engineer will deploy an AWS Lambda function into each account that copies the relevant log files to the centralized S3 bucket. The Security Engineer is unable to access the log files in the centralized S3 bucket. The Engineer's IAM user policy from the centralized account looks like this. The centralized S3 bucket policy looks like this. Why is the Security Engineer unable to access the log files?
 
-![Question 257 part 1](../images/aws_SCS_C02_pt2_257_1.png)
+![Question 257 part 1](../images/aws_SCS_C02_pt2_257_1.png)<br/>
 ![Question 257 part 2](../images/aws_SCS_C02_pt2_257_2.png)
 
     - A) The S3 bucket policy does not explicitly allow the Security Engineer access to the objects in the bucket.
@@ -659,7 +659,7 @@ Send email notifications using Amazon SNS.
 
 63. A Security Engineer has created an Amazon CloudWatch event that invokes an AWS Lambda function daily. The Lambda function runs an Amazon Athena query that checks AWS CloudTrail logs in Amazon S3 to detect whether any IAM user accounts or credentials have been created in the past 30 days. The results of the Athena query are created in the same S3 bucket. The Engineer runs a test execution of the Lambda function via the AWS Console, and the function runs successfully. After several minutes, the Engineer finds that his Athena query has failed with the error message: `Insufficient Permissions`. The IAM permissions of the Security Engineer and the Lambda function are shown below. Security Engineer. Lambda function execution role. What is causing the error?
 
-![Question 258 part 1](../images/aws_SCS_C02_pt2_258_1.png)
+![Question 258 part 1](../images/aws_SCS_C02_pt2_258_1.png)<br/>
 ![Question 258 part 2](../images/aws_SCS_C02_pt2_258_2.png)
 
     - A) The Lambda function does not have permissions to start the Athena query execution.
