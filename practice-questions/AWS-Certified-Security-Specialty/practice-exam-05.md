@@ -427,7 +427,7 @@ Send email notifications using Amazon SNS.
 
 <details markdown=1><summary markdown='span'><b>Answer</b></summary> Correct Answer(s): A, C, D</details>
 
-41. A security engineer needs to ensure their company's use of AWS meets AWS security best practices. As part of this, the AWS account root user must not be used for daily work. The root user must be monitored for use, and the security team must be alerted as quickly as possible if the root user is used. Which solution meets these requirements?
+41. A security engineer need to ensure their company's uses of AWS meets AWS security best practices. As part of this, the AWS account root user must not be used for daily work. The root user must be monitored for use, and the Security team must be alerted as quickly as possible if the root user is used. Which solution meets these requirements?
 
     - A) Set up an Amazon CloudWatch Events rule that triggers an Amazon SNS notification.
     - B) Create root user access keys. Use an AWS Lambda function to parse AWS CloudTrail logs from Amazon S3 and generate notifications using Amazon SNS.
