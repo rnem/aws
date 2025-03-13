@@ -7,18 +7,13 @@ If this practice exam has been helpful to you please share it with others and re
 ---
 
 1. A security engineer needs to create an Amazon S3 bucket policy to grant least privilege read access to IAM user accounts that are named User1, User2 and User3. These IAM user accounts are members of the AuthorizedPeople IAM group. The security engineer drafts the following S3 bucket policy. When the security engineer tries to add the policy to the S3 bucket, the following message appears: `Missing required field Principal.` The security engineer is adding a Principal element to the policy. The addition must provide read access to only User1, User2 and User3. Which solution meets these requirements?
+<br/>
+![Question 261](../images/aws_SCS_C02_pt2_261.jpg)<br/>
 
-![Question 261](../images/aws_SCS_C02_pt2_261.jpg)
-
-    - A) Option A.
-![Question 261 option A](../images/aws_SCS_C02_pt2_261_A.png)
-    - B) Option B.
-![Question 261 option B](../images/aws_SCS_C02_pt2_261_B.png)
-    - C) Option C.
-![Question 261 option C](../images/aws_SCS_C02_pt2_261_C.png)
-    - D) Option D.
-![Question 261 option D](../images/aws_SCS_C02_pt2_261_D.png)
-
+    - A) ![Question 261 option A](../images/aws_SCS_C02_pt2_261_A.png)<br/>
+    - B) ![Question 261 option B](../images/aws_SCS_C02_pt2_261_B.png)<br/>
+    - C) ![Question 261 option C](../images/aws_SCS_C02_pt2_261_C.png)<br/>
+    - D) ![Question 261 option D](../images/aws_SCS_C02_pt2_261_D.png)
 
 <details markdown=1><summary markdown='span'><b>Answer</b></summary> Correct Answer(s): A</details>
 
@@ -603,7 +598,7 @@ API.
 <details markdown=1><summary markdown='span'><b>Answer</b></summary> Correct Answer(s): B</details>
 
 58. An IAM user with fill EC2 permissions could bot start an Amazon EC2 instance after it was stopped for a maintenance task. Upon starting the instance, the instance state would change to `Pending`, but after a few seconds, it would switch back to `Stopped`. An inspection revealed that the instance has attached Amazon EBS volumes that were encrypted by using a Customer Master Key (CMK). When these encrypted volumes were detached, the IAM user was able to start the EC2 instances. The IAM user policy is as follows. What additional items need to be added to the IAM user policy? (Choose TWO)
-
+<br/>
 ![Question 318](../images/aws_SCS_C02_pt2_318.png)
 
     - A) `kms:GenerateDataKey`.
@@ -659,13 +654,13 @@ API.
 
 63. A Security Engineer must enforce the use of only Amazon EC2, Amazon S3, Amazon RDS, Amazon DynamoDB, and AWS STS in specific accounts. What is a scalable and efficient approach to meet this requirement?
 
-    - A) Set up an AWS Organizations hierarchy, and replace the FullAWSAccess policy with the following Service Control Policy for the governed organization units.
+    - A) Set up an AWS Organizations hierarchy, and replace the FullAWSAccess policy with the following Service Control Policy for the governed organization units.<br/>
 ![Question 323 option A](../images/aws_SCS_C02_pt2_323_A.png)
-    - B) Create multiple IAM users for the regulated accounts, and attach the following policy statement to restrict services as required.
+    - B) Create multiple IAM users for the regulated accounts, and attach the following policy statement to restrict services as required.<br/>
 ![Question 323 option B](../images/aws_SCS_C02_pt2_323_B.png)
-    - C) Set up an Organizations hierarchy, replace the global FullAWSAccess with the following Service Control Policy at the top level.
+    - C) Set up an Organizations hierarchy, replace the global FullAWSAccess with the following Service Control Policy at the top level.<br/>
 ![Question 323 option C](../images/aws_SCS_C02_pt2_323_C.png)
-    - D) Set up all users in the Active Directory for federated access to all accounts in the company. Associate Active Directory groups with IAM groups, and attach the following policy statement to restrict services as required.
+    - D) Set up all users in the Active Directory for federated access to all accounts in the company. Associate Active Directory groups with IAM groups, and attach the following policy statement to restrict services as required.<br/>
 ![Question 323 option D](../images/aws_SCS_C02_pt2_323_D.png)
 
 
