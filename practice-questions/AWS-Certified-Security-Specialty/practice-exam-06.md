@@ -8,12 +8,12 @@ If this practice exam has been helpful to you please share it with others and re
 
 1. A security engineer needs to create an Amazon S3 bucket policy to grant least privilege read access to IAM user accounts that are named User1, User2 and User3. These IAM user accounts are members of the AuthorizedPeople IAM group. The security engineer drafts the following S3 bucket policy. When the security engineer tries to add the policy to the S3 bucket, the following message appears: `Missing required field Principal.` The security engineer is adding a Principal element to the policy. The addition must provide read access to only User1, User2 and User3. Which solution meets these requirements?
 <br/>
-![Question 261](../images/aws_SCS_C02_pt2_261.jpg)<br/>
+<img src='../images/aws_SCS_C02_pt2_261.jpg'><br/>
 
-    - A) ![Question 261 option A](../images/aws_SCS_C02_pt2_261_A.png)<br/>
-    - B) ![Question 261 option B](../images/aws_SCS_C02_pt2_261_B.png)<br/>
-    - C) ![Question 261 option C](../images/aws_SCS_C02_pt2_261_C.png)<br/>
-    - D) ![Question 261 option D](../images/aws_SCS_C02_pt2_261_D.png)
+- A) ![](../images/aws_SCS_C02_pt2_261_A.png)
+    - B) <img src='../images/aws_SCS_C02_pt2_261_B.png'><br/>
+    - C) <img src='../images/aws_SCS_C02_pt2_261_C.png'><br/>
+    - D) <img src='../images/aws_SCS_C02_pt2_261_D.png'>
 
 <details markdown=1><summary markdown='span'><b>Answer</b></summary> Correct Answer(s): A</details>
 
@@ -100,9 +100,9 @@ If this practice exam has been helpful to you please share it with others and re
 
 <details markdown=1><summary markdown='span'><b>Answer</b></summary> Correct Answer(s): C</details>
 
-10. A company wants to establish separate AWS Key Management Service (AWS KMS) keys to use for different AWS services. The company's security engineer created the following key policy to allow the infrastructure deployment team to create encrypted Amazon Elastic Block Store (Amazon EBS) volumes by assuming the InfrastructueDeployment IAM role. The security engineer recently discovered that IAM roles other than the InfrastructureDeployment role used this key for other services. Which change to the policy should the security engineer make to resolve these issues?
+10. A company wants to establish separate AWS Key Management Service (AWS KMS) keys to use for different AWS services. The company's security engineer created the following key policy to allow the infrastructure deployment team to create encrypted Amazon Elastic Block Store (Amazon EBS) volumes by assuming the InfrastructueDeployment IAM role. The security engineer recently discovered that IAM roles other than the InfrastructureDeployment role used this key for other services. Which change to the policy should the security engineer make to resolve these issues? <br/>
 
-![Question 270](../images/aws_SCS_C02_pt2_270.jpg)
+<img src='..//images/aws_SCS_C02_pt2_270.jpg'>
 
     - A) In the statement block that contains the Sid Allow use of the key, under the Condition block, change StringEquals to StringLike.
     - B) In the policy document, remove the statement block that contains the Sid Enable IAM User Permissions. Add key management policies to the KMS policy.
@@ -599,7 +599,7 @@ API.
 
 58. An IAM user with fill EC2 permissions could bot start an Amazon EC2 instance after it was stopped for a maintenance task. Upon starting the instance, the instance state would change to `Pending`, but after a few seconds, it would switch back to `Stopped`. An inspection revealed that the instance has attached Amazon EBS volumes that were encrypted by using a Customer Master Key (CMK). When these encrypted volumes were detached, the IAM user was able to start the EC2 instances. The IAM user policy is as follows. What additional items need to be added to the IAM user policy? (Choose TWO)
 <br/>
-![Question 318](../images/aws_SCS_C02_pt2_318.png)
+<img src='../images/aws_SCS_C02_pt2_318.png'>
 
     - A) `kms:GenerateDataKey`.
     - B) `kms:Decrypt`.
@@ -654,14 +654,14 @@ API.
 
 63. A Security Engineer must enforce the use of only Amazon EC2, Amazon S3, Amazon RDS, Amazon DynamoDB, and AWS STS in specific accounts. What is a scalable and efficient approach to meet this requirement?
 
-    - A) Set up an AWS Organizations hierarchy, and replace the FullAWSAccess policy with the following Service Control Policy for the governed organization units.<br/>
-![Question 323 option A](../images/aws_SCS_C02_pt2_323_A.png)
+- A) Set up an AWS Organizations hierarchy, and replace the FullAWSAccess policy with the following Service Control Policy for the governed organization units.<br/>
+<img src='../images/aws_SCS_C02_pt2_323_A.png'>
     - B) Create multiple IAM users for the regulated accounts, and attach the following policy statement to restrict services as required.<br/>
-![Question 323 option B](../images/aws_SCS_C02_pt2_323_B.png)
+<img src='../images/aws_SCS_C02_pt2_323_B.png'>
     - C) Set up an Organizations hierarchy, replace the global FullAWSAccess with the following Service Control Policy at the top level.<br/>
-![Question 323 option C](../images/aws_SCS_C02_pt2_323_C.png)
+<img src='../images/aws_SCS_C02_pt2_323_C.png'>
     - D) Set up all users in the Active Directory for federated access to all accounts in the company. Associate Active Directory groups with IAM groups, and attach the following policy statement to restrict services as required.<br/>
-![Question 323 option D](../images/aws_SCS_C02_pt2_323_D.png)
+<img src='../images/aws_SCS_C02_pt2_323_D.png'>
 
 
 <details markdown=1><summary markdown='span'><b>Answer</b></summary> Correct Answer(s): A</details>
