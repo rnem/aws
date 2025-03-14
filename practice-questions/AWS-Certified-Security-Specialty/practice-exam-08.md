@@ -660,7 +660,7 @@ Which combination of steps would meet the requirements? (Select TWO.)
 
 What action should be performed to allow the ping to work?
 
-    - A) In the security group of the EC2 instance, allow inbound ICMP traffic.
+- A) In the security group of the EC2 instance, allow inbound ICMP traffic.
     - B) In the security group of the EC2 instance, allow outbound ICMP traffic.
     - C) In the VPC's NACL, allow inbound ICMP traffic.
     - D) In the VPC's NACL, allow outbound ICMP traffic.
