@@ -596,7 +596,7 @@ Which combination of steps would meet the requirements? (Select TWO.)
     - F) Confirm that the instance and the S3 bucket are in the same Region.
 
 
-<details markdown=1><summary markdown='span'><b>Answer</b></summary> Correct Answer(s): B, C, E</details>
+<details markdown=1><summary markdown='span'><b>Answer</b></summary> Correct Answer(s): B,C,E</details>
 
 46. A Security Engineer must implement mutually authenticated TLS connections between containers that communicate inside a VPC. Which solution would be MOST secure and easy to maintain?
 
@@ -627,7 +627,7 @@ Which combination of steps would meet the requirements? (Select TWO.)
     - E) The IAM policy.
 
 
-<details markdown=1><summary markdown='span'><b>Answer</b></summary> Correct Answer(s): A, C, E</details>
+<details markdown=1><summary markdown='span'><b>Answer</b></summary> Correct Answer(s): A,C,E</details>
 
 49. While analyzing a company's security solution, a Security Engineer wants to secure the AWS account root user. What should the Security Engineer do to provide the highest level of security for the account?
 
@@ -649,7 +649,7 @@ Which combination of steps would meet the requirements? (Select TWO.)
     - F) Update API Gateway to use a `COGNITO_USER_POOLS` authorizer.
 
 
-<details markdown=1><summary markdown='span'><b>Answer</b></summary> Correct Answer(s): B, C, F</details>
+<details markdown=1><summary markdown='span'><b>Answer</b></summary> Correct Answer(s): B,C,F</details>
 
 51. While securing the connection between a company's VPC and its on-premises data center, a Security Engineer sent a ping command from an on-premises host (IP address 203.0.113.12) to an Amazon EC2 instance (IP address 172.31.16.139). The ping command did not return a response. The flow log in the VPC showed the following:
    
@@ -677,7 +677,7 @@ What action should be performed to allow the ping to work?
     - E) Configure the Java application to catch a connection failure and make a call to AWS Secrets Manager to retrieve updated credentials when the password is rotated. Grant permission to the instance role associated with the EC2 instance to access Secrets Manager.
 
 
-<details markdown=1><summary markdown='span'><b>Answer</b></summary> Correct Answer(s): C, E</details>
+<details markdown=1><summary markdown='span'><b>Answer</b></summary> Correct Answer(s): C,E</details>
 
 53. A company plans to migrate a sensitive dataset to Amazon S3. A Security Engineer must ensure that the data is encrypted at rest. The encryption solution must enable the company to generate its own keys without needing to manage key storage or the encryption process. What should the Security Engineer use to accomplish this?
 
@@ -697,4 +697,145 @@ What action should be performed to allow the ping to work?
     - D) Ensure that Systems Administrators and Developers with job-related need-to-know requirements only are capable of viewing - but not modifying - the log files.
     - E) Ensure that all log files are stored on Amazon EC2 instances that allow SSH access from the internal corporate network only.
 
-<details markdown=1><summary markdown='span'><b>Answer</b></summary> Correct Answer(s): A, D</details>
+<details markdown=1><summary markdown='span'><b>Answer</b></summary> Correct Answer(s): A,D</details>
+
+[//]: # (AI AWS Gen ---------------------------------------------------------------------- )
+
+55. A security engineer needs to implement a solution that will automatically detect and remediate unintended access to S3 buckets. Which combination of AWS services would be most effective? (Select TWO)
+
+    - A) AWS Config with remediation actions
+    - B) Amazon GuardDuty with Lambda functions
+    - C) AWS Security Hub with AWS Systems Manager
+    - D) Amazon Macie with S3 event notifications
+    - E) AWS CloudTrail with Amazon EventBridge
+
+<details markdown=1><summary markdown='span'><b>Answer</b></summary> Correct Answer(s): A,B
+
+Explanation: AWS Config with remediation actions provides automated detection and remediation of non-compliant S3 bucket configurations. Amazon GuardDuty combined with Lambda functions can also detect unusual access patterns to S3 buckets and automatically remediate by invoking Lambda functions that modify bucket policies or permission
+</details>
+
+56. A company needs to encrypt sensitive data in their DynamoDB tables. Which approach provides the strongest security controls while maintaining application functionality?
+    
+    - A) DynamoDB server-side encryption with AWS owned CMK
+    - B) DynamoDB server-side encryption with AWS managed CMK
+    - C) DynamoDB server-side encryption with customer managed CMK in KMS
+    - D) Client-side encryption using the AWS Encryption SDK
+
+<details markdown=1><summary markdown='span'><b>Answer</b></summary> Correct Answer(s): D
+
+Explanation: Client-side encryption using the AWS Encryption SDK provides the strongest security controls as data is encrypted before it reaches DynamoDB. This approach ensures that plaintext data never leaves the client application and is never visible to AWS services. While server-side encryption options protect data at rest within DynamoDB, client-side encryption provides end-to-end protection of sensitive data.
+</details>
+
+57. An organization needs to implement a security control that prevents developers from launching EC2 instances without proper tags. Which AWS service should be used?
+
+    - A) AWS IAM
+    - B) AWS Organizations with Service Control Policies
+    - C) AWS Config Rules
+    - D) AWS CloudTrail
+
+<details markdown=1><summary markdown='span'><b>Answer</b></summary> Correct Answer(s): B
+
+Explanation: AWS Organizations with Service Control Policies (SCPs) allows you to centrally control permissions for accounts in your organization. You can create an SCP that denies the ability to launch EC2 instances unless specific tags are included. This provides preventative control rather than detective control, ensuring that non-compliant resources cannot be created in the first place.
+</details>
+
+58. A security team needs to ensure that all network traffic to and from their VPC is inspected and filtered. Which architecture should they implement?
+
+    - A) VPC Flow Logs with Amazon Athena queries
+    - B) Transit Gateway with Network Firewall
+    - C) Gateway VPC Endpoints with security groups
+    - D) AWS WAF with Amazon CloudFront
+
+<details markdown=1><summary markdown='span'><b>Answer</b></summary> Correct Answer(s): B
+
+Explanation: AWS Transit Gateway with AWS Network Firewall provides centralized network security across multiple VPCs. Transit Gateway routes traffic between VPCs, and Network Firewall can be deployed in a dedicated security VPC to inspect and filter all traffic flowing through the Transit Gateway. This architecture ensures comprehensive traffic inspection and filtering for all traffic to and from the VPCs.
+</details>
+
+59. Which encryption feature allows an organization to enforce separation of duties between key administrators and data users?
+
+    - A) AWS KMS key policies with separate administrative and usage permissions
+    - B) S3 bucket policies with condition keys
+    - C) CloudHSM with quorum authentication
+    - D) SSE-KMS with context keys
+
+<details markdown=1><summary markdown='span'><b>Answer</b></summary> Correct Answer(s): A
+
+Explanation: AWS KMS key policies allow you to define separate permissions for key administrators and data users. Key administrators can manage the key (enable/disable, rotation settings) but cannot use it for cryptographic operations, while data users can use the key for encryption/decryption but cannot modify key settings. This enforces separation of duties between those who manage the keys and those who use them.
+</details>
+
+60. A company is implementing a data loss prevention solution for their AWS environment. Which service should they use to automatically discover and protect sensitive data in S3 buckets?
+
+    - A) AWS Shield
+    - B) Amazon Macie
+    - C) AWS WAF
+    - D) Amazon Inspector
+
+<details markdown=1><summary markdown='span'><b>Answer</b></summary> Correct Answer(s): B
+
+Explanation: Amazon Macie is a fully managed data security and data privacy service that uses machine learning and pattern matching to discover and protect sensitive data in AWS. Macie automatically discovers sensitive data such as personally identifiable information (PII) or financial data in S3 buckets and provides alerts when it detects potential data exposures or unusual access patterns.
+</details>
+
+61. An organization needs to implement a security control that ensures all data transmitted between their on-premises data center and AWS is encrypted. Which solution should they implement?
+
+    - A) AWS Direct Connect with VPN
+    - B) AWS Site-to-Site VPN
+    - C) AWS Client VPN
+    - D) VPC Endpoints with TLS
+    - E) Transit Gateway with VPC peering
+
+<details markdown=1><summary markdown='span'><b>Answer</b></summary> Correct Answer(s): A,B
+
+Explanation: Both AWS Direct Connect with VPN and AWS Site-to-Site VPN ensure encrypted data transmission between on-premises data centers and AWS. Direct Connect provides a dedicated network connection, and when combined with VPN, it adds encryption to that connection. Site-to-Site VPN creates an encrypted tunnel over the internet. Both solutions ensure that all data transmitted between on-premises and AWS is encrypted.
+</details>
+
+62. A security team needs to implement solutions that will automatically respond to suspicious activities in their AWS environment. Which combination of services would be most effective? (Select THREE)
+
+    - A) Amazon GuardDuty
+    - B) AWS Lambda
+    - C) Amazon EventBridge
+    - D) AWS CloudTrail
+    - E) AWS Security Hub
+    - F) AWS Systems Manager Automation
+
+<details markdown=1><summary markdown='span'><b>Answer</b></summary> Correct Answer(s): A,B,C
+
+Explanation: Amazon GuardDuty provides continuous monitoring for malicious activity. When GuardDuty detects a threat, it can trigger an EventBridge event, which can then invoke a Lambda function to automatically respond to the threat. This combination provides automated threat detection and response capabilities 
+</details>
+
+63. Which AWS services should be used to centrally manage and enforce security policies across multiple AWS accounts? (Select THREE)
+
+    - A) AWS IAM
+    - B) AWS Organizations with Service Control Policies
+    - C) AWS Security Hub
+    - D) AWS Control Tower
+    - E) AWS Config
+    - F) AWS Firewall Manager
+
+<details markdown=1><summary markdown='span'><b>Answer</b></summary> Correct Answer(s): B,D,F
+
+Explanation: AWS Organizations with Service Control Policies (SCPs) allow you to set permission guardrails across accounts. AWS Control Tower provides a way to set up and govern a secure, compliant multi-account AWS environment. AWS Firewall Manager simplifies administration and maintenance of security rules across accounts and applications. Together, these services provide comprehensive security policy management 
+</details>
+
+64. A company needs to implement a solution that will monitor their AWS environment for compliance with PCI DSS. Which service should they use?
+
+    - A) AWS Artifact
+    - B) AWS Config with conformance packs
+    - C) AWS Trusted Advisor
+    - D) Amazon Inspector
+
+<details markdown=1><summary markdown='span'><b>Answer</b></summary> Correct Answer(s): B
+
+Explanation: AWS Config with conformance packs provides a way to continuously monitor your AWS resources for compliance with regulatory standards like PCI DSS. Conformance packs are collections of AWS Config rules and remediation actions that can be deployed as a single entity. AWS provides a sample conformance pack specifically for PCI DSS compliance that includes rules for monitoring security configurations required by the standard.
+</details>
+
+65. An organization wants to ensure that their Lambda functions can securely access AWS resources without storing credentials. Which approaches provide the best security? (Select TWO)
+
+    - A) Store credentials in environment variables
+    - B) Use IAM roles for Lambda functions
+    - C) Store credentials in AWS Secrets Manager and rotate regularly
+    - D) Use KMS to encrypt credentials in the function code
+    - E) Use AWS Identity Center for temporary federation
+
+<details markdown=1><summary markdown='span'><b>Answer</b></summary> Correct Answer(s): B,C
+
+Explanation: IAM roles for Lambda functions provide temporary credentials automatically without storing any credentials in your code. AWS Secrets Manager can securely store and automatically rotate credentials that might be needed for external systems not integrated with IAM. Both approaches avoid hardcoding credentials in function code and follow security best practices
+</details>
