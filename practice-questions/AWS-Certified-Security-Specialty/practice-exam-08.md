@@ -651,7 +651,14 @@ Which combination of steps would meet the requirements? (Select TWO.)
 
 <details markdown=1><summary markdown='span'><b>Answer</b></summary> Correct Answer(s): B, C, F</details>
 
-51. While securing the connection between a company's VPC and its on-premises data center, a Security Engineer sent a ping command from an on-premises host (IP address 203.0.113.12) to an Amazon EC2 instance (IP address 172.31.16.139). The ping command did not return a response. The flow log in the VPC showed the following: `2 123456789010 eni-1235b8ca 203.0.113.12 172.31.16.139 0 0 1 4 336 1432917027 1432917142 ACCEPT OK 2 123456789010 eni-1235b8ca 172.31.16.139 203.0.113.12 0 0 1 4 336 1432917094 1432917142 REJECT OK`. What action should be performed to allow the ping to work?
+51. While securing the connection between a company's VPC and its on-premises data center, a Security Engineer sent a ping command from an on-premises host (IP address 203.0.113.12) to an Amazon EC2 instance (IP address 172.31.16.139). The ping command did not return a response. The flow log in the VPC showed the following:
+   
+```
+2 123456789010 eni-1235b8ca 203.0.113.12 172.31.16.139 0 0 1 4 336 1432917027 1432917142 ACCEPT OK
+2 123456789010 eni-1235b8ca 172.31.16.139 203.0.113.12 0 0 1 4 336 1432917094 1432917142 REJECT OK
+```
+
+What action should be performed to allow the ping to work?
 
     - A) In the security group of the EC2 instance, allow inbound ICMP traffic.
     - B) In the security group of the EC2 instance, allow outbound ICMP traffic.
