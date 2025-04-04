@@ -20,6 +20,9 @@ If you found this guide beneficial, kindly share it with others and leave a reac
 - [Practice Exam - 5](./practice-exam-05.md)
 - [Practice Exam - 6](./practice-exam-06.md)
 - [Practice Exam - 7](./practice-exam-07.md)
+- [Practice Exam - 8](./practice-exam-08.md)
+- [Practice Exam - 9](./practice-exam-09.md) 
+- [Practice Exam - 10](./practice-exam-10.md)
 
 # AWS Whitepapers
  1. [AWS Key Management Service Best Practices](https://d1.awsstatic.com/whitepapers/aws-kms-best-practices.pdf)
