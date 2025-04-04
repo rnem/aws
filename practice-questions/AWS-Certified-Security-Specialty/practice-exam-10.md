@@ -94,7 +94,7 @@ If this practice exam has been helpful to you please share it with others and re
       AWS Firewall Manager can be used to enforce AWS WAF rules, which allow you to block traffic from known malicious IP addresses across multiple accounts.
     </details>
 	
-7. An AWS customer has deployed a multi-tier web application in a VP    - C. The application consists of a load balancer, web servers on EC2 instances, and a database. The security team observes unusual traffic patterns indicating that the web servers are under a DDoS attack. As an AWS Certified Security - Specialty candidate, you are asked which of the following would be the FIRST step in mitigation using Security Groups to reduce the impact of the attack.
+7. An AWS customer has deployed a multi-tier web application in a VPC. The application consists of a load balancer, web servers on EC2 instances, and a database. The security team observes unusual traffic patterns indicating that the web servers are under a DDoS attack. As an AWS Certified Security - Specialty candidate, you are asked which of the following would be the FIRST step in mitigation using Security Groups to reduce the impact of the attack.
 
     - A. Update the Security Groups associated with the web server instances to only allow traffic from the load balancer.
     - B. Remove all inbound rules from the Security Groups to block all incoming traffic to the web servers.
